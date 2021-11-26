@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f884d3a1d9e0042bf3ff6cc1b8b125, type: 3}
+  m_Name: BasementObject
+  m_EditorClassIdentifier: 
+  sceneName: Basement
+  entrances:
+  - {fileID: 11400000, guid: 7558c9e618041c743a3577f19d4bc4c0, type: 2}
+  - {fileID: 11400000, guid: 30fa9f8c4d130e147837f02df7942892, type: 2}
+  - {fileID: 11400000, guid: ab3195b48630b0e4e881a345c7b6d3e4, type: 2}
+  - {fileID: 11400000, guid: 76d9cd96c75b54e43a2c028d9b8f25cb, type: 2}

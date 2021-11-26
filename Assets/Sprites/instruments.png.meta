@@ -1,0 +1,1400 @@
+fileFormatVersion: 2
+guid: 77147d51bcb76c24690c06eac9727248
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4462151535567603180
+    second: instruments_0
+  - first:
+      213: 8934417788045318499
+    second: instruments_1
+  - first:
+      213: 5857888253465717878
+    second: instruments_2
+  - first:
+      213: 902729947969336118
+    second: instruments_3
+  - first:
+      213: -5535984676188626902
+    second: instruments_4
+  - first:
+      213: -1494897836919684725
+    second: instruments_5
+  - first:
+      213: -423855776556018086
+    second: instruments_6
+  - first:
+      213: -3899278877569038271
+    second: instruments_7
+  - first:
+      213: 6044564850832927176
+    second: instruments_8
+  - first:
+      213: -8534362376336475739
+    second: instruments_9
+  - first:
+      213: -8440331472588862946
+    second: instruments_10
+  - first:
+      213: -4372915770282101081
+    second: instruments_11
+  - first:
+      213: -7050127481354786592
+    second: instruments_12
+  - first:
+      213: 4568372703780560345
+    second: instruments_13
+  - first:
+      213: -269037637565859604
+    second: instruments_14
+  - first:
+      213: -6559051317676287676
+    second: instruments_15
+  - first:
+      213: 3370311395598326006
+    second: instruments_16
+  - first:
+      213: 3899334253384734322
+    second: instruments_17
+  - first:
+      213: 4580530097129925363
+    second: instruments_18
+  - first:
+      213: -7970170166405039669
+    second: instruments_19
+  - first:
+      213: -5216200950479127899
+    second: instruments_20
+  - first:
+      213: -8461359838984586872
+    second: instruments_21
+  - first:
+      213: 5769858574703788856
+    second: instruments_22
+  - first:
+      213: 9072086512084278254
+    second: instruments_23
+  - first:
+      213: 2584741897747129496
+    second: instruments_24
+  - first:
+      213: 2895775315176431992
+    second: instruments_25
+  - first:
+      213: 5830434408274288426
+    second: instruments_26
+  - first:
+      213: 3499523739050031254
+    second: instruments_27
+  - first:
+      213: -8110480876368091829
+    second: instruments_28
+  - first:
+      213: -5537436355788998133
+    second: instruments_29
+  - first:
+      213: 6627782502172473951
+    second: instruments_30
+  - first:
+      213: 4693080924905522508
+    second: instruments_31
+  - first:
+      213: 7989350776801554841
+    second: instruments_32
+  - first:
+      213: -2104313724652449807
+    second: instruments_33
+  - first:
+      213: 6664105790680038585
+    second: instruments_34
+  - first:
+      213: 5143581251412016762
+    second: instruments_35
+  - first:
+      213: 1172035753480419820
+    second: instruments_36
+  - first:
+      213: -9061565908986371264
+    second: instruments_37
+  - first:
+      213: 7150829685569227048
+    second: instruments_38
+  - first:
+      213: -1705053451383475031
+    second: instruments_39
+  - first:
+      213: 9025038015369484208
+    second: instruments_40
+  - first:
+      213: 7206698552515845192
+    second: instruments_41
+  - first:
+      213: -6565807533822324041
+    second: instruments_42
+  - first:
+      213: 1895788438123611110
+    second: instruments_43
+  - first:
+      213: -6868815351530836049
+    second: instruments_44
+  - first:
+      213: 6306937821883030035
+    second: instruments_45
+  - first:
+      213: 5794793114877680503
+    second: instruments_46
+  - first:
+      213: 3765426523739097062
+    second: instruments_47
+  - first:
+      213: 12173514356374227
+    second: instruments_48
+  - first:
+      213: 8309559017974021614
+    second: instruments_49
+  - first:
+      213: -2083472819936052258
+    second: instruments_50
+  - first:
+      213: 7964392760060012628
+    second: instruments_51
+  - first:
+      213: -1383636513568852526
+    second: instruments_52
+  - first:
+      213: 1009726874259128236
+    second: instruments_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: instruments_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a7784e1d04312c0800000000000000
+      internalID: -4462151535567603180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3695f5344ad6dfb70800000000000000
+      internalID: 8934417788045318499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ce1c184566b4150800000000000000
+      internalID: 5857888253465717878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633b1d4da14278c00800000000000000
+      internalID: 902729947969336118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2065c5944b3c23b0800000000000000
+      internalID: -5535984676188626902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1161
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8107ee665e014be0800000000000000
+      internalID: -1494897836919684725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56916aba692e1af0800000000000000
+      internalID: -423855776556018086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1484056258af2e9c0800000000000000
+      internalID: -3899278877569038271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c965b3d4bb92e350800000000000000
+      internalID: 6044564850832927176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9710eb2aadf8980800000000000000
+      internalID: -8534362376336475739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a8ac59e3bedda80800000000000000
+      internalID: -8440331472588862946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_11
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1031
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6b1af86484053c0800000000000000
+      internalID: -4372915770282101081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8e0aca86ae82e90800000000000000
+      internalID: -7050127481354786592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd5e6215ce166f30800000000000000
+      internalID: 4568372703780560345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce83dada1bf244cf0800000000000000
+      internalID: -269037637565859604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449d852f39199f4a0800000000000000
+      internalID: -6559051317676287676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8d61d8b50c5ce20800000000000000
+      internalID: 3370311395598326006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_17
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 901
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276928908d73d1630800000000000000
+      internalID: 3899334253384734322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa2a6acadf419f30800000000000000
+      internalID: 4580530097129925363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_19
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9f2002674446190800000000000000
+      internalID: -7970170166405039669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaf2a54fd45c97b0800000000000000
+      internalID: -5216200950479127899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88931908e06339a80800000000000000
+      internalID: -8461359838984586872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833067dbdc7a21050800000000000000
+      internalID: 5769858574703788856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_23
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 771
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb5564ed9686ed70800000000000000
+      internalID: 9072086512084278254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894694bbf09ded320800000000000000
+      internalID: 2584741897747129496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871af628e4cdf2820800000000000000
+      internalID: 2895775315176431992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f576f043dd9e050800000000000000
+      internalID: 5830434408274288426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_27
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698bf15ac4ec09030800000000000000
+      internalID: 3499523739050031254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b452b763d98c17f80800000000000000
+      internalID: -8110480876368091829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_29
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 641
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0afcd619f21723b0800000000000000
+      internalID: -5537436355788998133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a3a8af11d9afb50800000000000000
+      internalID: 6627782502172473951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45c7277c3c212140800000000000000
+      internalID: 4693080924905522508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9917f3db330efde60800000000000000
+      internalID: 7989350776801554841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff8c1a01d9fbc2e0800000000000000
+      internalID: -2104313724652449807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_34
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc7b1f98e8ab7c50800000000000000
+      internalID: 6664105790680038585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_35
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 511
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7eb5c375eba16740800000000000000
+      internalID: 5143581251412016762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9f14ede48e34010800000000000000
+      internalID: 1172035753480419820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043e316e0d9de3280800000000000000
+      internalID: -9061565908986371264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_38
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8290ca956b9dc3360800000000000000
+      internalID: 7150829685569227048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_39
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4fb337bee6658e0800000000000000
+      internalID: -1705053451383475031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b79e7e12406f3d70800000000000000
+      internalID: 9025038015369484208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_41
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 381
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c570a9626530460800000000000000
+      internalID: 7206698552515845192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2dfeac5d091e4a0800000000000000
+      internalID: -6565807533822324041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_43
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e386a74a813f4a10800000000000000
+      internalID: 1895788438123611110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_44
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf214094d01da0a0800000000000000
+      internalID: -6868815351530836049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_45
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a50dd888eb68750800000000000000
+      internalID: 6306937821883030035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_46
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bd927c2ad3b6050800000000000000
+      internalID: 5794793114877680503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_47
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 251
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e78d47297b714430800000000000000
+      internalID: 3765426523739097062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da31ee2fbf3b2000800000000000000
+      internalID: 12173514356374227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed3c72a6eb715370800000000000000
+      internalID: 8309559017974021614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_50
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbb78c42840613e0800000000000000
+      internalID: -2083472819936052258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_51
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458e113a405378e60800000000000000
+      internalID: 7964392760060012628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_52
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5f776fbe55ccce0800000000000000
+      internalID: -1383636513568852526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruments_53
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 121
+        width: 130
+        height: 130
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf716c0e35430e00800000000000000
+      internalID: 1009726874259128236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

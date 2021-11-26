@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3ee012797df1c5e42afe2a0719309cbd
+  - enabled: 1
+    path: Assets/Scenes/Backyard.unity
+    guid: 4c2779d17885aa24787c304c2765beab
+  - enabled: 1
+    path: Assets/Scenes/Farm.unity
+    guid: 33d0f4b5a5e8d6541875311bf7d40140
+  - enabled: 1
+    path: Assets/Scenes/UpperFloor.unity
+    guid: 7758f3757f2494943af88e05910a23f4
+  - enabled: 1
+    path: Assets/Scenes/JustinsRoom.unity
+    guid: 5b2e200452921a84d9daceeb69fe1baf
+  - enabled: 1
+    path: Assets/Scenes/Livingroom.unity
+    guid: 6c42b73f1a275954188535ef1b3665ca
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: 67e30e1205a6aa241bd1318c8b901555
+  - enabled: 1
+    path: Assets/Scenes/Garage.unity
+    guid: 239453c8f6efea947be7b466297d32a8
+  - enabled: 1
+    path: Assets/Scenes/LowerBasement.unity
+    guid: 89ce122f2b5983f4c8a5e306ed689e59
+  - enabled: 1
+    path: Assets/Scenes/Basketball.unity
+    guid: f992fb8d37b72bb47ae12bdc0c568591
+  m_configObjects: {}

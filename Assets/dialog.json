@@ -1,0 +1,16 @@
+{
+    "textBlocks": [
+        {
+            "name": "Default",
+            "text": "This ain't useful."
+        },
+        {
+            "name": "JustinUpdate",
+            "text": "Hey Justin! This is Trevor with an update on how your present is coming along. A \"virtual scavenger hunt\" is simultaneously really vague and weirdly specific. So since I have to test these systems anyway, I thought it'd be cool to give you a demonstration! That way you can see a little bit of what it will look like. And also so you can see that it actually exists! :) Anyway, as you can see some things are a little rough. I can't feasibly make more unique assets and finish anytime this year, so the link sprite is here to stay. And I didn't exactly get the rights to use him. So I guess if anyone asks where you got this game, ya know, just lie. But other than those little things, it's going to be the best time you've ever had. Definitely not over-promising anything there...                                                                                      Anyway later  "
+        },
+        {
+            "name": "IntroDialog",
+            "text": "Welcome to the scavenger hunt! This place may look familiar, depending on how much time I end up having to spend on it. I've hidden clues all over the place that will give you hints to find more clues. Look around with WASD and inspect things with the space bar or a mouse click."
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace Scripts {
+    public class MenuHandler : MonoBehaviour {
+        public SpawnObject spawn;
+        public InventoryObject inventory;
+
+        readonly string mainMenuScene = "MainMenu";
+
+        public void HandleStartNewGame() {
+            spawn.spawnpoint = null;
+            inventory.items.Clear();
+            SceneManager.LoadScene(1);
+        }
+
+        public void HandleContinueGame() {
+            var currentScene = spawn.spawnpoint.FromLocation.sceneName;
+            SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
+        }
+
+        public void HandleExit() {
+            Application.Quit();
+        }
+
+        public void HandleUnpause() {
+            Destroy(gameObject);
+        }
+
+        public void HandleExitGame() {
+            SceneManager.LoadScene(mainMenuScene, LoadSceneMode.Single);
+        }
+
+        void Update() {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                HandleUnpause();
+        }
+    }
+}

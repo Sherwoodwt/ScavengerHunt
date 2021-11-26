@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87b9da006e4c584da548e4609443ad3, type: 3}
+  m_Name: BasementUpstairs
+  m_EditorClassIdentifier: 
+  entrypoint: {x: 0.07, y: -10.02}
+  toLocation: {fileID: 11400000, guid: 748acb77fa9db814e8dee91a43004fdc, type: 2}
+  FromLocation: {fileID: 11400000, guid: 98457faeaba8c0941982cbd3aabcfe5c, type: 2}

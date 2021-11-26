@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f884d3a1d9e0042bf3ff6cc1b8b125, type: 3}
+  m_Name: BackyardObject
+  m_EditorClassIdentifier: 
+  sceneName: Backyard
+  entrances:
+  - {fileID: 11400000, guid: e5c0f027b389dc541a6dadb58f695758, type: 2}
+  - {fileID: 11400000, guid: 036db67123a45dd41b277f16ec5d2fdb, type: 2}
+  - {fileID: 11400000, guid: c44befc640e64d14dac00d3ae07b9a61, type: 2}
