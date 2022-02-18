@@ -5,6 +5,7 @@ namespace Scripts.Inspectables {
     public class Grabbable : MonoBehaviour, Inspectable {
         public InventoryObject inventory;
         public ItemObject item;
+        public ItemObject key;
 
         new AudioSource audio;
 
@@ -15,9 +16,11 @@ namespace Scripts.Inspectables {
         }
 
         public void Inspect() {
-            inventory.Add(item);
-            Debug.Log($"Adding Item: {item.description}");
-            audio.Play();
+            if (key == null || inventory.Contains(key)) {
+                inventory.Add(item);
+                Debug.Log($"Adding Item: {item.description}");
+                audio.Play();
+            }
         }
     }
 }

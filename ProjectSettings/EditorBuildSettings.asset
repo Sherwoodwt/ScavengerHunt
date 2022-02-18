@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Basketball.unity
     guid: f992fb8d37b72bb47ae12bdc0c568591
+  - enabled: 1
+    path: Assets/Scenes/Pogo.unity
+    guid: 3e9759ff53c7eca40994b509c5704a23
   m_configObjects: {}

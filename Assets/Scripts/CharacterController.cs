@@ -2,16 +2,16 @@
 using UnityEngine;
 
 namespace Scripts {
-    [RequireComponent(typeof(CharacterMovement))]
+    [RequireComponent(typeof(CharacterPhysics))]
     [RequireComponent(typeof(BoxCollider2D))]
-    public class HandleControls : MonoBehaviour {
+    public class CharacterController : MonoBehaviour {
         public GameObject pauseMenuPrefab;
         public Animator animator;
         public LayerMask inspectMask;
 
         GameObject pauseMenu;
         Vector2 direction;
-        CharacterMovement character;
+        CharacterPhysics character;
         new BoxCollider2D collider;
 
         public void Pause() {
@@ -19,7 +19,7 @@ namespace Scripts {
         }
 
         void Start() {
-            character = GetComponent<CharacterMovement>();
+            character = GetComponent<CharacterPhysics>();
             collider = GetComponent<BoxCollider2D>();
         }
 

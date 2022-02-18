@@ -23,8 +23,8 @@ TagManager:
   - LockedDoor
   - Door
   - Projectile
-  - 
-  - 
+  - Hurtbox
+  - Zombie
   - 
   - 
   - 

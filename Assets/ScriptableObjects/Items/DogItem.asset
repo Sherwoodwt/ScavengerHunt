@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
-  m_Name: Dog
+  m_Name: DogItem
   m_EditorClassIdentifier: 
-  description: 
-  sprite: {fileID: 0}
+  description: This teeny weeny guy would make an itty bitty gift for someone who's
+    a teeny tiny bit lonely.
+  sprite: {fileID: 21300000, guid: e12957861ec02324d9148751a9eb0804, type: 3}

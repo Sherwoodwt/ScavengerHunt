@@ -117,7 +117,7 @@ MonoBehaviour:
   displayText: {fileID: 5345237777428910711}
   text: 
   textSpeed: 0.01
-  chunkSize: 324
+  chunkSize: 300
   clips:
   - {fileID: 8300000, guid: 71dd97d64083fbf4cb027799d63b6965, type: 3}
   - {fileID: 8300000, guid: 2326faeb8c2cd044298a7eb238762708, type: 3}
@@ -265,8 +265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3, y: -194.7}
-  m_SizeDelta: {x: 1048.783, y: 159.64204}
+  m_AnchoredPosition: {x: -0.5, y: -195.86}
+  m_SizeDelta: {x: 1028.1895, y: 143.80608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5345237777428910708
 CanvasRenderer:

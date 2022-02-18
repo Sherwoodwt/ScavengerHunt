@@ -16,3 +16,4 @@ MonoBehaviour:
   entrances:
   - {fileID: 11400000, guid: 2ac08318bbb727a40af4fb13bb6fc00b, type: 2}
   - {fileID: 11400000, guid: 9158550264ef85c4182daa6da2386ea4, type: 2}
+  - {fileID: 11400000, guid: d1cd2dabc6559c747b4a53bd49294044, type: 2}

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4436552157291265013}
   - component: {fileID: 4436552157291265012}
   - component: {fileID: 4436552157291265015}
-  - component: {fileID: 4436552157291265014}
   - component: {fileID: 4436552157291265018}
   - component: {fileID: 4436552157291265019}
+  - component: {fileID: 3246072362184653965}
+  - component: {fileID: 3630652206530384071}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -105,23 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4436552157291265014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4436552157291265009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9054576fd59d04a41ba4ea45f2272cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {x: 0, y: 0}
-  magnitude: 3.7
-  collidables:
-    serializedVersion: 2
-    m_Bits: 1792
 --- !u!114 &4436552157291265018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,12 +120,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
     type: 3}
-  text: This is just a test to see how many characters I should reserve for each
-    section of the textbox. Luckily, since the resolution of this game is much better
-    than that of pokemon, I can display a lot more characters. This should allow
-    me to have more text content without it being super monotonous to read through.
-    Looks like it can handle over 350 characters!!!!!! NOW I'M GONNA TRY SOMETHING
-    EVEN BIGGER. iT'S GOING TO CHALLENGE MY PERSEPTION OF REALITY AS I KNOW ITL
+  texts: []
+  key: {fileID: 0}
+  inventory: {fileID: 0}
+  unlockedText: 
 --- !u!61 &4436552157291265019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -168,3 +150,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67380095, y: 0.98550487}
   m_EdgeRadius: 0
+--- !u!114 &3246072362184653965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436552157291265009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81ea5a0405473d498b590e40d605fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 0
+  input: {x: 0, y: 0}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 3584
+--- !u!114 &3630652206530384071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436552157291265009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a809292d462d6e4884835005ab04b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stirCraziness: 0.0014
+  disableX: 0
+  disableY: 0

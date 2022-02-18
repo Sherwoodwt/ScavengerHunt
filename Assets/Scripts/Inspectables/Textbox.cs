@@ -9,7 +9,7 @@ namespace Scripts.Inspectables {
         public Text displayText;
         public string text;
         public float textSpeed = .01f;
-        public int chunkSize = 324;
+        public int chunkSize;
         public AudioClip[] clips;
 
         new AudioSource audio;
@@ -26,7 +26,7 @@ namespace Scripts.Inspectables {
             for (int i = 0; i < words.Length; i++) {
                 if (chonque.Length + words[i].Length + 1 >= chunkSize) {
                     chonques.Add(chonque);
-                    chonque = string.Empty;
+                    chonque = words[i] + ' ';
                 } else {
                     chonque += words[i] + ' ';
                 }

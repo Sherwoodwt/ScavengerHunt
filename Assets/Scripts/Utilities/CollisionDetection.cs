@@ -1,21 +1,13 @@
 ﻿using UnityEngine;
 
-namespace Scripts {
-    public class CharacterMovement : MonoBehaviour {
-        public Vector2 input;
-        [Range(1f, 10f)]
-        public float magnitude;
-        public LayerMask collidables;
-
-        new BoxCollider2D collider;
-
-        void Start() {
-            collider = GetComponent<BoxCollider2D>();
+namespace Scripts.Utilities {
+    public static class CollisionDetection {
+        // TODO: Does this work?
+        public static Vector2 CheckCollision(BoxCollider2D collider, Vector2 velocity) {
+            return CheckCollision(collider, velocity, ~0);
         }
 
-        void Update() {
-            var velocity = new Vector2(input.x * magnitude * Time.deltaTime, input.y * magnitude * Time.deltaTime);
-
+        public static Vector2 CheckCollision(BoxCollider2D collider, Vector2 velocity, LayerMask layerMask) {
             if (velocity.x != 0) {
                 // calculate edges
                 var max = collider.bounds.max;
@@ -33,7 +25,7 @@ namespace Scripts {
                 var speed = Mathf.Abs(velocity.x);
                 var closest = speed;
                 foreach (var edge in edges) {
-                    var hit = Physics2D.Raycast(edge, direction, speed, collidables);
+                    var hit = Physics2D.Raycast(edge, direction, speed, layerMask);
                     if (hit.collider != null) {
                         var distance = Mathf.Abs((hit.point - edge).x);
                         if (distance < closest) {
@@ -45,7 +37,6 @@ namespace Scripts {
                 if (closest < speed)
                     velocity.x = (closest * direction.x);
             }
-
             if (velocity.y != 0) {
                 // calculate edges
                 var max = collider.bounds.max;
@@ -63,7 +54,7 @@ namespace Scripts {
                 var speed = Mathf.Abs(velocity.y);
                 var closest = speed;
                 foreach (var edge in edges) {
-                    var hit = Physics2D.Raycast(edge, direction, speed, collidables);
+                    var hit = Physics2D.Raycast(edge, direction, speed, layerMask);
                     if (hit.collider != null) {
                         var distance = Mathf.Abs((hit.point - edge).y);
                         if (distance < closest) {
@@ -76,7 +67,7 @@ namespace Scripts {
                     velocity.y = (closest * direction.y);
             }
 
-            transform.position = new Vector3(transform.position.x + velocity.x, transform.position.y + velocity.y, transform.position.z);
+            return velocity;
         }
     }
 }

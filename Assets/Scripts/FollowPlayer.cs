@@ -3,7 +3,8 @@
 namespace Scripts {
     public class FollowPlayer : MonoBehaviour {
         new public BoxCollider2D collider;
-        public CharacterMovement player;
+        public BasePhysics player;
+        public float factor = 1f;
 
         void Update() {
             var xdif = 0f;
@@ -18,8 +19,8 @@ namespace Scripts {
             else if (player.transform.position.y < collider.bounds.min.y)
                 ydif = player.transform.position.y - collider.bounds.min.y;
 
-            xdif *= Time.deltaTime * player.magnitude;
-            ydif *= Time.deltaTime * player.magnitude;
+            xdif *= Time.deltaTime * player.accel * factor;
+            ydif *= Time.deltaTime * player.accel * factor;
 
             if (xdif != 0 || ydif != 0)
                 transform.position = new Vector3(

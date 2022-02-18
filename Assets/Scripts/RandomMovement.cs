@@ -3,7 +3,7 @@ using Scripts.Inspectables;
 using UnityEngine;
 
 namespace Scripts {
-    [RequireComponent(typeof(CharacterMovement))]
+    [RequireComponent(typeof(CharacterPhysics))]
     public class RandomMovement : MonoBehaviour {
         [Range(0, .01f)]
         public float stirCraziness;
@@ -11,11 +11,11 @@ namespace Scripts {
         public bool disableY;
 
         Animator animator;
-        CharacterMovement movement;
+        CharacterPhysics movement;
 
         void Start() {
             animator = GetComponent<Animator>();
-            movement = GetComponent<CharacterMovement>();
+            movement = GetComponent<CharacterPhysics>();
         }
 
         void Update() {

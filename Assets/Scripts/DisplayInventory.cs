@@ -33,17 +33,28 @@ namespace Scripts {
 
         void Start() {
             slots = GameObject.FindGameObjectsWithTag(slotTag);
+            // sort by slot name
+            for (int i = 0; i < slots.Length; i++) {
+                var first = i;
+                for (int j = i+1; j < slots.Length; j++) {
+                    if (slots[j].name.CompareTo(slots[first].name) < 0)
+                        first = j;
+                }
+                var temp = slots[i];
+                slots[i] = slots[first];
+                slots[first] = temp;
+            }
         }
 
         void Update() {
             if (start != prevStart || inventory.items.Count != prevCount) {
                 prevStart = start;
                 prevCount = inventory.items.Count;
-                StartCoroutine(UpdateImages());
+                StartCoroutine(RefreshDisplay());
             }
         }
 
-        IEnumerator UpdateImages() {
+        IEnumerator RefreshDisplay() {
             int i = start;
             foreach (var slot in slots) {
                 var image = slot.GetComponent<Image>();

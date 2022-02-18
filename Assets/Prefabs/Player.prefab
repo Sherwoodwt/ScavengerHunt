@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3442368244624008471}
   - component: {fileID: 3442368244624008464}
   - component: {fileID: 3442368244624008465}
-  - component: {fileID: 3442368244624008466}
-  - component: {fileID: 3442368244624008467}
   - component: {fileID: 3442368244624008476}
   - component: {fileID: 3442368244624008477}
   - component: {fileID: 7520240851080834039}
+  - component: {fileID: 3442368244624008467}
+  - component: {fileID: 520068061948457585}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -107,41 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3442368244624008466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442368244624008478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9054576fd59d04a41ba4ea45f2272cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {x: 0, y: 0}
-  magnitude: 3.7
-  collidables:
-    serializedVersion: 2
-    m_Bits: 7680
---- !u!114 &3442368244624008467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442368244624008478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a112f278f51734784bda208f81735d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuPrefab: {fileID: 3662829968097567002, guid: edeaf55957cba6244b3a43a72cd980bc,
-    type: 3}
-  animator: {fileID: 3442368244624008465}
-  inspectMask:
-    serializedVersion: 2
-    m_Bits: 7168
 --- !u!61 &3442368244624008476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -202,3 +167,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 11400000, guid: 58e6f48bbba3b9e43905282dae966365, type: 2}
+--- !u!114 &3442368244624008467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442368244624008478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a112f278f51734784bda208f81735d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPrefab: {fileID: 3662829968097567002, guid: edeaf55957cba6244b3a43a72cd980bc,
+    type: 3}
+  animator: {fileID: 3442368244624008465}
+  inspectMask:
+    serializedVersion: 2
+    m_Bits: 7168
+--- !u!114 &520068061948457585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442368244624008478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81ea5a0405473d498b590e40d605fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 5.43
+  input: {x: 0, y: 0}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 3584

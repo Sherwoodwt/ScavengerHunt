@@ -57,6 +57,7 @@ namespace Scripts {
             }
         }
 
+        // TODO: Clean this up
         void OnTriggerEnter2D(Collider2D collider) {
             if (open) {
                 var entrance = toLocation.entrances
