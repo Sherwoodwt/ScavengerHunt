@@ -6,7 +6,7 @@ namespace Scripts {
         public LayerMask collisionMask;
         public Vector2 input;
 
-        void Update() {
+        void LateUpdate() {
             var velocity = new Vector2(input.x * accel * Time.deltaTime, input.y * accel * Time.deltaTime);
 
             velocity = CollisionDetection.CheckCollision(collider, velocity, collisionMask);

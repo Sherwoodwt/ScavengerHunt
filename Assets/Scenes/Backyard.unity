@@ -367,6 +367,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &119670662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5427587174949290763, guid: 8e4d2d2671cc23147a3df337688ea311,
+    type: 3}
+  m_PrefabInstance: {fileID: 1666786021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &119670663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119670662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9f443832035c34cbf233f8d554b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  item: {fileID: 0}
+  key: {fileID: 11400000, guid: 1b1d14d52671ed946899f18e8efdebbd, type: 2}
+--- !u!82 &119670664
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119670662}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 78bfe6372e7ac9e489e099acf8f7b2a6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &139297312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39898,6 +40015,90 @@ PrefabInstance:
     - target: {fileID: 1290592438, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
       propertyPath: disableX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141383900783261504, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: accel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b1d14d52671ed946899f18e8efdebbd,
+        type: 2}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480,
+        type: 2}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: unlockedText
+      value: For me? Wow! Finally I'll have someone to talk to who actually listens
+        to what I have to say! You know, you may have been a shitty friend and neighbor,
+        but with this last gesture of good faith... well I think I might have had
+        you pegged wrong. I apologize for any harsh words we may have shared in the
+        past. Now, come along little dog. I've got a lot of rooms to show you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: texts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: I'm a background character. I don't serve any real purpose. The only
+        reason I'm here is to walk around and say some pointless nonesense. At least
+        that's how it feels. These days I don't do anything except sit pace around
+        out here in the yard. When I'm not out in the yard I'm usually inside making
+        something to eat or watching tv. Or sleeping. That's actually the only places
+        I even go in my house anymore are those two rooms, the kitchen and the living
+        room. Kitchen, living room, and my back yard out by this here bush fence.
+        That's the only 3 places I ever go anymore. What a way to live, day in and
+        day out, for the last 30 years. Well anyway, I don't want to bore you anymore
+        dribbling on about my life. I know you've got other more important things
+        to do.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Hey you're back! Been a while hasn't it? Not that long you say? Yeah
+        time flies when you're living life to the fullest. Since we last talked,
+        I started visiting some of the other rooms of my house occasionally. Come
+        to think of it, I don't know how I got by without so much as entering my
+        bathroom for decades. Lifes sure full of pleasant little mysteries ain't
+        it? Anyhow, I've I'm thinking my next goal is going to be to venture into
+        my guest room. The door's been shut as long as I can remember. Who knows
+        what's on the other side!? I can tell you're as eager to know what's in there
+        as I am. Well you're just gonna have to wait til next time!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Hey there neighbor. The what? Oh right, the guest room. Yeah I went
+        in there. It was pretty wild... lots of... you know, cool items and things...
+        Alright I'm lying. I don't have a mysterious unopened room. I just wanted
+        you to come talk to me again so I made up a story that I knew you couldn't
+        resist. You're the only person I talk to. And you rarely come over to my
+        neck of the woods. Maybe if you made more of a habit of coming out here I
+        wouldn't have to trick you. Lets just try to cool down and move on before
+        one of us says something we regret, okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427587174949290760, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: Yeah so anyway, now that I don't have any mysterious rooms in my house
+        to explore, I've just been trying to see if I can count how many hairs I
+        have. The hardest part is keeping track of which ones I've already counted...
+        I'm getting a vibe from you. Is everything good? Is it because of earlier?
+        I said I was sorry, okay?... At least I'm pretty sure I did. Plus I haven't
+        lied to you since. And look! You're over here again, so I guess my plan actually
+        worked. So maybe you should actually be thanking me. In fact, you know what?
+        I don't have to take this anymore. I'm out of here. Come back when you've
+        learned some respect!
       objectReference: {fileID: 0}
     - target: {fileID: 5427587174949290761, guid: 8e4d2d2671cc23147a3df337688ea311,
         type: 3}

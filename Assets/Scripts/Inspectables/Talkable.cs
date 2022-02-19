@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Scripts.Inspectables {
     public class Talkable : MonoBehaviour, Inspectable {
         public GameObject textboxPrefab;
-        [TextArea(2,6)]
+        [TextArea(2,12)]
         public List<string> texts;
 
         [Header("Lock Stuff")]
