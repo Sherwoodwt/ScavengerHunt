@@ -117,7 +117,7 @@ MonoBehaviour:
   displayText: {fileID: 5345237777428910711}
   text: 
   textSpeed: 0.01
-  chunkSize: 300
+  chunkSize: 156
   clips:
   - {fileID: 8300000, guid: 71dd97d64083fbf4cb027799d63b6965, type: 3}
   - {fileID: 8300000, guid: 2326faeb8c2cd044298a7eb238762708, type: 3}
@@ -297,7 +297,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 --- !u!1 &5345237778484061528
 GameObject:
   m_ObjectHideFlags: 0
