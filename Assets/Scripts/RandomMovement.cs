@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using Scripts.Inspectables;
 using UnityEngine;
 
 namespace Scripts {

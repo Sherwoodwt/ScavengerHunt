@@ -19,23 +19,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1290592432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5427587174949290763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9054576fd59d04a41ba4ea45f2272cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {x: 0, y: 0}
-  magnitude: 3.7
-  collidables:
-    serializedVersion: 2
-    m_Bits: 15872
 --- !u!114 &1290592438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,6 +34,23 @@ MonoBehaviour:
   stirCraziness: 0.00336
   disableX: 0
   disableY: 0
+--- !u!114 &3141383900783261504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427587174949290763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81ea5a0405473d498b590e40d605fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 1
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 3584
+  input: {x: 0, y: 0}
 --- !u!1001 &3426927187263901572
 PrefabInstance:
   m_ObjectHideFlags: 0

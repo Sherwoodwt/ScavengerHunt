@@ -2,11 +2,6 @@
 
 namespace Scripts.Utilities {
     public static class CollisionDetection {
-        // TODO: Does this work?
-        public static Vector2 CheckCollision(BoxCollider2D collider, Vector2 velocity) {
-            return CheckCollision(collider, velocity, ~0);
-        }
-
         public static Vector2 CheckCollision(BoxCollider2D collider, Vector2 velocity, LayerMask layerMask) {
             if (velocity.x != 0) {
                 // calculate edges

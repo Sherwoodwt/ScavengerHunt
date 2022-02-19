@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Teleport : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+namespace Scripts {
+    [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(Collider2D))]
+    public class Teleport : MonoBehaviour {
+        public Vector2 destination;
         
-    }
+        new AudioSource audio;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Start() {
+            audio = GetComponent<AudioSource>();
+        }
+
+        void OnTriggerEnter2D(Collider2D collider) {
+            if (collider.tag == "Player") {
+                audio.Play();
+                collider.transform.position = destination;
+            }
+        }
     }
 }

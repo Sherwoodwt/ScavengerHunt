@@ -778,6 +778,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1290592438, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
     - {fileID: 1290592433, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
+    - {fileID: 1290592432, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
 --- !u!1001 &544902228
 PrefabInstance:
@@ -39973,7 +39974,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bob
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1290592432, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
 --- !u!1001 &1691805515
 PrefabInstance:
@@ -40409,6 +40411,11 @@ PrefabInstance:
       propertyPath: stirCraziness
       value: 0.003
       objectReference: {fileID: 0}
+    - target: {fileID: 3141383900783261504, guid: 8e4d2d2671cc23147a3df337688ea311,
+        type: 3}
+      propertyPath: accel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5427587174949290761, guid: 8e4d2d2671cc23147a3df337688ea311,
         type: 3}
       propertyPath: m_RootOrder
@@ -40504,7 +40511,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1290592432, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e4d2d2671cc23147a3df337688ea311, type: 3}
 --- !u!1001 &5296225021358916591
 PrefabInstance:
