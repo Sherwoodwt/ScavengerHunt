@@ -10,6 +10,7 @@ namespace Scripts {
         public ItemObject[] keys;
         public InventoryObject inventory;
         public SpawnObject spawn;
+        public float transitionTime = 1;
         public GameObject transitionPrefab;
 
         readonly string lockedLayer = "LockedDoor";
@@ -57,22 +58,28 @@ namespace Scripts {
             }
         }
 
-        // TODO: Clean this up
         void OnTriggerEnter2D(Collider2D collider) {
             if (open) {
-                var entrance = toLocation.entrances
-                    .Single(e => e.toLocation.sceneName == SceneManager.GetActiveScene().name);
-                spawn.spawnpoint = entrance;
+                try {
+                    var entrance = toLocation.entrances
+                        .Single(e => e.toLocation.sceneName == SceneManager.GetActiveScene().name);
+                    spawn.spawnpoint = entrance;
 
-                GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
-                audio.Play();
+                    if (transitionPrefab != null) {
+                        GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
+                    }
+                    audio.Play();
 
-                StartCoroutine(Transition());
+                    StartCoroutine(Transition());
+                } catch (System.Exception ex) {
+                    Debug.LogError($"no matching enterance in {toLocation.sceneName}");
+                    throw ex;
+                }
             }
         }
 
         IEnumerator Transition() {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(transitionTime);
             SceneManager.LoadScene(toLocation.sceneName, LoadSceneMode.Single);
         }
     }

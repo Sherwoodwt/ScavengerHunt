@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
+  m_Script: {fileID: 11500000, guid: ba32056e5417f214e8fbf38dadca49d0, type: 3}
   m_Name: DreamJournal
   m_EditorClassIdentifier: 
   description: "This journal contains mysterious text:\n\n\u03A4\u0391 \u039C\u03A0\u0395\u03A1\u0394\u0395\u039C\u0388\u039D\u0391
@@ -50,3 +50,14 @@ MonoBehaviour:
     \u039A\u039F\u03A1\u03A5\u03A6\u0389 \u03A4\u039F\u03A5 \u0392\u03A1\u0391\u03A7\u038F\u0394\u0397\u03A3
     \u039A\u039F\u03A1\u03A5\u03A6\u0389\r  "
   sprite: {fileID: 21300000, guid: ed00a3a436edea54f829adc36e38c495, type: 3}
+  key: {fileID: 11400000, guid: 4b2933b128bba2a4b8db634774922686, type: 2}
+  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  unlockedDescription: "The tangled sheets envelope every limb like chaos wrapped
+    around my every thought. This night as I'm awake I scribe this dream so to ensure
+    it be never forgot. Just before I woke up in a sweat I ran against a moving escalator.
+    Up toward a crowd of people who I knew away from a hungry-looking alligator.
+    I found myself in such a wicked bind for having just one of the pair of keys.
+    One earned through tests of skill and one of mind so it became impassable to
+    me. As soon as I awoke I leapt to work to write this down before my memory stops.
+    Make sure that you are fully prepared before you hit the peak of Rocky Top\u2026
+    Rocky Top is now accessible."

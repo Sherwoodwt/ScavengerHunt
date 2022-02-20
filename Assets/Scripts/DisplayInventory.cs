@@ -68,7 +68,7 @@ namespace Scripts {
                     var item = inventory.items[i];
                     if (item != null) {
                         image.sprite = item.sprite;
-                        inspectable.texts.Add(item.description);
+                        inspectable.texts.Add(item.Description);
                     } else {
                         image.sprite = defaultImage;
                         inspectable.texts.Clear();

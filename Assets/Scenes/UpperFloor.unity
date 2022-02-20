@@ -132,7 +132,6 @@ PrefabInstance:
         type: 3}
       propertyPath: texts.Array.data[0]
       value: Whoever made this bed knows what they're doing. It looks crisp and fresh.
-        I just hope there's... nothing underneeth....
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -869,7 +868,8 @@ PrefabInstance:
       propertyPath: texts.Array.data[3]
       value: If you're finding yourself inspecting something that looks interesting
         but it doesn't have anything interesting to say, you could try bumping into
-        it.
+        it. Don't fear death! You can't die! I swear this advice isn't as irresponsible
+        as it sounds.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -953,6 +953,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1864086579618130609, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdbca83296405a648a8db12c242ead8b, type: 3}
     - target: {fileID: 5296225021808980800, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_Size.x
@@ -3320,6 +3325,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1864086579618130609, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdbca83296405a648a8db12c242ead8b, type: 3}
     - target: {fileID: 3179730687030010776, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -8807,6 +8817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1864086579618130609, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdbca83296405a648a8db12c242ead8b, type: 3}
     - target: {fileID: 3179730687030010776, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_Size.x
@@ -8936,8 +8951,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: This here is a fine piece of furniture. Fit for many things, such as
-        fine dining. And breathing.
+      value: This here is a fine piece of furniture.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}

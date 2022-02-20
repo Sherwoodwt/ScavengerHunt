@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc6e445078ca9e44b66b469bf84bbc9, type: 3}
-  m_Name: InventoryObject
+  m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
+  m_Name: PasscodeItem
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: 67892aa0280079a4bac1a6744d22e3ef, type: 2}
-  - {fileID: 11400000, guid: 44716c20a4bc5ef44b60128f255fa3d1, type: 2}
+  description: 
+  sprite: {fileID: 0}

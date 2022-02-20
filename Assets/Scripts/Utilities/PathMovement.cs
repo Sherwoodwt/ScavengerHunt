@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Pogo {
+namespace Scripts.Utilities {
     public class PathMovement : MonoBehaviour {
         [Range(0, .1f)]
         public float speed;
