@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4f884d3a1d9e0042bf3ff6cc1b8b125, type: 3}
-  m_Name: LivingroomObject
+  m_Name: PotterlandObject
   m_EditorClassIdentifier: 
-  sceneName: Livingroom
+  sceneName: Potterland
   entrances:
-  - {fileID: 11400000, guid: e25399439463c8b46abd110cef26e0f3, type: 2}
-  - {fileID: 11400000, guid: f224986969710c84aaf2573f751f15bb, type: 2}
-  - {fileID: 11400000, guid: cc8022c2ba7141c4ebcbeb603edfb434, type: 2}
+  - {fileID: 11400000, guid: c76bfa7ddd189324ea7da6ea0a8bb6c3, type: 2}
