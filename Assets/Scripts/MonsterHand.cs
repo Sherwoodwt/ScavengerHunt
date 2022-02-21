@@ -9,18 +9,17 @@ namespace Scripts {
         Collider2D handCollider;
         PathMovement movement;
         DisableMovement disableMovement;
-        new AudioSource audio;
         GameObject grabbed = null;
         // shameless hack
         [SerializeField] bool first;
 
         void Start() {
-            audio = GetComponent<AudioSource>();
             handCollider = GetComponent<Collider2D>();
             movement = GetComponent<PathMovement>();
             disableMovement = GetComponent<DisableMovement>();
-            disableMovement.enabled = false;
             first = true;
+
+            disableMovement.enabled = true;
         }
 
         void LateUpdate() {
@@ -38,7 +37,6 @@ namespace Scripts {
 
         void OnTriggerEnter2D(Collider2D collider) {
             if (collider.tag == "Player") {
-                disableMovement.enabled = true;
                 grabbed = collider.gameObject;
             }
         }

@@ -21,7 +21,7 @@ namespace Scripts.Inspectables {
                 throw new MissingComponentException("Needs a textbox prefab");
         }
 
-        public virtual void Inspect() {
+        public void Inspect() {
             if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
                 var obj = GameObject.Instantiate(textboxPrefab);
                 textbox = obj.GetComponent<Textbox>();
