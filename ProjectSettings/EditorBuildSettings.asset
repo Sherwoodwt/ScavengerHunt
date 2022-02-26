@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Potterland.unity
     guid: b77e0123c45d0fd499017e451c4076ca
+  - enabled: 1
+    path: Assets/Scenes/Rockytop.unity
+    guid: e7e6f8b0a14d71f4ba3946d3fbe4309b
+  - enabled: 1
+    path: Assets/Scenes/Foosball.unity
+    guid: bfa3b075eeea3934a9c58c87d9bbd9b6
+  - enabled: 1
+    path: Assets/Scenes/Closet.unity
+    guid: c35d4637d96c3ac4f93c5eeea8aac259
   m_configObjects: {}

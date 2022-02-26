@@ -6,6 +6,8 @@ namespace Scripts {
     [RequireComponent(typeof(BoxCollider2D))]
     public class CharacterController : MonoBehaviour {
         public GameObject pauseMenuPrefab;
+        public InventoryObject inventory;
+        public ItemObject shoeItem;
         public Animator animator;
         public LayerMask inspectMask;
 
@@ -13,9 +15,10 @@ namespace Scripts {
         Vector2 direction;
         CharacterPhysics character;
         new BoxCollider2D collider;
+        bool running;
 
-        public void Pause() {
-            pauseMenu = GameObject.Instantiate(pauseMenuPrefab);
+        public void Pause(GameObject prefab) {
+            pauseMenu = GameObject.Instantiate(prefab);
         }
 
         void Start() {
@@ -29,14 +32,15 @@ namespace Scripts {
             if (pauseMenu != null)
                 return;
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-                Pause();
+            if (Input.GetKeyDown(KeyCode.Tab))
+                Pause(pauseMenuPrefab);
 
+            var speed = running ? 2 : 1;
             // y inputs
             if (Input.GetKey(KeyCode.S)) {
-                character.input.y = -1;
+                character.input.y = -speed;
             } else if (Input.GetKey(KeyCode.W)) {
-                character.input.y = 1;
+                character.input.y = speed;
             } else {
                 character.input.y = 0;
             }
@@ -45,9 +49,9 @@ namespace Scripts {
 
             // x inputs
             if (Input.GetKey(KeyCode.A)) {
-                character.input.x = -1;
+                character.input.x = -speed;
             } else if (Input.GetKey(KeyCode.D)) {
-                character.input.x = 1;
+                character.input.x = speed;
             } else {
                 character.input.x = 0;
             }
@@ -70,6 +74,11 @@ namespace Scripts {
                     foreach (var item in items)
                         item.Inspect();
                 }
+            }
+
+            // handle run
+            if (inventory.Contains(shoeItem) && Input.GetKeyDown(KeyCode.R)) {
+                running = !running;
             }
         }
     }

@@ -1,11 +1,10 @@
 ﻿using System.Collections;
-using Scripts.Utilities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Scripts.Inspectables {
     [RequireComponent(typeof(AudioSource))]
-    public class Spookable : MonoBehaviour, Inspectable {
+    public class Transportable : MonoBehaviour, Inspectable {
         public LocationObject location;
         public EntranceObject entrance;
         public SpawnObject spawnObject;

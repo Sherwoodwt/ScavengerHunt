@@ -6095,7 +6095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
-  item: {fileID: 11400000, guid: 44716c20a4bc5ef44b60128f255fa3d1, type: 2}
+  item: {fileID: 11400000, guid: bc81ff28d63ac0d4688ce192a623de12, type: 2}
 --- !u!114 &272282202
 MonoBehaviour:
   m_ObjectHideFlags: 0

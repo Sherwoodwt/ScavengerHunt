@@ -181,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuPrefab: {fileID: 3662829968097567002, guid: edeaf55957cba6244b3a43a72cd980bc,
     type: 3}
+  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  shoeItem: {fileID: 11400000, guid: 2c62a5a0b89534e4f88cdf097dca636a, type: 2}
   animator: {fileID: 3442368244624008465}
   inspectMask:
     serializedVersion: 2
@@ -198,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accel: 5.43
-  input: {x: 0, y: 0}
   collisionMask:
     serializedVersion: 2
     m_Bits: 3584
+  input: {x: 0, y: 0}
