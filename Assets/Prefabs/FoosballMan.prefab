@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8911507524833871552}
   - component: {fileID: 8911507524833871555}
   - component: {fileID: 8911507524833871554}
+  - component: {fileID: 5446153206043080917}
   m_Layer: 16
   m_Name: FoosballMan
   m_TagString: Untagged
@@ -246,3 +247,18 @@ MonoBehaviour:
   player: {fileID: 0}
   spawnPoint: {fileID: 11400000, guid: 3c186cf22f413f5499c394c0c1e057ca, type: 2}
   playerTag: Player
+--- !u!114 &5446153206043080917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8911507524833871565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acc70cb32b81e64b9622d581ebe78c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  maxIntensity: 30
+  randomStart: 1

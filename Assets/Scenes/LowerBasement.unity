@@ -5083,3 +5083,121 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2033937218
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: flippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: points.Array.data[0].x
+      value: 25.37543
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: points.Array.data[0].y
+      value: -20.35708
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: points.Array.data[1].x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: points.Array.data[1].y
+      value: -20.35708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2933b128bba2a4b8db634774922686,
+        type: 2}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480,
+        type: 2}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: unlockedText
+      value: Hey man! I'm looking for something to eat. I usually find food in the
+        pantry, but strangly I can't find it...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: "Salut mec ! Je cherche quelque chose \xE0 manger. Je trouve habituellement
+        de la nourriture dans le garde-manger, mais \xE9trangement je ne le trouve
+        pas..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.35708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234763, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rat Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}

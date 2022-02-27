@@ -101,7 +101,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -155,3 +155,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 0}
+  player: {fileID: 0}
+  factor: 1

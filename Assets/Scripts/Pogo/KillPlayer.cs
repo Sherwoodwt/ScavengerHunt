@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Scripts.Pogo {
     [RequireComponent(typeof(AudioSource))]
-    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(Collider2D))]
     public class KillPlayer : MonoBehaviour {
         public LayerMask layerMask;
         public Transform player;
@@ -11,12 +11,12 @@ namespace Scripts.Pogo {
         public string playerTag = "Player";
 
         new AudioSource audio;
-        new BoxCollider2D collider;
+        new Collider2D collider;
         Grabbable grabbable;
 
         void Start() {
             audio = GetComponent<AudioSource>();
-            collider = GetComponent<BoxCollider2D>();
+            collider = GetComponent<Collider2D>();
             grabbable = GetComponent<Grabbable>();
             if (player == null && !string.IsNullOrEmpty(playerTag)) {
                 player = GameObject.FindGameObjectWithTag(playerTag)?.transform;

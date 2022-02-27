@@ -51,9 +51,8 @@ MonoBehaviour:
   keys: []
   inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
   spawn: {fileID: 11400000, guid: 58e6f48bbba3b9e43905282dae966365, type: 2}
+  transitionTime: 1
   transitionPrefab: {fileID: 1205180893210336901, guid: fc841d63f1f8881428b32d75c779c81b,
-    type: 3}
-  canvasObject: {fileID: 6993481828657196211, guid: b6992aa9560a60a47ab1bec7e5430d7d,
     type: 3}
 --- !u!212 &5296225021808980831
 SpriteRenderer:
@@ -165,7 +164,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ef6e080054404a64fa402d0f5cf882ff, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.44
   m_Pitch: 1
   Loop: 0
   Mute: 0
