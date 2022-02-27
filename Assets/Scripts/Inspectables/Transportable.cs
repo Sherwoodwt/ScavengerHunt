@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Scripts.Animation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,14 +13,19 @@ namespace Scripts.Inspectables {
         public float delay;
 
         new AudioSource audio;
+        Wobble wobble;
 
         void Start() {
             audio = GetComponent<AudioSource>();
+            wobble = GetComponent<Wobble>();
         }
 
         public void Inspect() {
             spawnObject.spawnpoint = entrance;
             audio.Play();
+            if (wobble != null) {
+                wobble.enabled = true;
+            }
             StartCoroutine(LoadScene());
         }
 

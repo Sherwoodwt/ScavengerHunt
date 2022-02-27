@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Scripts.Animation;
 using Scripts.Utilities;
 using UnityEngine;
 
@@ -27,7 +28,6 @@ namespace Scripts.Shuffle {
 
         void OnTriggerEnter2D(Collider2D collider) {
             if (collider.tag == "Player") {
-                // Debug.Log("START");
                 startCollider.enabled = false;
                 disableMovement.enabled = true;
                 StartCoroutine(ShuffleAnimation());
@@ -35,7 +35,7 @@ namespace Scripts.Shuffle {
         }
 
         IEnumerator ShuffleAnimation() {
-            // Debug.Log("Animation Start");
+            // grab prize
             var hand = GameObject.Instantiate(handPrefab, jars[1].position, Quaternion.identity);
             var path = hand.GetComponent<PathMovement>();
             if (path != null) {
@@ -51,8 +51,25 @@ namespace Scripts.Shuffle {
 
             yield return new WaitForSeconds(.2f);
             GameObject.DestroyImmediate(prizeRenderer.gameObject);
-
             yield return new WaitForSeconds(1);
+
+            // shake jars
+            foreach (var jar in jars) {
+                var wob = jar.GetComponent<Wobble>();
+                if (wob != null) {
+                    wob.enabled = true;
+                }
+            }
+            yield return new WaitForSeconds(2);
+            foreach (var jar in jars) {
+                var wob = jar.GetComponent<Wobble>();
+                if (wob != null) {
+                    wob.enabled = false;
+                    jar.transform.rotation = Quaternion.identity;
+                }
+            }
+
+            // rotate jars
             float waitTime = .05f;
             for (int i = 0; i < numberOfShuffles; i++) {
                 int j1 = Random.Range(0, jars.Length);
@@ -70,7 +87,6 @@ namespace Scripts.Shuffle {
         }
 
         IEnumerator SwitchPlaces(Transform jar1, Transform jar2, Vector2 center, float waitTime) {
-            // Debug.Log("SWITCHING");
             float numSegments = 64;
             var angle = 180 / numSegments * (jar1.position.x < jar2.position.x ? 1 : -1);
             for (int i = 0; i < numSegments; i++) {

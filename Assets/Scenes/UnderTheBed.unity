@@ -494,6 +494,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &435234196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435234194}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acc70cb32b81e64b9622d581ebe78c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  maxIntensity: 30
+  randomStart: 0
+  backswing: 0
 --- !u!114 &435234198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +532,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1178986737}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &562643883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562643882}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acc70cb32b81e64b9622d581ebe78c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  maxIntensity: 30
+  randomStart: 0
+  backswing: 0
 --- !u!114 &562643886
 MonoBehaviour:
   m_ObjectHideFlags: 0

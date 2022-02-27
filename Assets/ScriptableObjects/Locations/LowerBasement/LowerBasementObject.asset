@@ -15,3 +15,4 @@ MonoBehaviour:
   sceneName: LowerBasement
   entrances:
   - {fileID: 11400000, guid: 61a4188d01af15d4fba0dbe8509748cd, type: 2}
+  - {fileID: 11400000, guid: 077f4ff4d3a7b5d42b85b1a436761148, type: 2}
