@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: 919ae224493bfaa40ac5d85fe7e1a209
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9037882636154720048
+    second: poolball_0
+  - first:
+      213: -2711602546382923083
+    second: poolball_1
+  - first:
+      213: 7526079482816852417
+    second: poolball_2
+  - first:
+      213: 4401600002248060239
+    second: poolball_3
+  - first:
+      213: 4815340672955132685
+    second: poolball_4
+  - first:
+      213: 6482753624641427291
+    second: poolball_5
+  - first:
+      213: 7255361455702425751
+    second: poolball_6
+  - first:
+      213: -2474366926414584033
+    second: poolball_7
+  - first:
+      213: -652734881437581299
+    second: poolball_8
+  - first:
+      213: -5825651179796510783
+    second: poolball_9
+  - first:
+      213: -6815649902106979745
+    second: poolball_10
+  - first:
+      213: 1543552438368617228
+    second: poolball_11
+  - first:
+      213: -9077406895995121435
+    second: poolball_12
+  - first:
+      213: 791101230271300425
+    second: poolball_13
+  - first:
+      213: 1774249169676263571
+    second: poolball_14
+  - first:
+      213: 152206059585430181
+    second: poolball_15
+  - first:
+      213: -7896861183806825719
+    second: poolball_16
+  - first:
+      213: 1317286332559881715
+    second: poolball_17
+  - first:
+      213: 7115264484513254623
+    second: poolball_18
+  - first:
+      213: 545722348404803653
+    second: poolball_19
+  - first:
+      213: -6529123194596588022
+    second: poolball_20
+  - first:
+      213: -5102007248462656785
+    second: poolball_21
+  - first:
+      213: 2952380705567069783
+    second: poolball_22
+  - first:
+      213: -3517157487824955182
+    second: poolball_23
+  - first:
+      213: -7802635071191497565
+    second: poolball_24
+  - first:
+      213: 6820847092500992643
+    second: poolball_25
+  - first:
+      213: 8254715496302673979
+    second: poolball_26
+  - first:
+      213: 4054901533969900397
+    second: poolball_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poolball_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 691
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f4ca17f520d6d70800000000000000
+      internalID: 9037882636154720048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 691
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba1dcac9d37e5ad0800000000000000
+      internalID: -2711602546382923083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_2
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 691
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c177ac2a61027860800000000000000
+      internalID: 7526079482816852417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_3
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 692
+        width: 160
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4daa51a1ef951d30800000000000000
+      internalID: 4401600002248060239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 508
+        width: 162
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2bfb44d683d240800000000000000
+      internalID: 4815340672955132685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 508
+        width: 162
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57d023131e57f950800000000000000
+      internalID: 6482753624641427291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_6
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 508
+        width: 162
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790443cadc830b460800000000000000
+      internalID: 7255361455702425751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_7
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 508
+        width: 160
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f176513e36849add0800000000000000
+      internalID: -2474366926414584033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 308
+        width: 162
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00086b651501f6f0800000000000000
+      internalID: -652734881437581299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 464
+        width: 25
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c4ea1e11272fa0800000000000000
+      internalID: -5825651179796510783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_10
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 464
+        width: 20
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52dc7f5682f961a0800000000000000
+      internalID: -6815649902106979745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_11
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 308
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03462db3cccb6510800000000000000
+      internalID: 1543552438368617228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_12
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 308
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e09782b582960280800000000000000
+      internalID: -9077406895995121435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_13
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 308
+        width: 153
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94302b3a06e8afa00800000000000000
+      internalID: 791101230271300425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_14
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 464
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390e59d28366f9810800000000000000
+      internalID: 1774249169676263571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_15
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 464
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a26042da9ebc1200800000000000000
+      internalID: 152206059585430181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_16
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 380
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b9f9ab796b86290800000000000000
+      internalID: -7896861183806825719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 308
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f575bfa0f0f74210800000000000000
+      internalID: 1317286332559881715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 308
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc8d52b95f7eb260800000000000000
+      internalID: 7115264484513254623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_19
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 308
+        width: 18
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54809a2a59bc29700800000000000000
+      internalID: 545722348404803653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_20
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 308
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a068e4b1c05e365a0800000000000000
+      internalID: -6529123194596588022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_21
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 308
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea4ae960770239b0800000000000000
+      internalID: -5102007248462656785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_22
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 308
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756da0dfb96f8f820800000000000000
+      internalID: 2952380705567069783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_23
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 124
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8961746eb803fc0800000000000000
+      internalID: -3517157487824955182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_24
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 124
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a440ad2eb877b390800000000000000
+      internalID: -7802635071191497565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_25
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 124
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38217cfca4488ae50800000000000000
+      internalID: 6820847092500992643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_26
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 124
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30880f2204ae8270800000000000000
+      internalID: 8254715496302673979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poolball_27
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63667b1677e54830800000000000000
+      internalID: 4054901533969900397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

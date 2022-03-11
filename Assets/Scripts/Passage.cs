@@ -25,7 +25,7 @@ namespace Scripts {
         void Start() {
             audio = GetComponent<AudioSource>();
             canvas = GameObject.FindWithTag(canvasTag)?.transform;
-            if (canvas == null)
+            if (canvas == null && transitionPrefab != null)
                 throw new System.Exception($"No object found with tag {canvasTag}");
 
             if (keys.Length == 0) {

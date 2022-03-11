@@ -5,9 +5,11 @@ namespace Scripts.Inspectables {
     /// Sort of like an inspectable knockoff but for just collisions idk why I put a pogo game in this stupid game.
     /// </summary>
     [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(Collider2D))]
     public class Slurpable : MonoBehaviour {
         public InventoryObject inventory;
         public ItemObject item;
+        public bool die;
 
         new AudioSource audio;
 
@@ -22,6 +24,9 @@ namespace Scripts.Inspectables {
                 inventory.Add(item);
                 Debug.Log($"Adding Item: {item.description}");
                 audio.Play();
+                if (die) {
+                    GameObject.Destroy(this.gameObject, 1);
+                }
             }
         }
     }
