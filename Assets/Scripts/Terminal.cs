@@ -10,9 +10,9 @@ namespace Scripts {
         public Text text;
         public AudioClip failureClip;
         public AudioClip successClip;
-        [TextArea(1, 2)]
+        [TextArea()]
         public string failureText;
-        [TextArea(1, 2)]
+        [TextArea()]
         public string successText;
         public string password;
 

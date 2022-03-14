@@ -202,5 +202,5 @@ MonoBehaviour:
   accel: 5.43
   collisionMask:
     serializedVersion: 2
-    m_Bits: 3584
+    m_Bits: 7680
   input: {x: 0, y: 0}

@@ -4,13 +4,13 @@ using UnityEngine;
 namespace Scripts.Inspectables {
     public class Talkable : MonoBehaviour, Inspectable {
         public GameObject textboxPrefab;
-        [TextArea(2,12)]
+        [TextArea(2, 20)]
         public List<string> texts;
 
         [Header("Lock Stuff")]
         public ItemObject key;
         public InventoryObject inventory;
-        [TextArea(2,6)]
+        [TextArea()]
         public string unlockedText;
 
         int textIndex = 0;

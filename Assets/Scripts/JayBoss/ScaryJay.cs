@@ -16,7 +16,7 @@ namespace Scripts.JayBoss {
         public GameObject textboxPrefab;
         public AudioClip transitionAudio;
         public Image transitionImage;
-        [TextArea(2,12)]
+        [TextArea()]
         public string introSpeech;
 
         Textbox textbox;

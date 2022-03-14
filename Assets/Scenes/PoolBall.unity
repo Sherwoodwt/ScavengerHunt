@@ -154,8 +154,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1950786966255293518, guid: b081850a57f23c74fb95fa48ae9e20c4,
     type: 3}
+  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
+    type: 3}
   target: {fileID: 148382011}
-  cursorSprite: {fileID: 2800000, guid: 92ec611ca3f95b5439f4644bf9dca09f, type: 3}
+  poolControls: {fileID: 1773920524}
+  spawnRadius: 15
+  startNoise: {fileID: 8300000, guid: d772e2b0da07d6c44bcf7eaee40d36ce, type: 3}
+  endNoise: {fileID: 8300000, guid: 78bfe6372e7ac9e489e099acf8f7b2a6, type: 3}
+  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  prize: {fileID: 11400000, guid: 20e4b67d67044b14c9003baa1a592f6f, type: 2}
   ballSprites:
   - {fileID: 9037882636154720048, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
   - {fileID: -2711602546382923083, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
@@ -166,8 +173,15 @@ MonoBehaviour:
   - {fileID: 7255361455702425751, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
   - {fileID: -2474366926414584033, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
   - {fileID: -652734881437581299, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
-  startNoise: {fileID: 8300000, guid: d772e2b0da07d6c44bcf7eaee40d36ce, type: 3}
-  spawnRadius: 15
+  - {fileID: 1543552438368617228, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  - {fileID: -9077406895995121435, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  - {fileID: 791101230271300425, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  - {fileID: -3517157487824955182, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  - {fileID: -7802635071191497565, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  - {fileID: 8254715496302673979, guid: 919ae224493bfaa40ac5d85fe7e1a209, type: 3}
+  victoryText: After collecting all the fragments, the pool balls all exploded and
+    the fragments gathered together as if driven by a magnetic-like force. The combined
+    mass of stone fragments fused together into one solid item!
   balls: []
 --- !u!4 &40255383
 Transform:
@@ -213,7 +227,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.655
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -525,6 +539,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder
@@ -599,6 +618,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder
@@ -658,6 +682,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fragment (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629324699969234719, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629324699969234719, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.491
       objectReference: {fileID: 0}
     - target: {fileID: 8741655874962688946, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
@@ -3445,6 +3479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder
@@ -3584,6 +3623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cueBallPrefab: {fileID: 6587281771364827533, guid: b20d6f83458d4e04cb3b2e84bd839a56,
     type: 3}
+  cursorSprite: {fileID: 2800000, guid: 92ec611ca3f95b5439f4644bf9dca09f, type: 3}
+  disableShoot: 0
 --- !u!1001 &1881472758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3591,6 +3632,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder
@@ -20604,6 +20650,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder
@@ -20750,6 +20801,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 40255383}
     m_Modifications:
+    - target: {fileID: 7321431915216147189, guid: 8c311e97a57d871439f840ed6bc7d370,
+        type: 3}
+      propertyPath: poolGame
+      value: 
+      objectReference: {fileID: 40255382}
     - target: {fileID: 7629324699969234707, guid: 8c311e97a57d871439f840ed6bc7d370,
         type: 3}
       propertyPath: m_RootOrder

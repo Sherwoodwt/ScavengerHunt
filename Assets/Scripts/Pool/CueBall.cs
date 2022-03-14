@@ -5,18 +5,18 @@ namespace Scripts.Pool {
     public class CueBall : MonoBehaviour {
         public float speed;
 
-        public Vector3 Target { get; set; }
+        public Vector2 Target { get; set; }
 
         
-       Vector3 direction;
+       Vector2 direction;
 
         void Start() {
-            direction = (Target - transform.position).normalized;
+            direction = (Target - (Vector2)transform.position).normalized;
             StartCoroutine(Expire());
         }
 
         void FixedUpdate() {
-            transform.position += direction * speed;
+            transform.position += ((Vector3)direction * speed);
         }
 
         IEnumerator Expire() {

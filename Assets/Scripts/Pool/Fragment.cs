@@ -7,18 +7,16 @@ namespace Scripts.Pool {
         public PoolGame poolGame;
 
         new AudioSource audio;
-        new Collider2D collider;
 
         void Start() {
             audio = GetComponent<AudioSource>();
-            collider = GetComponent<Collider2D>();
         }
 
         void OnTriggerEnter2D(Collider2D collider) {
-            if (collider.gameObject.tag == "Player") {
-                poolGame.AddScore();
+            if (collider.gameObject.CompareTag("Player")) {
                 audio.Play();
-                GameObject.Destroy(this.gameObject);
+                poolGame.AddScore();
+                GameObject.Destroy(this.gameObject, .1f);
             }
         }
     }

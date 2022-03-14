@@ -59,7 +59,7 @@ namespace Scripts {
         }
 
         void OnTriggerEnter2D(Collider2D collider) {
-            if (open) {
+            if (open && collider.gameObject.tag == "Player") {
                 try {
                     var entrance = toLocation.entrances
                         .Single(e => e.toLocation.sceneName == SceneManager.GetActiveScene().name);

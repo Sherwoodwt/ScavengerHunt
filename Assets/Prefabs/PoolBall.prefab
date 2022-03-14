@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1950786966255293512}
   - component: {fileID: 1950786966255293556}
   - component: {fileID: 1950786966255293519}
+  - component: {fileID: -2169441464740514440}
   m_Layer: 0
   m_Name: PoolBall
   m_TagString: Untagged
@@ -96,7 +97,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -110,8 +111,8 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950786966255293518}
-  m_BodyType: 0
-  m_Simulated: 0
+  m_BodyType: 2
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.1
@@ -133,9 +134,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09d97e9c27d977243b32880944cfaf9f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57a44ccadba0dd6418b52e37540cf8ad, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.509
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -235,3 +236,27 @@ MonoBehaviour:
   maxSpeed: 0.1
   rotationSpeed: 1.63
   chase: 0
+  spawnSound: {fileID: 8300000, guid: 57a44ccadba0dd6418b52e37540cf8ad, type: 3}
+  killSound: {fileID: 8300000, guid: 026460462a80760488b2fa53d2c39724, type: 3}
+  dieSound: {fileID: 8300000, guid: 8821990196a37d344bda2c6590888690, type: 3}
+  poolGame: {fileID: 0}
+  target: {fileID: 0}
+--- !u!95 &-2169441464740514440
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950786966255293518}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 879eb207a442bd04daf43725abd32bdf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
