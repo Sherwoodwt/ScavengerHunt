@@ -2,7 +2,7 @@
 
 namespace Scripts.Utilities {
     public class PathMovement : MonoBehaviour {
-        [Range(0, .1f)]
+        [Range(0, .5f)]
         public float speed;
         public Vector2[] points;
         public bool flippable = false;
