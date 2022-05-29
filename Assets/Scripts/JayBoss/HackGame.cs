@@ -40,23 +40,23 @@ namespace Scripts.JayBoss {
         }
 
         IEnumerator SpawnEnemies() {
-            // for (int i = 0; i < enemyCount; i++) {
-            //     var obj = GameObject.Instantiate(enemyPrefab1, transform.position, Quaternion.identity);
-            //     var mustache = obj.GetComponent<Mustache>();
-            //     mustache.points = GeneratePoints(Random.Range(4, 8));
+            for (int i = 0; i < enemyCount; i++) {
+                var obj = GameObject.Instantiate(enemyPrefab1, transform.position, Quaternion.identity);
+                var mustache = obj.GetComponent<Mustache>();
+                mustache.points = GeneratePoints(Random.Range(4, 8));
 
-            //     yield return new WaitForSeconds(2f);
-            // }
+                yield return new WaitForSeconds(2f);
+            }
 
-            // yield return new WaitForSeconds(10);
-            // for (int i = 0; i < enemyCount * 1.5f; i++) {
-            //     var prefab = i % 2 == 0 ? enemyPrefab1 : enemyPrefab2;
-            //     var obj = GameObject.Instantiate(prefab, transform.position, Quaternion.identity);
-            //     var mustache = obj.GetComponent<Mustache>();
-            //     mustache.points = GeneratePoints(Random.Range(4, 8));
+            yield return new WaitForSeconds(10);
+            for (int i = 0; i < enemyCount * 1.5f; i++) {
+                var prefab = i % 2 == 0 ? enemyPrefab1 : enemyPrefab2;
+                var obj = GameObject.Instantiate(prefab, transform.position, Quaternion.identity);
+                var mustache = obj.GetComponent<Mustache>();
+                mustache.points = GeneratePoints(Random.Range(4, 8));
 
-            //     yield return new WaitForSeconds(1.5f);
-            // }
+                yield return new WaitForSeconds(1.5f);
+            }
 
             yield return new WaitForSeconds(8);
             var o = GameObject.Instantiate(enemyPrefab1, transform.position, Quaternion.identity);
