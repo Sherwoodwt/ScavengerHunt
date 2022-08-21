@@ -1,4 +1,5 @@
 ﻿using Scripts.Inspectables;
+using Scripts.Utilities;
 using UnityEngine;
 
 namespace Scripts.Pogo {
@@ -9,6 +10,7 @@ namespace Scripts.Pogo {
         public Transform player;
         public EntranceObject spawnPoint;
         public string playerTag = "Player";
+        public EmptyEvent OnKill;
 
         new AudioSource audio;
         new Collider2D collider;
@@ -30,6 +32,8 @@ namespace Scripts.Pogo {
 
                 if (grabbable)
                     grabbable.Inspect();
+                
+                OnKill();
             }
         }
     }
