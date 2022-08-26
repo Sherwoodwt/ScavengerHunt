@@ -1482,7 +1482,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
       propertyPath: texts.Array.data[0]
+      value: 'Hello sir! Welcome to my abode. I have no time for conversation, but
+        I leave you with this: If you ever find yourself in possession of a pair
+        of shoes, press R to toggle between running and walking.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[1]
       value: 'Hello sir! Welcome to my abode. I have no time for conversation, but
         I leave you with this: If you ever find yourself in possession of a pair
         of shoes, press R to toggle between running and walking.'

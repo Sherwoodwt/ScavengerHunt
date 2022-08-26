@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShedPalace.unity
     guid: 072b4f95831084d6a84610a784e7c9f9
+  - enabled: 1
+    path: Assets/Scenes/ShedPalaceTreasure.unity
+    guid: 74475926058694b1084f0790088a0f33
   m_configObjects: {}

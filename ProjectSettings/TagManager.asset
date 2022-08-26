@@ -10,6 +10,8 @@ TagManager:
   - Projectile
   - Question
   - Answer
+  - Portal
+  - Lore
   layers:
   - Default
   - TransparentFX

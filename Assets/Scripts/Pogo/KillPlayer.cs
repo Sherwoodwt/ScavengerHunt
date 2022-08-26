@@ -10,6 +10,8 @@ namespace Scripts.Pogo {
         public Transform player;
         public EntranceObject spawnPoint;
         public string playerTag = "Player";
+        public GameObject transitionPrefab;
+        public Transform canvas;
         public EmptyEvent OnKill;
 
         new AudioSource audio;
@@ -30,10 +32,16 @@ namespace Scripts.Pogo {
                 audio.Play();
                 player.position = spawnPoint.entrypoint;
 
-                if (grabbable)
+                if (grabbable) {
                     grabbable.Inspect();
+                }
                 
                 OnKill();
+
+                if (transitionPrefab != null) {
+                    var t = GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
+                    GameObject.Destroy(t, 1);
+                }
             }
         }
     }

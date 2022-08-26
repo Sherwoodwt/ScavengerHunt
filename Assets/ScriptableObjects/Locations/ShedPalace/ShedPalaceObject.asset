@@ -15,3 +15,4 @@ MonoBehaviour:
   sceneName: ShedPalace
   entrances:
   - {fileID: 11400000, guid: 62fbf183210fd4e51b29b5ef8fdbafdb, type: 2}
+  - {fileID: 11400000, guid: 9d01cfdba537548519572451258a48f9, type: 2}

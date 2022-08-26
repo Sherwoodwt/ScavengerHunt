@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7027468309669166577}
   - component: {fileID: 6086801647563322584}
   - component: {fileID: 6453426837348473264}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: AnswerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ef6e080054404a64fa402d0f5cf882ff, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fdbca83296405a648a8db12c242ead8b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.44
   m_Pitch: 1
@@ -196,8 +196,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   player: {fileID: 0}
-  spawnPoint: {fileID: 11400000, guid: f4ae17d93064d4ec08b7bcc78902855b, type: 2}
+  spawnPoint: {fileID: 11400000, guid: 62fbf183210fd4e51b29b5ef8fdbafdb, type: 2}
   playerTag: Player
+  transitionPrefab: {fileID: 1205180893210336901, guid: fc841d63f1f8881428b32d75c779c81b,
+    type: 3}
+  canvas: {fileID: 0}
 --- !u!1 &1356768630392547942
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5918145545008691038}
   - component: {fileID: 5189834432221122135}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DoorSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7457339162474914811}
   - component: {fileID: 8925164001768320439}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DoorSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
