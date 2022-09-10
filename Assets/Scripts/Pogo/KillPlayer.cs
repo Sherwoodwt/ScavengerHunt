@@ -36,7 +36,8 @@ namespace Scripts.Pogo {
                     grabbable.Inspect();
                 }
                 
-                OnKill();
+                if (OnKill != null)
+                    OnKill();
 
                 if (transitionPrefab != null) {
                     var t = GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
