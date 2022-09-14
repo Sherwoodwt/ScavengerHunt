@@ -7656,8 +7656,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5426895570249105873, guid: b75483d901e86475d8e43129f0024e8c,
         type: 3}
+      propertyPath: texts.Array.data[0]
+      value: You try to give her a pat on the head, but she tucks and weeves. Before
+        you know it she jumps up on you and grabs your wrist in her mouth. This is
+        what is known as a handshake.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426895570249105873, guid: b75483d901e86475d8e43129f0024e8c,
+        type: 3}
       propertyPath: texts.Array.data[1]
-      value: You try to give her a pat on the head, but she tucks weeves. Before
+      value: You try to give her a pat on the head, but she tucks and weeves. Before
         you know it she jumps up on you and grabs your wrist in her mouth. This is
         what is known as a handshake.
       objectReference: {fileID: 0}
