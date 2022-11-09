@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HackGame.unity
     guid: cf012bb6629ebb440a14ee702bd2dd86
   - enabled: 1
+    path: Assets/Scenes/Shed.unity
+    guid: eca0ff0f6533b00439573452ee48a715
+  - enabled: 1
     path: Assets/Scenes/ShedPalace.unity
     guid: 072b4f95831084d6a84610a784e7c9f9
   - enabled: 1
