@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Scripts.Utilities;
 using UnityEngine;
 
 namespace Scripts {
@@ -7,8 +8,17 @@ namespace Scripts {
         public float speed;
 
         bool flippin;
+        PathMovement movement;
+
+        void Start() {
+            movement = GetComponent<PathMovement>();
+        }
 
         public void StartChasin(Transform newTarget) {
+            if (movement != null) {
+                // if pathmovement, disable when chasin, enable when not
+                movement.enabled = newTarget == null;
+            }
             target = newTarget;
         }
 
