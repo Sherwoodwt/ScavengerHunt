@@ -1,4 +1,5 @@
 ﻿using Scripts.Inspectables;
+using Scripts.Utilities;
 using UnityEngine;
 
 namespace Scripts.Pogo {
@@ -9,6 +10,9 @@ namespace Scripts.Pogo {
         public Transform player;
         public EntranceObject spawnPoint;
         public string playerTag = "Player";
+        public GameObject transitionPrefab;
+        public Transform canvas;
+        public EmptyEvent OnKill;
 
         new AudioSource audio;
         new Collider2D collider;
@@ -28,8 +32,17 @@ namespace Scripts.Pogo {
                 audio.Play();
                 player.position = spawnPoint.entrypoint;
 
-                if (grabbable)
+                if (grabbable) {
                     grabbable.Inspect();
+                }
+                
+                if (OnKill != null)
+                    OnKill();
+
+                if (transitionPrefab != null) {
+                    var t = GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
+                    GameObject.Destroy(t, 1);
+                }
             }
         }
     }

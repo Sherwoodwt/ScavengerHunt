@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Scripts.Utilities;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Scripts {
@@ -7,11 +8,14 @@ namespace Scripts {
         [System.Serializable]
         public class OnDetect : UnityEvent<Transform> {};
         public OnDetect onDetect;
+        public string collisionTag;
 
         Collider2D view;
 
         void OnTriggerEnter2D(Collider2D collider) {
-            onDetect.Invoke(collider.transform);
+            if (string.IsNullOrEmpty(collisionTag) || collider.tag == collisionTag) {
+                onDetect.Invoke(collider.transform);
+            }
         }
 
         void OnTriggerExit2D(Collider2D collider) {
