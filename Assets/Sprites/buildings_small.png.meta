@@ -203,8 +203,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -213,9 +211,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
-    aniso: 1
-    mipBias: 0
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -236,12 +234,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1541,67 +1536,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      pokemon-buildings 1_22: -5382155387308071598
-      pokemon-buildings 1_36: 6889496086127442607
-      pokemon-buildings 1_17: -5432322997955409347
-      pokemon-buildings 1_35: 5189157108098966497
-      pokemon-buildings 1_44: -8068065871480934391
-      pokemon-buildings 1_40: -2737817792715583314
-      pokemon-buildings 1_55: 6291469611932839257
-      pokemon-buildings 1_25: 3515050244181824181
-      pokemon-buildings 1_32: -2522633566673133332
-      pokemon-buildings 1_18: -6362583626209308237
-      pokemon-buildings 1_46: 6411617813675967170
-      pokemon-buildings 1_37: 8581047016153233673
-      pokemon-buildings 1_43: -662828533384616884
-      pokemon-buildings 1_38: -3426171815637654680
-      pokemon-buildings 1_30: -4931337087726021239
-      pokemon-buildings 1_0: 1897527091334930328
-      pokemon-buildings 1_15: -6648145611422685771
-      pokemon-buildings 1_33: -1509958027572660050
-      pokemon-buildings 1_4: 335248705127736126
-      pokemon-buildings 1_20: -1263541356041957799
-      pokemon-buildings 1_3: -1095453140731843401
-      pokemon-buildings 1_34: -1774905967859910320
-      pokemon-buildings 1_14: 2298392551083987007
-      pokemon-buildings 1_26: 371940162073889693
-      pokemon-buildings 1_41: -2423611128033207530
-      pokemon-buildings 1_2: -8028869081488055426
-      pokemon-buildings 1_11: -8015232442803061969
-      pokemon-buildings 1_8: -4828353017125120012
-      pokemon-buildings 1_6: -3705925605402015175
-      pokemon-buildings 1_47: 4836139789119321245
-      pokemon-buildings 1_50: -2889850183131081135
-      pokemon-buildings 1_7: -1280860105033954159
-      pokemon-buildings 1_53: 8705190267570430491
-      pokemon-buildings 1_54: -4368903325170221193
-      pokemon-buildings 1_56: -5328705038114228915
-      pokemon-buildings 1_58: 6764748740062062997
-      pokemon-buildings 1_13: 1255040733961371508
-      pokemon-buildings 1_28: 6965428531866377452
-      pokemon-buildings 1_21: 5233825125307331681
-      pokemon-buildings 1_51: 1260156537071393946
-      pokemon-buildings 1_23: 2485903539734709137
-      pokemon-buildings 1_45: -620329837903036843
-      pokemon-buildings 1_59: -4169887358733670968
-      pokemon-buildings 1_16: -8261183514013980784
-      pokemon-buildings 1_5: 1302119113590878957
-      pokemon-buildings 1_31: -5083484685210092741
-      pokemon-buildings 1_49: 7769912886214291875
-      pokemon-buildings 1_48: -5645949740302788721
-      pokemon-buildings 1_42: 5649189668988937147
-      pokemon-buildings 1_57: 848138080949848357
-      pokemon-buildings 1_24: -8043296933788953242
-      pokemon-buildings 1_9: 1961380698845009368
-      pokemon-buildings 1_1: 5751958356535732426
-      pokemon-buildings 1_27: -4230921319391962929
-      pokemon-buildings 1_12: -8123720644338298461
-      pokemon-buildings 1_39: -4179045703822379946
-      pokemon-buildings 1_29: 8824201804540684108
-      pokemon-buildings 1_10: -3730463993993747975
-      pokemon-buildings 1_19: 5384601698729781640
-      pokemon-buildings 1_52: -8388913015337966806
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -8,10 +8,6 @@ TagManager:
   - Inventory
   - Canvas
   - Projectile
-  - Question
-  - Answer
-  - Portal
-  - Lore
   layers:
   - Default
   - TransparentFX

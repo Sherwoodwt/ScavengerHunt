@@ -22,19 +22,15 @@ namespace Scripts.Inspectables {
         }
 
         public void Inspect() {
-            if (textbox == null) {
-                if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
-                    // unlocked
-                    var obj = GameObject.Instantiate(textboxPrefab);
-                    textbox = obj.GetComponent<Textbox>();
-                    textbox.text = unlockedText;
-                } else if (texts.Count > 0) {
-                    // locked / no key required
-                    var obj = GameObject.Instantiate(textboxPrefab);
-                    textbox = obj.GetComponent<Textbox>();
-                    textbox.text = texts[textIndex];
-                    textIndex = (textIndex + 1) % texts.Count;
-                }
+            if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
+                var obj = GameObject.Instantiate(textboxPrefab);
+                textbox = obj.GetComponent<Textbox>();
+                textbox.text = unlockedText;
+            } else if (textbox == null && texts.Count > 0) {
+                var obj = GameObject.Instantiate(textboxPrefab);
+                textbox = obj.GetComponent<Textbox>();
+                textbox.text = texts[textIndex];
+                textIndex = (textIndex + 1) % texts.Count;
             }
         }
     }

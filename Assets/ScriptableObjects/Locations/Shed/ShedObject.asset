@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: ShedObject
   m_EditorClassIdentifier: 
   sceneName: Shed
-  entrances:
-  - {fileID: 11400000, guid: cf1e1ccf64fdf8a4e858efb8028d7eaf, type: 2}
-  - {fileID: 11400000, guid: f4ae17d93064d4ec08b7bcc78902855b, type: 2}
+  entrances: []

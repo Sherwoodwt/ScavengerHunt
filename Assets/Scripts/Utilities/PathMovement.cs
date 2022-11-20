@@ -15,7 +15,7 @@ namespace Scripts.Utilities {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        void FixedUpdate() {
+        void Update() {
             var dir = ((Vector3)points[cur] - transform.position).normalized;
             var velocity = speed * dir;
             transform.position += velocity;
