@@ -21,17 +21,26 @@ namespace Scripts.Inspectables {
                 throw new MissingComponentException("Needs a textbox prefab");
         }
 
-        public void Inspect() {
+        public virtual void Inspect() {
             if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
+                // Lock conditions present and has key, show unlock text
                 var obj = GameObject.Instantiate(textboxPrefab);
                 textbox = obj.GetComponent<Textbox>();
                 textbox.text = unlockedText;
             } else if (textbox == null && texts.Count > 0) {
+                // Show textbox with the current text
                 var obj = GameObject.Instantiate(textboxPrefab);
                 textbox = obj.GetComponent<Textbox>();
                 textbox.text = texts[textIndex];
                 textIndex = (textIndex + 1) % texts.Count;
             }
+
+            // If it moves, it don't move no more
+            GetComponentInChildren<RandomMovement>();
+            // TODO: There are more movement examples here. Could it be that refactoring
+            // movement to be more generally referencable would benefit me?
+
+            // If it rotates, rotate towards the one whomst started it
         }
     }
 }

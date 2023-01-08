@@ -87,7 +87,7 @@ TextureImporter:
       213: 4054901533969900397
     second: poolball_27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -107,6 +107,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -115,9 +117,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -138,10 +140,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -157,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -768,6 +786,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      poolball_8: -652734881437581299
+      poolball_20: -6529123194596588022
+      poolball_15: 152206059585430181
+      poolball_9: -5825651179796510783
+      poolball_18: 7115264484513254623
+      poolball_13: 791101230271300425
+      poolball_16: -7896861183806825719
+      poolball_23: -3517157487824955182
+      poolball_7: -2474366926414584033
+      poolball_21: -5102007248462656785
+      poolball_0: 9037882636154720048
+      poolball_4: 4815340672955132685
+      poolball_24: -7802635071191497565
+      poolball_10: -6815649902106979745
+      poolball_22: 2952380705567069783
+      poolball_6: 7255361455702425751
+      poolball_25: 6820847092500992643
+      poolball_26: 8254715496302673979
+      poolball_14: 1774249169676263571
+      poolball_1: -2711602546382923083
+      poolball_3: 4401600002248060239
+      poolball_17: 1317286332559881715
+      poolball_27: 4054901533969900397
+      poolball_11: 1543552438368617228
+      poolball_2: 7526079482816852417
+      poolball_5: 6482753624641427291
+      poolball_12: -9077406895995121435
+      poolball_19: 545722348404803653
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

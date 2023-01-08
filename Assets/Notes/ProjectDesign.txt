@@ -1,0 +1,60 @@
+Sketch of project design
+
+Animation - Theoretically, used to house animation effect scripts
+- Wobble: Wobble back and forth, underutilized
+
+Basketball - Basketball game related
+- *Basketball: Animation script for basketball, just rotate and move to the right.
+- *BasketballHoop: Animation, collision handling and score keeping logic for game.
+- *HandleMiss: Resets Hoop score, destroys ball like hoop
+- ThrowBasketball: Handles controller input and instantiates basketball at player
+
+Inspectables - Handle how things are inspected by the player
+- Grabbable: Give objects to player, allows for locking
+- Inspectable: Interface with Inspect()
+- *Playable: Plays audio, allows for locking - seems unnecessary...
+- Questionable: Used for trivia answers, WIP
+- Slurpable: Like Grabbable, but without needing to be inspected. DOESN'T IMPLEMENT INTERFACE
+- Spawnable: Instantiates an object when inspected
+- Talkable: Talks to player, can say multiple things, allows for locking
+- *Textbox: Behaviour for textbox text writing - DOESN'T IMPLEMENT INTERFACE
+- Transportable: Transports player on inspect
+
+JayBoss
+- GermControls: Control handling, physics, collision handling for GermControls
+- HackGame: Game loop and logic for hack game. Spawns enemies, ends, restarts, counts points, plays sounds
+- Mustache: Script for mustache enemies. Move along paths and kill player on collision
+- ScaryJay: Big Script, handles Scary Jay cut scene
+
+Pogo - Theoretically scripts related to the Pogo game
+- *KillPlayer: Sends player back to a spawn point on collision
+- PogoController: Handle (simple) pogo controls, modify PogoPhysics
+- PogoPhysics: Handle movement of pogoer, detect collisions with walls
+- ZombiePhysics: Handle zombie physics/collisions
+
+Pool - Pool scripts
+- CueBall: Sends a cueball toward a point at a speed, killing it after a certain amount of time
+- Fragment: Basically slurp but accumulates points in Pool game
+- PoolBall: Chase the player, die when collide with projectile, kill player on collision with player
+- PoolGame: Game logic for pool game, spawns balls, resets, on score quits game
+
+Shuffle - Theoretically all scripts related to shuffle game
+- ShuffleGame: Handles cutscene logic for shuffle game (jars under the bed)
+
+Utilities - Utility bin
+- *AutoDeselect: Auto-deselects a ui button on mouse button up. Not sure why it's here or if it's used
+- CollisionDetection: Contains edge raycast math for box collision detection for movement
+- *LayerUtils: Contains InLayerMask helper function that is only used in Basketball game for some reason
+- PathMovement: Move along a list of points. If flippable, moves backwards too
+
+Others - Top level junk, some of which could probably stay as such
+- *BasePhysics: Base class for (currently) two different types of player movement, pogo and regular. This is
+    apparently only used for generically allowing the camera to select the box collider and accel prop of these
+    two components generically to allow for following the player.
+- *BedMonster: When player enters collider, spawns a monster hand prefab and sets its path movement to move
+    toward the player and back
+- *MonsterHand: Goes with BedMonster, logic for hand that disables movement and drags player on collision
+- CharacterController: Handle standard character controls and manipulate CharacterPhysics
+- CharacterPhysics: Based on input vector, move object
+- *Chase: Move toward target at a speed, handles flipping left/right based on direction
+- Detect: 

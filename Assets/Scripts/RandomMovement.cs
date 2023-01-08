@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Scripts {
     [RequireComponent(typeof(CharacterPhysics))]
+    /// <summary>
+    /// Used for characters who are supposed to walk in random directions occassionally, like pokemon/zelda
+    /// </summary>
     public class RandomMovement : MonoBehaviour {
         [Range(0, .01f)]
         public float stirCraziness;

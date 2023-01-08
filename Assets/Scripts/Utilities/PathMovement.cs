@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
 namespace Scripts.Utilities {
+    /// <summary>
+    /// Used for things that move along a list of points
+    /// </summary>
     public class PathMovement : MonoBehaviour {
         [Range(0, .5f)]
         public float speed;

@@ -165,7 +165,7 @@ TextureImporter:
       213: 1009726874259128236
     second: instruments_53
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -185,6 +185,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -193,9 +195,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -216,10 +218,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -235,6 +241,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1392,6 +1410,61 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      instruments_51: 7964392760060012628
+      instruments_0: -4462151535567603180
+      instruments_5: -1494897836919684725
+      instruments_11: -4372915770282101081
+      instruments_26: 5830434408274288426
+      instruments_47: 3765426523739097062
+      instruments_41: 7206698552515845192
+      instruments_4: -5535984676188626902
+      instruments_16: 3370311395598326006
+      instruments_52: -1383636513568852526
+      instruments_48: 12173514356374227
+      instruments_21: -8461359838984586872
+      instruments_32: 7989350776801554841
+      instruments_45: 6306937821883030035
+      instruments_18: 4580530097129925363
+      instruments_25: 2895775315176431992
+      instruments_15: -6559051317676287676
+      instruments_29: -5537436355788998133
+      instruments_13: 4568372703780560345
+      instruments_24: 2584741897747129496
+      instruments_23: 9072086512084278254
+      instruments_33: -2104313724652449807
+      instruments_35: 5143581251412016762
+      instruments_10: -8440331472588862946
+      instruments_7: -3899278877569038271
+      instruments_46: 5794793114877680503
+      instruments_2: 5857888253465717878
+      instruments_27: 3499523739050031254
+      instruments_49: 8309559017974021614
+      instruments_30: 6627782502172473951
+      instruments_43: 1895788438123611110
+      instruments_50: -2083472819936052258
+      instruments_22: 5769858574703788856
+      instruments_8: 6044564850832927176
+      instruments_17: 3899334253384734322
+      instruments_19: -7970170166405039669
+      instruments_20: -5216200950479127899
+      instruments_40: 9025038015369484208
+      instruments_12: -7050127481354786592
+      instruments_37: -9061565908986371264
+      instruments_9: -8534362376336475739
+      instruments_14: -269037637565859604
+      instruments_28: -8110480876368091829
+      instruments_6: -423855776556018086
+      instruments_44: -6868815351530836049
+      instruments_1: 8934417788045318499
+      instruments_53: 1009726874259128236
+      instruments_38: 7150829685569227048
+      instruments_42: -6565807533822324041
+      instruments_36: 1172035753480419820
+      instruments_34: 6664105790680038585
+      instruments_39: -1705053451383475031
+      instruments_3: 902729947969336118
+      instruments_31: 4693080924905522508
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -35,7 +35,7 @@ namespace Scripts {
             if (Input.GetKeyDown(KeyCode.Tab))
                 Pause(pauseMenuPrefab);
 
-            var speed = running ? 2 : 1;
+            var speed = running ? 1.5f : 1;
             // y inputs
             if (Input.GetKey(KeyCode.S)) {
                 character.input.y = -speed;
