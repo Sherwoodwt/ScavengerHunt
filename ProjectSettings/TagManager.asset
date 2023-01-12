@@ -8,6 +8,7 @@ TagManager:
   - Inventory
   - Canvas
   - Projectile
+  - Textbox
   layers:
   - Default
   - TransparentFX

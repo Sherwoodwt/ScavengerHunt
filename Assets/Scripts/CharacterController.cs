@@ -15,10 +15,15 @@ namespace Scripts {
         Vector2 direction;
         CharacterPhysics character;
         new BoxCollider2D collider;
-        bool running;
+        bool running, disableInspect;
 
         public void Pause(GameObject prefab) {
             pauseMenu = GameObject.Instantiate(prefab);
+        }
+
+        public bool DisableInspect {
+            get { return disableInspect; }
+            set { disableInspect = value; }
         }
 
         void Start() {
@@ -63,16 +68,18 @@ namespace Scripts {
                 direction = character.input;
 
             // handle inspect
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                var displacement = ((Vector2)collider.bounds.size / 2 * direction) + (.1f * direction);
-                var origin = ((Vector2)collider.bounds.center) + displacement;
-                var size = Vector2.one * direction;
-                var hit = Physics2D.Raycast(origin, direction, size.magnitude, inspectMask);
-                Debug.DrawRay(origin, direction, Color.blue, .5f);
-                if (hit.collider != null) {
-                    var items = hit.collider.gameObject.GetComponents<Inspectable>();
-                    foreach (var item in items)
-                        item.Inspect();
+            if (!disableInspect) {
+                if (Input.GetKeyDown(KeyCode.Space)) {
+                    var displacement = ((Vector2)collider.bounds.size / 2 * direction) + (.1f * direction);
+                    var origin = ((Vector2)collider.bounds.center) + displacement;
+                    var size = Vector2.one * direction;
+                    var hit = Physics2D.Raycast(origin, direction, size.magnitude, inspectMask);
+                    Debug.DrawRay(origin, direction, Color.blue, .5f);
+                    if (hit.collider != null) {
+                        var items = hit.collider.gameObject.GetComponents<Inspectable>();
+                        foreach (var item in items)
+                            item.Inspect();
+                    }
                 }
             }
 

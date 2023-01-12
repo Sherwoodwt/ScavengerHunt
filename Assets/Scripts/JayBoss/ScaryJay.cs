@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Scripts.Inspectables;
+using Scripts.Utilites;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,7 +14,6 @@ namespace Scripts.JayBoss {
         public InventoryObject inventory;
         public ItemObject computerCable, mustache;
         public FollowPlayer cameraFocus;
-        public GameObject textboxPrefab;
         public AudioClip transitionAudio;
         public Image transitionImage;
         [TextArea()]
@@ -27,6 +27,7 @@ namespace Scripts.JayBoss {
         bool introFinished;
 
         void Start() {
+            textbox = TextboxUtils.Init();
             audio = GetComponent<AudioSource>();
             disableMovement = GetComponent<DisableMovement>();
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -47,8 +48,7 @@ namespace Scripts.JayBoss {
             yield return new WaitForSeconds(2);
 
             cameraFocus.player = this.physics;
-            var obj = Instantiate(textboxPrefab);
-            textbox = obj.GetComponent<Textbox>();
+            textbox.gameObject.SetActive(true);
             textbox.text = introSpeech;
             introFinished = true;
         }
@@ -67,7 +67,7 @@ namespace Scripts.JayBoss {
         }
 
         void Update() {
-            if (textbox == null && introFinished) {
+            if (!textbox.gameObject.activeSelf && introFinished) {
                 StartCoroutine(Transition());
                 introFinished = false;
             }

@@ -11,10 +11,9 @@ General Issues
 - Refactor some of the code for sanity. Movement, Physics, any dangling components
 
 Textbox changes
-- Make a way to skip text to the end by pressing a button
+- Make it scaled correctly
 - Make it that NPCs won't walk away when you're talking to them
 - Make sure that both parties face each other when talking
-
 
 Maybe Fixed
 - Figure out a way to keep the position and size of the inventory consistent regardless of screen size

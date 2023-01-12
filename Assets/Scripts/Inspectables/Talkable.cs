@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Scripts.Utilites;
 
 namespace Scripts.Inspectables {
     public class Talkable : MonoBehaviour, Inspectable {
-        public GameObject textboxPrefab;
         [TextArea(2, 20)]
         public List<string> texts;
 
@@ -17,27 +17,28 @@ namespace Scripts.Inspectables {
         Textbox textbox;
 
         void Start() {
-            if (textboxPrefab == null)
-                throw new MissingComponentException("Needs a textbox prefab");
+            textbox = TextboxUtils.Init();
         }
 
         public virtual void Inspect() {
+            // check for lock to determine which text to use
             if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
-                // Lock conditions present and has key, show unlock text
-                var obj = GameObject.Instantiate(textboxPrefab);
-                textbox = obj.GetComponent<Textbox>();
                 textbox.text = unlockedText;
-            } else if (textbox == null && texts.Count > 0) {
-                // Show textbox with the current text
-                var obj = GameObject.Instantiate(textboxPrefab);
-                textbox = obj.GetComponent<Textbox>();
+
+            } else {
                 textbox.text = texts[textIndex];
                 textIndex = (textIndex + 1) % texts.Count;
             }
 
+            // activate textbox
+            if (!textbox.gameObject.activeSelf && texts.Count > 0) {
+                textbox.gameObject.SetActive(true);
+            }
+
+            // TODO: 4. Make talker look at the inspector
             // If it moves, it don't move no more
             GetComponentInChildren<RandomMovement>();
-            // TODO: There are more movement examples here. Could it be that refactoring
+            // TODO: 3. There are more movement examples here. Could it be that refactoring
             // movement to be more generally referencable would benefit me?
 
             // If it rotates, rotate towards the one whomst started it

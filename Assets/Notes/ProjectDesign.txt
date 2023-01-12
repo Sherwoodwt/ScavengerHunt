@@ -24,7 +24,7 @@ JayBoss
 - GermControls: Control handling, physics, collision handling for GermControls
 - HackGame: Game loop and logic for hack game. Spawns enemies, ends, restarts, counts points, plays sounds
 - Mustache: Script for mustache enemies. Move along paths and kill player on collision
-- ScaryJay: Big Script, handles Scary Jay cut scene
+- ScaryJay: Big Script, handles Scary Jay cut scene, BREAK OUT THE DISABLE FUNCTIONALITY
 
 Pogo - Theoretically scripts related to the Pogo game
 - *KillPlayer: Sends player back to a spawn point on collision
@@ -57,4 +57,8 @@ Others - Top level junk, some of which could probably stay as such
 - CharacterController: Handle standard character controls and manipulate CharacterPhysics
 - CharacterPhysics: Based on input vector, move object
 - *Chase: Move toward target at a speed, handles flipping left/right based on direction
-- Detect: 
+- *Detect: Detects collision and invokes event, used just in ChasePlayer for detection hitboxes
+- DisableMovement: Detects player and turns off Physics inputs, used for cutscenes
+- DisplayInventory: Handles cycling and refreshing item pictures in the inventory
+- FollowPlayer: Follows the player, used by camera, can be overrided (like in cutscenes)
+- FoosballPhysics: 

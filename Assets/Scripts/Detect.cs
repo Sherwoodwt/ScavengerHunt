@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 
 namespace Scripts {
+    // Component used to invoke an event upon collision, used for detection boxes (ChasePlayer)
     [RequireComponent(typeof(Collider2D))]
     public class Detect : MonoBehaviour {
         [System.Serializable]

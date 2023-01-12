@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Scripts.Utilites;
 
 namespace Scripts.Inspectables {
     [RequireComponent(typeof(AudioSource))]
@@ -11,14 +12,24 @@ namespace Scripts.Inspectables {
         public float textSpeed = .01f;
         public int chunkSize;
         public AudioClip[] clips;
+        public string playerTag = "Player";
 
         new AudioSource audio;
-        bool writing;
+        Canvas canvas;
+        DisableMovement disableMovement;
+        CharacterController characterController;
+        bool writing, skip;
         [SerializeField] string[] chunks;
         int currentChunk;
 
-        void Start() {
-            audio = GetComponent<AudioSource>();
+        void OnEnable() {
+            if (!audio || !disableMovement || !characterController) {
+                audio = GetComponent<AudioSource>();
+                disableMovement = GetComponent<DisableMovement>();
+                characterController = GameObject.FindWithTag(playerTag).GetComponent<CharacterController>();
+            }
+            disableMovement.enabled = true;
+            characterController.DisableInspect = true;
 
             var chonques = new List<string>();
             var words = text.Split(' ');
@@ -40,18 +51,24 @@ namespace Scripts.Inspectables {
             StartCoroutine(WriteText(chunks[currentChunk]));
         }
 
-        void Update() {
-            if (writing)
-                return;
+        void OnDisable() {
+            disableMovement.enabled = false;
+            characterController.DisableInspect = false;
+        }
 
+        void Update() {
             if (Input.GetKeyDown(KeyCode.Space)) {
-                currentChunk++;
-                if (currentChunk < chunks.Length) {
-                    PlayAudio();
-                    StartCoroutine(WriteText(chunks[currentChunk]));
+                if (writing) {
+                    skip = true;
                 } else {
-                    audio.Stop();
-                    GameObject.Destroy(this.gameObject);
+                    currentChunk++;
+                    if (currentChunk < chunks.Length) {
+                        PlayAudio();
+                        StartCoroutine(WriteText(chunks[currentChunk]));
+                    } else {
+                        audio.Stop();
+                        gameObject.SetActive(false);
+                    }
                 }
             }
         }
@@ -61,6 +78,12 @@ namespace Scripts.Inspectables {
             writing = true;
             var chars = text.ToCharArray();
             for (int i = 0; i < chars.Length; i++) {
+                if (skip) {
+                    displayText.text = text;
+                    skip = false;
+                    audio.Stop();
+                    break;
+                }
                 displayText.text += chars[i];
                 yield return new WaitForSeconds(textSpeed);
             }
