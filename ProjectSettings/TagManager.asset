@@ -9,6 +9,10 @@ TagManager:
   - Canvas
   - Projectile
   - Textbox
+  - Question
+  - Answer
+  - Portal
+  - Lore
   layers:
   - Default
   - TransparentFX

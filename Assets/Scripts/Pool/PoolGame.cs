@@ -4,6 +4,7 @@ using Scripts.Inspectables;
 using Scripts.Movement;
 using UnityEngine;
 
+// TODO: THIS SHIT AINT FINISHED
 namespace Scripts.Pool {
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(DisableMovement))]
