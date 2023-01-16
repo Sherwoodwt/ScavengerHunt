@@ -5,7 +5,7 @@ namespace Scripts.Utilities {
     /// Used for things that move along a list of points
     /// </summary>
     public class PathMovement : MonoBehaviour {
-        [Range(0, .1f)]
+        [Range(0, .02f)]
         public float speed;
         public Vector2[] points;
         public bool flippable = false;

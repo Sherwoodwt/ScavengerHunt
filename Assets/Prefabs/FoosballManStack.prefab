@@ -1,0 +1,780 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5263858963774440131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5263858963774440133}
+  - component: {fileID: 5263858963774440130}
+  m_Layer: 16
+  m_Name: FoosballManStack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5263858963774440133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263858963774440131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7, y: -6.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5263858965041467348}
+  - {fileID: 3648183111814688061}
+  - {fileID: 3648183113083204877}
+  - {fileID: 3648183111926561458}
+  - {fileID: 3648183113139462541}
+  - {fileID: 3648183113566845746}
+  - {fileID: 3648183111610154650}
+  - {fileID: 3648183113443497921}
+  - {fileID: 3648183112852575122}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5263858963774440130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263858963774440131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756bbf08224c09c4980e56d4cd4618f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.0411
+  points:
+  - {x: 1.7, y: 7.75}
+  - {x: 1.7, y: -6.8}
+  flippable: 0
+--- !u!1001 &3648183111457229075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &5263858965041467348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 3648183111457229075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858963324086090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183113139462541 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858963324086090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858963381138378
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183113083204877 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858963381138378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858963468484085
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183113566845746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858963468484085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858963556946182
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183113443497921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858963556946182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858964182439253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183112852575122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858964182439253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858964888270941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183111610154650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858964888270941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858965108210805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183111926561458 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858965108210805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5263858965220600826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5263858963774440133}
+    m_Modifications:
+    - target: {fileID: 8911507524833871554, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911507524833871565, guid: 9e8aed83dc05ab247b00f38cb7954098,
+        type: 3}
+      propertyPath: m_Name
+      value: FoosballMan (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e8aed83dc05ab247b00f38cb7954098, type: 3}
+--- !u!4 &3648183111814688061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8911507524833871559, guid: 9e8aed83dc05ab247b00f38cb7954098,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263858965220600826}
+  m_PrefabAsset: {fileID: 0}
