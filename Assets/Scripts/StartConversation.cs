@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Scripts.Inspectables;
+using Scripts.Movement;
 using UnityEngine;
 
 namespace Scripts {

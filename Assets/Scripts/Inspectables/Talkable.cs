@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Scripts.Utilites;
+using Scripts.Movement;
 
 namespace Scripts.Inspectables {
     public class Talkable : MonoBehaviour, Inspectable {

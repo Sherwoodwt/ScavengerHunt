@@ -61,4 +61,13 @@ Others - Top level junk, some of which could probably stay as such
 - DisableMovement: Detects player and turns off Physics inputs, used for cutscenes
 - DisplayInventory: Handles cycling and refreshing item pictures in the inventory
 - FollowPlayer: Follows the player, used by camera, can be overrided (like in cutscenes)
-- FoosballPhysics: 
+- FoosballPhysics: Controls the foosballs in the foosball game, basically they chase the player
+- MenuHandler: Handles pause menu and restarting and stuff
+- MonsterHand: Controls the hand. Controls the monster hand.
+- Passage: Controls doors, creates scene transition
+- RandomMovement: Move characters in random directions occassionally, x/y can be disabled
+- Rotate: Literally just rotate at a speed. This should be used more
+- SpawnHandler: Handles putting the player at the enterance location on scene load
+- StartConversation: Used by Bob, initiate conversation with the player against their will
+- Teleport: When the player hits this, teleport them to a position. Used by shoes sometimes.
+- Terminal: Used to handle password entry and other terminal controls.

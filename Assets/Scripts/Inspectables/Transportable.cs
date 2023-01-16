@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using Scripts.Animation;
+using Scripts.Movement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

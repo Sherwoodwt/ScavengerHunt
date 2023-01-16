@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Scripts.Inspectables;
+using Scripts.Movement;
 using UnityEngine;
 
 namespace Scripts.Pool {

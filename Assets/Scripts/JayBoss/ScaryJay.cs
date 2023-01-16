@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Scripts.Inspectables;
+using Scripts.Movement;
 using Scripts.Utilites;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Scripts.JayBoss {
     [RequireComponent(typeof(AudioSource))]
-    [RequireComponent(typeof(CharacterPhysics))]
+    [RequireComponent(typeof(NormalPhysics))]
     [RequireComponent(typeof(DisableMovement))]
     [RequireComponent(typeof(SpriteRenderer))]
     public class ScaryJay : MonoBehaviour {
@@ -23,7 +24,7 @@ namespace Scripts.JayBoss {
         new AudioSource audio;
         DisableMovement disableMovement;
         SpriteRenderer spriteRenderer;
-        CharacterPhysics physics;
+        NormalPhysics physics;
         bool introFinished;
 
         void Start() {
@@ -31,7 +32,7 @@ namespace Scripts.JayBoss {
             audio = GetComponent<AudioSource>();
             disableMovement = GetComponent<DisableMovement>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            physics = GetComponent<CharacterPhysics>();
+            physics = GetComponent<NormalPhysics>();
 
             if (inventory.Contains(computerCable) && !inventory.Contains(mustache)) {
                 disableMovement.enabled = true;

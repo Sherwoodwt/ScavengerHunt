@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Scripts.Utilities;
+using Scripts.Movement;
 
 namespace Scripts.Pogo {
     [RequireComponent(typeof(SpriteRenderer))]

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using Scripts.Utilites;
+using Scripts.Movement;
 
 namespace Scripts.Inspectables {
     [RequireComponent(typeof(AudioSource))]
@@ -17,7 +17,7 @@ namespace Scripts.Inspectables {
         new AudioSource audio;
         Canvas canvas;
         DisableMovement disableMovement;
-        CharacterController characterController;
+        NormalController characterController;
         bool writing, skip;
         [SerializeField] string[] chunks;
         int currentChunk;
@@ -26,7 +26,7 @@ namespace Scripts.Inspectables {
             if (!audio || !disableMovement || !characterController) {
                 audio = GetComponent<AudioSource>();
                 disableMovement = GetComponent<DisableMovement>();
-                characterController = GameObject.FindWithTag(playerTag).GetComponent<CharacterController>();
+                characterController = GameObject.FindWithTag(playerTag).GetComponent<NormalController>();
             }
             disableMovement.enabled = true;
             characterController.DisableInspect = true;

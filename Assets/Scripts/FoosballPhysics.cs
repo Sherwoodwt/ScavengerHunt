@@ -1,4 +1,4 @@
-﻿using Scripts.Utilities;
+﻿using Scripts.Movement;
 using UnityEngine;
 
 namespace Scripts {

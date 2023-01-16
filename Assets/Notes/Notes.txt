@@ -9,6 +9,7 @@ General Issues
 - Pretty sure terminal typing doesn't work
 - Have all the stuff for a music game, need sounds and to code a game around it
 - Refactor some of the code for sanity. Movement, Physics, any dangling components
+- Ensure path movement, random movement, foosball, basketball, etc are moving properly after swtiching to fixedupdate
 
 Textbox changes
 - Make it scaled correctly
