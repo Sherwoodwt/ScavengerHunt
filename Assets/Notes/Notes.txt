@@ -5,6 +5,7 @@ General Issues
 - Adjust the camera in all the scenes properly so it isn't a jarring change scene to scene but
     it also fits contextually with each area
 - Asta is buggy
+- Spider text should be slightly updated/cleaned up
 - Spider trivia isn't finished and there's no real prize item
 - Pretty sure terminal typing doesn't work
 - Have all the stuff for a music game, need sounds and to code a game around it

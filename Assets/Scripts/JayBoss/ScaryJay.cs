@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using Scripts.Inspectables;
 using Scripts.Movement;
-using Scripts.Utilites;
+using Scripts.Utilities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;

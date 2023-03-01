@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using Scripts.Utilites;
+using Scripts.Utilities;
 using Scripts.Movement;
 
 namespace Scripts.Inspectables {

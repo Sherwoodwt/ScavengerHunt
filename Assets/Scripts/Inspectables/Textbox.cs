@@ -3,18 +3,20 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Scripts.Movement;
+using Scripts.Utilities;
 
 namespace Scripts.Inspectables {
     [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(RandomAudio))]
     public class Textbox : MonoBehaviour {
         public Text displayText;
         public string text;
         public float textSpeed = .01f;
         public int chunkSize;
-        public AudioClip[] clips;
         public string playerTag = "Player";
 
         new AudioSource audio;
+        RandomAudio randomAudio;
         Canvas canvas;
         DisableMovement disableMovement;
         NormalController characterController;
@@ -23,8 +25,9 @@ namespace Scripts.Inspectables {
         int currentChunk;
 
         void OnEnable() {
-            if (!audio || !disableMovement || !characterController) {
-                audio = GetComponent<AudioSource>();
+            audio = GetComponent<AudioSource>();
+            randomAudio = GetComponent<RandomAudio>();
+            if (!disableMovement || !characterController) {
                 disableMovement = GetComponent<DisableMovement>();
                 characterController = GameObject.FindWithTag(playerTag).GetComponent<NormalController>();
             }
@@ -47,7 +50,7 @@ namespace Scripts.Inspectables {
 
             chunks = chonques.ToArray();
             currentChunk = 0;
-            PlayAudio();
+            randomAudio.PlayAudio();
             StartCoroutine(WriteText(chunks[currentChunk]));
         }
 
@@ -63,7 +66,7 @@ namespace Scripts.Inspectables {
                 } else {
                     currentChunk++;
                     if (currentChunk < chunks.Length) {
-                        PlayAudio();
+                        randomAudio.PlayAudio();
                         StartCoroutine(WriteText(chunks[currentChunk]));
                     } else {
                         audio.Stop();
@@ -88,14 +91,6 @@ namespace Scripts.Inspectables {
                 yield return new WaitForSeconds(textSpeed);
             }
             writing = false;
-        }
-
-        void PlayAudio() {
-            if (audio.isPlaying) {
-                audio.Stop();
-            }
-            var i = Random.Range(0, clips.Length);
-            audio.PlayOneShot(clips[i]);
         }
     }
 }

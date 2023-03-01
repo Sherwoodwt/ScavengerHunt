@@ -1,7 +1,7 @@
 using UnityEngine;
 using Scripts.Inspectables;
 
-namespace Scripts.Utilites {
+namespace Scripts.Utilities {
     public static class TextboxUtils {
         static string textboxTag = "Textbox";
 

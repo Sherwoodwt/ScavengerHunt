@@ -408,10 +408,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -489,6 +485,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 14
       objectReference: {fileID: 0}
@@ -497,7 +499,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -13.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!4 &150069161 stripped
 Transform:
@@ -737,10 +740,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -818,6 +817,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 5
       objectReference: {fileID: 0}
@@ -826,7 +831,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &211742424
 GameObject:
@@ -1128,10 +1134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -1209,6 +1211,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -15
       objectReference: {fileID: 0}
@@ -1217,7 +1225,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!4 &254797989 stripped
 Transform:
@@ -1238,10 +1247,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -1319,6 +1324,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 12.8
       objectReference: {fileID: 0}
@@ -1327,7 +1338,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &283178378
 PrefabInstance:
@@ -13957,6 +13969,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 5
       objectReference: {fileID: 0}
@@ -13965,7 +13983,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -13.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!4 &296421632 stripped
 Transform:
@@ -14063,6 +14082,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -14.5
       objectReference: {fileID: 0}
@@ -14071,7 +14096,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &318472338
 GameObject:
@@ -14667,6 +14693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -14711,10 +14738,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -14792,6 +14815,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 14
       objectReference: {fileID: 0}
@@ -14800,7 +14829,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &492213054
 GameObject:
@@ -18180,10 +18210,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -18261,6 +18287,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 5.8
       objectReference: {fileID: 0}
@@ -18269,7 +18301,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &605370795
 PrefabInstance:
@@ -18355,6 +18388,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 5
       objectReference: {fileID: 0}
@@ -18363,7 +18402,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -4.9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &626893420
 GameObject:
@@ -18540,10 +18580,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -18621,6 +18657,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 15.7
       objectReference: {fileID: 0}
@@ -18629,7 +18671,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -14.45
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &687855954
 PrefabInstance:
@@ -19060,10 +19103,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -19141,6 +19180,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 13.7
       objectReference: {fileID: 0}
@@ -19149,7 +19194,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -4.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &745734709
 PrefabInstance:
@@ -19832,6 +19878,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -14.5
       objectReference: {fileID: 0}
@@ -19840,7 +19892,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!4 &830470140 stripped
 Transform:
@@ -20663,8 +20716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - This smells horrible. And, kinda delicious too? You question yourself
   key: {fileID: 0}
@@ -20886,6 +20937,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 5
       objectReference: {fileID: 0}
@@ -20894,7 +20951,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -13.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &982508352
 GameObject:
@@ -20926,8 +20984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - This smells horrible. And, kinda delicious too? You question yourself
   key: {fileID: 0}
@@ -20987,10 +21043,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -21068,6 +21120,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -4.3
       objectReference: {fileID: 0}
@@ -21076,7 +21134,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -13.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &1094295113
 PrefabInstance:
@@ -21514,10 +21573,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -21595,6 +21650,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -2.12
       objectReference: {fileID: 0}
@@ -21603,7 +21664,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -6.83
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!4 &1148653395 stripped
 Transform:
@@ -21812,10 +21874,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -21893,6 +21951,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -16.5
       objectReference: {fileID: 0}
@@ -21901,7 +21965,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -13.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &1263537952
 GameObject:
@@ -23198,8 +23263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - This smells horrible. And, kinda delicious too? You question yourself
   key: {fileID: 0}
@@ -23433,10 +23496,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -23514,6 +23573,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -4
       objectReference: {fileID: 0}
@@ -23522,7 +23587,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &1667898293
 GameObject:
@@ -24757,10 +24823,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -24838,6 +24900,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -15
       objectReference: {fileID: 0}
@@ -24846,7 +24914,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &1934781614
 PrefabInstance:
@@ -25065,10 +25134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -25146,6 +25211,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -13
       objectReference: {fileID: 0}
@@ -25154,7 +25225,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1001 &1986236088
 PrefabInstance:
@@ -25844,10 +25916,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1946123305}
     m_Modifications:
-    - target: {fileID: 4246137596918896, guid: 36bbd783db781cc478817864338c005d, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 358144428482845158, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
       propertyPath: m_RootOrder
@@ -25925,6 +25993,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: 13.2
       objectReference: {fileID: 0}
@@ -25933,7 +26007,8 @@ PrefabInstance:
       propertyPath: destination.y
       value: -1.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}
 --- !u!1 &2145743728
 GameObject:
@@ -26103,6 +26178,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
         type: 3}
+      propertyPath: poofPrefab
+      value: 
+      objectReference: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+        type: 3}
+    - target: {fileID: 5387994315778271903, guid: 36bbd783db781cc478817864338c005d,
+        type: 3}
       propertyPath: destination.x
       value: -20
       objectReference: {fileID: 0}
@@ -26111,5 +26192,6 @@ PrefabInstance:
       propertyPath: destination.y
       value: 3.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 200958010161002821, guid: 36bbd783db781cc478817864338c005d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36bbd783db781cc478817864338c005d, type: 3}

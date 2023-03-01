@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5345237776868452999}
   - component: {fileID: 7742459274926238514}
   - component: {fileID: 7104550106002638490}
+  - component: {fileID: 3597921286906557178}
   m_Layer: 5
   m_Name: Textbox
   m_TagString: Untagged
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5345237776868452999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,22 +112,7 @@ MonoBehaviour:
   text: 
   textSpeed: 0.01
   chunkSize: 200
-  clips:
-  - {fileID: 8300000, guid: 71dd97d64083fbf4cb027799d63b6965, type: 3}
-  - {fileID: 8300000, guid: 2326faeb8c2cd044298a7eb238762708, type: 3}
-  - {fileID: 8300000, guid: 9727ca9a52d6dcc44a13bfcd9be7720a, type: 3}
-  - {fileID: 8300000, guid: e5c07c580501af144bd6c490a7901578, type: 3}
-  - {fileID: 8300000, guid: 547a8c2c0983f354abcee060bf0f3a2f, type: 3}
-  - {fileID: 8300000, guid: 4ec58882b96c7d345845531c26feba6c, type: 3}
-  - {fileID: 8300000, guid: f75c97f5a35ce86449aa35469f5b4ead, type: 3}
-  - {fileID: 8300000, guid: c48d8646732d1d24aacc51c2356faacc, type: 3}
-  - {fileID: 8300000, guid: f646c8a5f7b83c64f8143d9c080d5013, type: 3}
-  - {fileID: 8300000, guid: ae0de12dd4bfbf1429ee4135cb200488, type: 3}
-  - {fileID: 8300000, guid: dfc0ae25acd26f44f86862176c099647, type: 3}
-  - {fileID: 8300000, guid: 7073e09d5975a8040a66e5c3fc1e35a4, type: 3}
-  - {fileID: 8300000, guid: 7326a367472593545a70eb25e3067556, type: 3}
-  - {fileID: 8300000, guid: 359006877794796448c8d2d7597b807e, type: 3}
-  - {fileID: 8300000, guid: e94ae79b27e1f884fad1cdc1b4a08078, type: 3}
+  playerTag: Player
   chunks: []
 --- !u!82 &7742459274926238514
 AudioSource:
@@ -236,6 +222,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df568759d7586a643b1c2ea2de1b62a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3597921286906557178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345237776868452994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe5523f1d8cd4d139bf8848fd5912fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 71dd97d64083fbf4cb027799d63b6965, type: 3}
+  - {fileID: 8300000, guid: 2326faeb8c2cd044298a7eb238762708, type: 3}
+  - {fileID: 8300000, guid: 9727ca9a52d6dcc44a13bfcd9be7720a, type: 3}
+  - {fileID: 8300000, guid: e5c07c580501af144bd6c490a7901578, type: 3}
+  - {fileID: 8300000, guid: 547a8c2c0983f354abcee060bf0f3a2f, type: 3}
+  - {fileID: 8300000, guid: 4ec58882b96c7d345845531c26feba6c, type: 3}
+  - {fileID: 8300000, guid: f75c97f5a35ce86449aa35469f5b4ead, type: 3}
+  - {fileID: 8300000, guid: c48d8646732d1d24aacc51c2356faacc, type: 3}
+  - {fileID: 8300000, guid: f646c8a5f7b83c64f8143d9c080d5013, type: 3}
+  - {fileID: 8300000, guid: ae0de12dd4bfbf1429ee4135cb200488, type: 3}
+  - {fileID: 8300000, guid: dfc0ae25acd26f44f86862176c099647, type: 3}
+  - {fileID: 8300000, guid: 7073e09d5975a8040a66e5c3fc1e35a4, type: 3}
+  - {fileID: 8300000, guid: 7326a367472593545a70eb25e3067556, type: 3}
+  - {fileID: 8300000, guid: 359006877794796448c8d2d7597b807e, type: 3}
+  - {fileID: 8300000, guid: e94ae79b27e1f884fad1cdc1b4a08078, type: 3}
 --- !u!1 &5345237777428910710
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +359,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5345237777428910709}
   m_Father: {fileID: 5345237776868452998}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
