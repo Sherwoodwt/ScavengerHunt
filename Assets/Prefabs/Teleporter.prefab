@@ -224,7 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4688645463a3a4fbdce05ba07e8d86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poofPrefab: {fileID: 0}
+  poofPrefab: {fileID: 3448675310489275023, guid: ddd9655cea68a403097afa0cb340668a,
+    type: 3}
   destination: {x: 0, y: 0}
   cameraTag: MainCamera
 --- !u!114 &4804857926853749577

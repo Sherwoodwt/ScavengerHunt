@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Scripts.Utilities {
@@ -5,13 +6,8 @@ namespace Scripts.Utilities {
     public class RandomAudio : MonoBehaviour {
         public AudioClip[] clips;
 
-        new AudioSource audio;
-
-        void Start() {
-            audio = GetComponent<AudioSource>();
-        }
-
         public void PlayAudio() {
+            var audio = GetComponent<AudioSource>();
             if (audio.isPlaying) {
                 audio.Stop();
             }
