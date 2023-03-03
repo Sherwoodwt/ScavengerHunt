@@ -109,8 +109,6 @@ namespace Scripts.Inspectables {
             disableMovement.enabled = true;
             characterController.DisableInspect = true;
 
-            Debug.Log("PAUSING");
-
             targetRandomMovement = talker.GetComponent<RandomMovement>();
             if (targetRandomMovement != null)
                 targetRandomMovement.SetFocus(player.transform.position);

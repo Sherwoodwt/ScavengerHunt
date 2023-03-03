@@ -11,7 +11,8 @@ namespace Scripts {
         public InventoryObject inventory;
 
         GameObject[] slots;
-        int start = 0;
+        int start = 0, cachedCount;
+        
         readonly int count = 7;
         readonly string slotTag = "Slot";
 
@@ -44,7 +45,13 @@ namespace Scripts {
             RefreshDisplay();
         }
 
+        void FixedUpdate() {
+            if (cachedCount != inventory.items.Count)
+                RefreshDisplay();
+        }
+
         void RefreshDisplay() {
+            cachedCount = inventory.items.Count;
             int i = start;
             foreach (var slot in slots) {
                 var image = slot.GetComponent<Image>();

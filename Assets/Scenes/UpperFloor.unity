@@ -843,36 +843,60 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: Hey! It's me Trevor! You can talk to this phone and I'll give you some
-        advice. I'll try my best to avoid spoilers. You can keep inspecting this
-        phone to get more advice.
+      value: Hey! It's me Trevor! So you're finally playing the scavenger hunt game,
+        huh? Pretty exciting stuff. How ya liking it so far? It's basically like
+        one of those point and click adventure games but you move around and hit
+        space bar. Moving and hitting spacebar scavenger hunt, where the thing your
+        scavenging for is the end of the game. So, yeah. Go around and look for clues
+        to solve the mystery of what the next thing in the game is or whatever. Keep
+        talking to this phone if you want to hear more advice from me. (I'll avoid
+        spoilers)
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[1]
-      value: Speaking of, there are many other objects you can inspect multiple times.
-        So try inspecting things more than once if you're curious.
+      value: Hey it's you again! As you may have noticed, I'm not saying the exact
+        same thing I said last time we talked. Gif of Grama pointing at her head,
+        like that one time when I was a little kid and we were at mcdonalds and I
+        saw her drinking soda or something with two straws at once and I looked at
+        her like "whoa damn!" and mid-slurp she pointed at her head and looked at
+        me as if to say "yeah I'm clever, you just learned something"...... Well
+        anyway, if you inspect things more than once, they may have more than one
+        thing to say. Sometimes things will react differently or say different things
+        to you depending on what items you have.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[2]
-      value: You can click on items in your inventory in the top right of the screen
-        to see a description.
+      value: Speaking of items, you can see your items in your inventory in the top
+        right of the screen. Click on the items to see what they're called and what
+        they do. If you have more than 7 items you can cycle through them with the
+        arrows. Aside from clues, inspecting items or talking to people will sometimes
+        lead to you picking up a new item. When you aquire a new item you'll here
+        a sound... you know, this is not the first game you've played, I think you
+        get it.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[3]
-      value: If you're finding yourself inspecting something that looks interesting
-        but it doesn't have anything interesting to say, you could try bumping into
-        it. Don't fear death! You can't die! I swear this advice isn't as irresponsible
-        as it sounds.
+      value: If you inspect something and find it has nothing to say, try running
+        into it. Sometimes running into an object will cause you to pick it up, or
+        interact with it in some other way. I know that sounds dangerous but you
+        don't have to worry because, and don't freak out, in this world you can't
+        die. That's right. It's not just you, I actually can't die either. I also
+        can't leave this phone, which is a whole other crazy thing. Wild stuff. I
+        wonder if this is what the inside of a pokeball is like.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[4]
-      value: If you find anything written in a language you don't understand, you
-        might find something to help you read it in a dark and magical place to the
-        north-west.
+      value: Sometimes you might see things in a language you don't understand. Don't
+        worry. This is normal. You're not having a stroke. Your computer isn't having
+        a meltdown. It's not one of the many bugs in this game. No, you're just being
+        ethnocentric. Other languages exist, it's perfectly normal. Don't go running
+        over to google translate to find out what it says. Well actually, if you
+        want you can, but if you do it'll ruin the game and you won't be a real gamer
+        anymore, so your choice. I'm sorry it's like 2am right now in my timezone.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -1126,8 +1150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Interesting... but this doesn't appear to be useful.
   key: {fileID: 0}
@@ -1343,8 +1365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Just a quick peak past the shower curtains. You never know what kinds of things
     could be hiding back there. Looks like there was nothing... this time....
@@ -3829,8 +3849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - You take a look in the fridge. It's full of all your favorite foods.
   key: {fileID: 0}
@@ -4168,6 +4186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -9980,8 +9999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - 'You know, I''ve heard people say water from the bathroom sink is no different
     than water from the kitchen sink.
@@ -10145,8 +10162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Interesting... but this doesn't appear to be useful.
   key: {fileID: 0}
@@ -10251,8 +10266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - 'You can''t tell if the stove is on or not. You press your hand onto the burners
     just to feel something. Just to feel alive.
@@ -10413,8 +10426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Interesting... but this doesn't appear to be useful.
   key: {fileID: 0}
@@ -10945,8 +10956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Interesting... but this doesn't appear to be useful.
   key: {fileID: 0}
@@ -11136,8 +11145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textboxPrefab: {fileID: 5345237776868452994, guid: 7a3b36d2e37502e45b206cc9f4f360d1,
-    type: 3}
   texts:
   - Ooohhhhhhh yeahhhh! You know what goes on in this bad boy.                 Just
     make sure if you use it you lock the door. Or at least close it all the way.
