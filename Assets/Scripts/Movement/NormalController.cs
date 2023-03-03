@@ -11,9 +11,11 @@ namespace Scripts.Movement {
         public Animator animator;
         public LayerMask inspectMask;
 
+        public bool DisableInputs { get; set; }
+
         GameObject pauseMenu;
         Vector2 direction;
-        NormalPhysics character;
+        NormalPhysics physics;
         new BoxCollider2D collider;
         bool running, disableInspect;
 
@@ -27,13 +29,13 @@ namespace Scripts.Movement {
         }
 
         void Start() {
-            character = GetComponent<NormalPhysics>();
+            physics = GetComponent<NormalPhysics>();
             collider = GetComponent<BoxCollider2D>();
         }
 
         void Update()
         {
-            // ONLY RUN IF NOT PAUSED
+            // If paused, DON'T RUN! WALK! SLOWLY!
             if (pauseMenu != null)
                 return;
 
@@ -42,30 +44,34 @@ namespace Scripts.Movement {
 
             var speed = running ? 1.5f : 1;
             // y inputs
-            if (Input.GetKey(KeyCode.S)) {
-                character.input.y = -speed;
-            } else if (Input.GetKey(KeyCode.W)) {
-                character.input.y = speed;
-            } else {
-                character.input.y = 0;
+            if (!DisableInputs) {
+                if (Input.GetKey(KeyCode.S)) {
+                    physics.input.y = -speed;
+                } else if (Input.GetKey(KeyCode.W)) {
+                    physics.input.y = speed;
+                } else {
+                    physics.input.y = 0;
+                }
             }
-            if (animator.GetFloat("YVel") != character.input.y)
-                animator.SetFloat("YVel", character.input.y);
+            if (animator.GetFloat("YVel") != physics.input.y)
+                animator.SetFloat("YVel", physics.input.y);
 
             // x inputs
-            if (Input.GetKey(KeyCode.A)) {
-                character.input.x = -speed;
-            } else if (Input.GetKey(KeyCode.D)) {
-                character.input.x = speed;
-            } else {
-                character.input.x = 0;
+            if (!DisableInputs) {
+                if (Input.GetKey(KeyCode.A)) {
+                    physics.input.x = -speed;
+                } else if (Input.GetKey(KeyCode.D)) {
+                    physics.input.x = speed;
+                } else {
+                    physics.input.x = 0;
+                }
             }
-            if (animator.GetFloat("XVel") != character.input.x)
-                animator.SetFloat("XVel", character.input.x);
+            if (animator.GetFloat("XVel") != physics.input.x)
+                animator.SetFloat("XVel", physics.input.x);
 
             // Set direction to input if input has magnitude. This prevents having no direction, which would break inspecting.
-            if (character.input.magnitude > 0)
-                direction = character.input;
+            if (physics.input.magnitude > 0)
+                direction = physics.input;
 
             // handle inspect
             if (!disableInspect) {

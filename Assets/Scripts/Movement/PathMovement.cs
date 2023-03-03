@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Utilities {
+namespace Scripts.Movement {
     /// <summary>
     /// Used for things that move along a list of points
     /// </summary>
-    public class PathMovement : MonoBehaviour {
-        [Range(0, .02f)]
+    public class PathMovement : MonoBehaviour, Influencable {
         public float speed;
         public Vector2[] points;
         public bool flippable = false;
+
+        // used to store speed for disabling when focus set
+        float cachedSpeed;
 
         SpriteRenderer spriteRenderer;
         int cur;
@@ -32,6 +34,15 @@ namespace Scripts.Utilities {
             if (flippable && spriteRenderer != null) {
                 spriteRenderer.flipX = points[cur].x - transform.position.x > 0;
             }
+        }
+
+        public void SetFocus(Vector3 playerPos) {
+            cachedSpeed = speed;
+            speed = 0;
+        }
+
+        public void DisableFocus() {
+            speed = cachedSpeed;
         }
     }
 }

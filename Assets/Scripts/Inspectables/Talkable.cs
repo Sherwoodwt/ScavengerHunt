@@ -30,19 +30,12 @@ namespace Scripts.Inspectables {
                 textbox.text = texts[textIndex];
                 textIndex = (textIndex + 1) % texts.Count;
             }
+            textbox.talker = this.gameObject;
 
             // activate textbox
             if (!textbox.gameObject.activeSelf && texts.Count > 0) {
                 textbox.gameObject.SetActive(true);
             }
-
-            // TODO: 4. Make talker look at the inspector
-            // If it moves, it don't move no more
-            GetComponentInChildren<RandomMovement>();
-            // TODO: 3. There are more movement examples here. Could it be that refactoring
-            // movement to be more generally referencable would benefit me?
-
-            // If it rotates, rotate towards the one whomst started it
         }
     }
 }

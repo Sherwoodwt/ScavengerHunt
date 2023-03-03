@@ -11,6 +11,7 @@ namespace Scripts.Inspectables {
     public class Textbox : MonoBehaviour {
         public Text displayText;
         public string text;
+        public GameObject talker;
         public float textSpeed = .01f;
         public int chunkSize;
         public string playerTag = "Player";
@@ -20,19 +21,17 @@ namespace Scripts.Inspectables {
         Canvas canvas;
         DisableMovement disableMovement;
         NormalController characterController;
+        RandomMovement targetRandomMovement;
+        PathMovement targetPathMovement;
         bool writing, skip;
         [SerializeField] string[] chunks;
         int currentChunk;
+        GameObject player;
 
         void OnEnable() {
+            player = GameObject.FindWithTag(playerTag);
             audio = GetComponent<AudioSource>();
             randomAudio = GetComponent<RandomAudio>();
-            if (!disableMovement || !characterController) {
-                disableMovement = GetComponent<DisableMovement>();
-                characterController = GameObject.FindWithTag(playerTag).GetComponent<NormalController>();
-            }
-            disableMovement.enabled = true;
-            characterController.DisableInspect = true;
 
             var chonques = new List<string>();
             var words = text.Split(' ');
@@ -52,11 +51,20 @@ namespace Scripts.Inspectables {
             currentChunk = 0;
             randomAudio.PlayAudio();
             StartCoroutine(WriteText(chunks[currentChunk]));
+
+            Pause();
         }
 
         void OnDisable() {
             disableMovement.enabled = false;
             characterController.DisableInspect = false;
+
+
+            if (targetRandomMovement != null)
+                targetRandomMovement.DisableFocus();
+
+            if (targetPathMovement != null)
+                targetPathMovement.DisableFocus();
         }
 
         void Update() {
@@ -91,6 +99,24 @@ namespace Scripts.Inspectables {
                 yield return new WaitForSeconds(textSpeed);
             }
             writing = false;
+        }
+
+        void Pause() {
+            if (!disableMovement || !characterController) {
+                disableMovement = GetComponent<DisableMovement>();
+                characterController = player.GetComponent<NormalController>();
+            }
+            disableMovement.enabled = true;
+            characterController.DisableInspect = true;
+
+            Debug.Log("PAUSING");
+
+            targetRandomMovement = talker.GetComponent<RandomMovement>();
+            if (targetRandomMovement != null)
+                targetRandomMovement.SetFocus(player.transform.position);
+            targetPathMovement = talker.GetComponent<PathMovement>();
+            if (targetPathMovement != null)
+                targetPathMovement.SetFocus(player.transform.position);
         }
     }
 }

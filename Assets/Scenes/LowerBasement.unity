@@ -2201,6 +2201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -6172,6 +6173,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469220236, guid: 3b4dbda8a99690a49817df11544da6f1, type: 3}
       propertyPath: flippable
       value: 1
       objectReference: {fileID: 0}
@@ -6210,15 +6215,16 @@ PrefabInstance:
     - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
       propertyPath: unlockedText
-      value: Hey man! I'm looking for something to eat. I usually find food in the
-        pantry, but strangly I can't find it...
+      value: Hey man! Don't mind me, I'm just running around looking for food. I
+        usually find food in the pantry in the kitchen hallway, but strangly I can't
+        find it...
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
       propertyPath: texts.Array.data[0]
       value: "Salut mec ! Je cherche quelque chose \xE0 manger. Je trouve habituellement
         de la nourriture dans le garde-manger, mais \xE9trangement je ne le trouve
-        pas..."
+        pas... tu ne me comprends pas... "
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
@@ -6227,13 +6233,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.32
+      value: 20.5532
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.35708
+      value: -20.4861
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
@@ -6273,6 +6289,11 @@ PrefabInstance:
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234762, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234763, guid: 3b4dbda8a99690a49817df11544da6f1,
