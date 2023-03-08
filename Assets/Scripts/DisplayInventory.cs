@@ -14,6 +14,7 @@ namespace Scripts {
         readonly int count = 7;
         readonly string slotTag = "Slot";
 
+        // TODO: PRetty sure this isn't used anywhere
         public void Add(ItemObject item) {
             if (!inventory.items.Contains(item)) {
                 inventory.items.Add(item);

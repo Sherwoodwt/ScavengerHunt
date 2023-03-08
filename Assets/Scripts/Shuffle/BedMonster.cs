@@ -21,10 +21,12 @@ namespace Scripts.Shuffle {
                 var movement = instance.GetComponent<PathMovement>();
                 if (movement != null) {
                     movement.points = new Vector2[2] {
-                        instance.transform.position,
                         collider.transform.position,
+                        instance.transform.position + new Vector3(0, -.1f, 0),
                     };
                 }
+
+                rangeCollider.enabled = false;
             }
         }
     }

@@ -9,9 +9,12 @@ namespace Scripts.Movement {
         public Vector2[] points;
         public bool flippable = false;
 
+        public int LoopCount { get { return loopCount; } }
+
         // used to store speed for disabling when focus set
         float cachedSpeed;
 
+        [SerializeField] int loopCount = 0;
         SpriteRenderer spriteRenderer;
         int cur;
         int inc = -1;
@@ -29,6 +32,8 @@ namespace Scripts.Movement {
                 if (cur == 0 || cur == points.Length - 1)
                     inc = -inc;
                 cur += inc;
+                if (cur == 0)
+                    loopCount++;
             }
 
             if (flippable && spriteRenderer != null) {

@@ -40,8 +40,8 @@ namespace Scripts.Shuffle {
             var path = hand.GetComponent<PathMovement>();
             if (path != null) {
                 path.points = new Vector2[2] {
-                    jars[1].position,
                     prizeRenderer.transform.position,
+                    jars[1].position,
                 };
             }
             var handCollider = hand.GetComponent<Collider2D>();

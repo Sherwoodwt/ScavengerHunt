@@ -1,5 +1,5 @@
-﻿using Scripts.Movement;
-using Scripts.Utilities;
+﻿using System.Linq;
+using Scripts.Movement;
 using UnityEngine;
 
 namespace Scripts.Shuffle {
@@ -11,14 +11,11 @@ namespace Scripts.Shuffle {
         PathMovement movement;
         DisableMovement disableMovement;
         GameObject grabbed = null;
-        // shameless hack
-        [SerializeField] bool first;
 
         void Start() {
             handCollider = GetComponent<Collider2D>();
             movement = GetComponent<PathMovement>();
             disableMovement = GetComponent<DisableMovement>();
-            first = true;
 
             disableMovement.enabled = true;
         }
@@ -27,12 +24,9 @@ namespace Scripts.Shuffle {
             if (grabbed != null) {
                 grabbed.transform.position = handCollider.transform.position;
             }
-            if (!first) {
-                if ((Vector2)transform.position == movement.points[0]) {
-                    GameObject.Destroy(gameObject);
-                }
-            } else {
-                first = false;
+            if (movement.LoopCount >= 1) {
+                this.gameObject.SetActive(false);
+                grabbed?.gameObject?.SetActive(false);
             }
         }
 

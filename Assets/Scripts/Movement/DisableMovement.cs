@@ -14,6 +14,11 @@ namespace Scripts.Movement {
             physics.input = Vector2.zero;
         }
 
+        void FixedUpdate() {
+            controller.DisableInputs = true;
+            physics.input = Vector2.zero;
+        }
+
         void OnDisable() {
             controller.DisableInputs = false;
         }
