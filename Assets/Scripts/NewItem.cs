@@ -26,7 +26,8 @@ namespace Scripts {
 
         void Reset() {
             oldCount = inventory.items.Count;
-            image.sprite = normalSprite;
+            if (image != null)
+                image.sprite = normalSprite;
         }
     }
 }

@@ -160,6 +160,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   player: {fileID: 0}
   factor: 1
+  maxSpeed: 2
 --- !u!1001 &1375064892102243310
 PrefabInstance:
   m_ObjectHideFlags: 0
