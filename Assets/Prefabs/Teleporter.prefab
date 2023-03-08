@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5387994315778271903}
   - component: {fileID: 4804857926853749577}
   - component: {fileID: 1140792899075787195}
-  - component: {fileID: 200958010161002821}
   m_Layer: 8
   m_Name: Teleporter
   m_TagString: Untagged
@@ -262,23 +261,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df568759d7586a643b1c2ea2de1b62a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &200958010161002821
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2611859128776206913}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2337dc741241f4460b307730dc89d849, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0

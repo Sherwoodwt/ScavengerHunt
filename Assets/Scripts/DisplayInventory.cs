@@ -1,4 +1,3 @@
-﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Scripts.Inspectables;
@@ -7,12 +6,11 @@ using UnityEngine.UI;
 
 namespace Scripts {
     public class DisplayInventory : MonoBehaviour {
-        public Sprite defaultImage;
+        public Sprite defaultSlotImage;
         public InventoryObject inventory;
 
         GameObject[] slots;
         int start = 0, cachedCount;
-        
         readonly int count = 7;
         readonly string slotTag = "Slot";
 
@@ -67,7 +65,7 @@ namespace Scripts {
                         image.sprite = item.sprite;
                         talkable.texts = new List<string> { item.Description };
                     } else {
-                        image.sprite = defaultImage;
+                        image.sprite = defaultSlotImage;
                         talkable.texts.Clear();
                     }
                 }

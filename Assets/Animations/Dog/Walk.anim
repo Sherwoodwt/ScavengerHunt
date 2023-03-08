@@ -20,15 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 716200672, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+      value: {fileID: 78490412, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
     - time: 0.083333336
-      value: {fileID: -2075954539, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+      value: {fileID: -406015028, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
     - time: 0.16666667
-      value: {fileID: 2138557417, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+      value: {fileID: -749663299, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
     - time: 0.25
-      value: {fileID: -2075954539, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+      value: {fileID: 78490412, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
     - time: 0.33333334
-      value: {fileID: 716200672, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+      value: {fileID: -406015028, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,11 +48,11 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 716200672, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
-    - {fileID: -2075954539, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
-    - {fileID: 2138557417, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
-    - {fileID: -2075954539, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
-    - {fileID: 716200672, guid: 74d041a0697ee4e19a97044e836bc5b0, type: 3}
+    - {fileID: 78490412, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
+    - {fileID: -406015028, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
+    - {fileID: -749663299, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
+    - {fileID: 78490412, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
+    - {fileID: -406015028, guid: c4b64bd5aaf684ca1b3e882a008d848c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -63,7 +63,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

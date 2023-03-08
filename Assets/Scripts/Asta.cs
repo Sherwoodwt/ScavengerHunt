@@ -10,16 +10,17 @@ namespace Scripts {
     [RequireComponent(typeof(SpriteRenderer))]
     public class Asta : MonoBehaviour {
         public float distance;
-        public Transform spawnpoint;
         public Sprite sleepingSprite;
-        public string borkTrigger;
-        public LayerMask collisionMask;
+        public ItemObject key;
+        public InventoryObject inventory;
+        public string borkTrigger = "Bork";
 
         Animator animator;
         new AudioSource audio;
         new BoxCollider2D collider;
         SpriteRenderer sprite;
         Chase chase;
+        Transform start;
         
 
         void Start() {
@@ -28,16 +29,24 @@ namespace Scripts {
             collider = GetComponent<BoxCollider2D>();
             chase = GetComponent<Chase>();
             sprite = GetComponent<SpriteRenderer>();
-            transform.position = spawnpoint.position;
+            start = transform;
 
-            StartCoroutine(Greet());
+            if (!inventory.Contains(key)) {
+                sprite.enabled = false;
+                chase.enabled = false;
+            } else
+                StartCoroutine(Greet());
         }
 
-        void Update() {
+        void FixedUpdate() {
+            if (!inventory.Contains(key)) {
+                return;
+            }
+
             if (chase.target != null) {
                 var dist = (transform.position - chase.target.position).magnitude;
                 if (dist < distance) {
-                    if (chase.target == spawnpoint) {
+                    if (chase.target == start) {
                         animator.enabled = false;
                         sprite.sprite = sleepingSprite;
                     } else {
@@ -65,7 +74,7 @@ namespace Scripts {
             yield return new WaitForSeconds(2);
 
             animator.ResetTrigger(borkTrigger);
-            chase.target = spawnpoint;
+            chase.target = start;
             chase.speed = chase.speed / 2f;
         }
     }
