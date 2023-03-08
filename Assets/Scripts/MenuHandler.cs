@@ -20,7 +20,11 @@ namespace Scripts {
         }
 
         public void HandleExit() {
+# if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+# else
             Application.Quit();
+# endif
         }
 
         public void HandleUnpause() {
