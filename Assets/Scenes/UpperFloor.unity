@@ -719,7 +719,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -778,6 +778,14 @@ PrefabInstance:
         over to google translate to find out what it says. Well actually, if you
         want you can, but if you do it'll ruin the game and you won't be a real gamer
         anymore, so your choice. I'm sorry it's like 2am right now in my timezone.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: ............Oh, you're still there. I'm sorry man, having difficult
+        time staying awake. Um... what else do I have to say.... Oh right! Remember,
+        every good scavenger hunt has a few red herrings. Don't let them lead you
+        astray. Now I'm gonna go to bed. Bye.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
