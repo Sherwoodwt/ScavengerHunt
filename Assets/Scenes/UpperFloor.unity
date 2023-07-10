@@ -1348,7 +1348,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10930,6 +10930,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2281933159434502933, guid: caa20a776e806ac44ba786ccd6ab6364,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7788811231513873106, guid: caa20a776e806ac44ba786ccd6ab6364,
         type: 3}
       propertyPath: m_Name

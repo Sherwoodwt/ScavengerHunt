@@ -13,6 +13,7 @@ TagManager:
   - Answer
   - Portal
   - Lore
+  - MusicPlayer
   layers:
   - Default
   - TransparentFX
