@@ -38,14 +38,14 @@ namespace Scripts {
 
         void Update() {
             // Once opened they cannot be closed
-            if (open || inventorySize == inventory.items.Count || keys.Length == 0)
+            if (open || inventorySize == inventory.Count() || keys.Length == 0)
                 return;
 
-            inventorySize = inventory.items.Count;
+            inventorySize = inventory.Count();
 
             open = true;
             foreach (var key in keys) {
-                if (!inventory.items.Contains(key)) {
+                if (!inventory.Contains(key)) {
                     open = false;
                     break;
                 }

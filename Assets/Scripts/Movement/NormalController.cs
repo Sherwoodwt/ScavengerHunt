@@ -7,7 +7,7 @@ namespace Scripts.Movement {
     public class NormalController : MonoBehaviour {
         public GameObject pauseMenuPrefab;
         public InventoryObject inventory;
-        public ItemObject shoeItem;
+        public KeyItemObject shoeItem;
         public Animator animator;
         public LayerMask inspectMask;
 
@@ -90,9 +90,7 @@ namespace Scripts.Movement {
             }
 
             // handle run
-            if (inventory.Contains(shoeItem) && Input.GetKeyDown(KeyCode.R)) {
-                running = !running;
-            }
+            running = shoeItem.Active;
         }
     }
 }

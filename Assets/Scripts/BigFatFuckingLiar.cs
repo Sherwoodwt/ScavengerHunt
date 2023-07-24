@@ -21,7 +21,7 @@ namespace Scripts {
         }
 
         void Update() {
-            if (inventory.items.Contains(key) && watching && !textbox.gameObject.activeSelf) {
+            if (inventory.Contains(key) && watching && !textbox.gameObject.activeSelf) {
                 GameObject.Instantiate(poofPrefab);
                 GameObject.Instantiate(paulGiamattiPrefab);
                 disguiseObject.SetActive(false);

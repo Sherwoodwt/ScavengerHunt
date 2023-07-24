@@ -19,13 +19,13 @@ namespace Scripts {
         }
 
         void Update() {
-            if (oldCount != inventory.items.Count) {
+            if (oldCount != inventory.Count()) {
                 image.sprite = newItemSprite;
             }
         }
 
         void Reset() {
-            oldCount = inventory.items.Count;
+            oldCount = inventory.Count();
             if (image != null)
                 image.sprite = normalSprite;
         }

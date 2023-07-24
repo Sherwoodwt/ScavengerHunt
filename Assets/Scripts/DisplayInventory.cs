@@ -10,68 +10,48 @@ namespace Scripts {
         public InventoryObject inventory;
 
         GameObject[] slots;
-        int start = 0, cachedCount;
-        readonly int count = 7;
+        string oldHash;
         readonly string slotTag = "Slot";
-
-        // TODO: PRetty sure this isn't used anywhere
-        public void Add(ItemObject item) {
-            if (!inventory.items.Contains(item)) {
-                inventory.items.Add(item);
-                RefreshDisplay();
-            }
-        }
-
-        public void CycleRight() {
-            if (inventory.items.Count > count) {
-                start = Mathf.Min(start + count, inventory.items.Count - count);
-                RefreshDisplay();
-            }
-        }
-
-        public void CycleLeft() {
-            if (inventory.items.Count > count) {
-                start = Mathf.Max(0, start - count);
-                RefreshDisplay();
-            }
-        }
 
         void Start() {
             slots = GameObject
                 .FindGameObjectsWithTag(slotTag)
                 .OrderBy(s => s.tag)
                 .ToArray();
+            oldHash = HashInventory();
             RefreshDisplay();
         }
 
         void FixedUpdate() {
-            if (cachedCount != inventory.items.Count)
+            var hash = HashInventory();
+
+            if (hash.ToString() != oldHash) {
+                oldHash = hash;
                 RefreshDisplay();
+            }
         }
 
         void RefreshDisplay() {
-            cachedCount = inventory.items.Count;
-            int i = start;
-            foreach (var slot in slots) {
-                var image = slot.GetComponent<Image>();
-                if (image == null)
-                    throw new MissingComponentException($"object {slot.name} needs an Image component");
-                var talkable = slot.GetComponent<Talkable>();
-                if (talkable == null)
-                    throw new MissingComponentException($"object {slot.name} needs a Talkable component");
-
-                if (i < inventory.items.Count) {
-                    var item = inventory.items[i];
-                    if (item != null) {
-                        image.sprite = item.sprite;
-                        talkable.texts = new List<string> { item.Description };
-                    } else {
-                        image.sprite = defaultSlotImage;
-                        talkable.texts.Clear();
-                    }
+            for (int i = 0; i < inventory.items.Length; i++) {
+                var item = inventory.items[i];
+                var image = slots[i].GetComponent<Image>();
+                if (item == null){
+                    image.sprite = null;
+                } else {
+                    image.sprite = item.sprite;
                 }
-                i++;
             }
+        }
+
+        string HashInventory() {
+            var hash = new Hash128();
+            foreach (var item in inventory.items) {
+                if (item != null)
+                    hash.Append(item.name);
+                else
+                    hash.Append("empty");
+            }
+            return hash.ToString();
         }
     }
 }

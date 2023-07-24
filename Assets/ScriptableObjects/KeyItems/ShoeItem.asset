@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad756bea549834aaf8dcf0a3dfe69261, type: 3}
+  m_Name: ShoeItem
+  m_EditorClassIdentifier: 
+  description: 'Running Shoes: Press R to toggle run!'
+  sprite: {fileID: 21300000, guid: 91564a378e2648b4bb9fe6b3945f87d4, type: 3}
+  activatedSprite: {fileID: 21300000, guid: aaf82800470844896bf82988a4785e1d, type: 3}
+  active: 0

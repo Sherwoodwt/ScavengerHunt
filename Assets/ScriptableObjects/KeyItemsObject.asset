@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
-  m_Name: ShoeItem
+  m_Script: {fileID: 11500000, guid: 6a79ea6dfd02042f8994f27669572834, type: 3}
+  m_Name: KeyItemsObject
   m_EditorClassIdentifier: 
-  description: 'Running Shoes: Press R to toggle run!'
-  sprite: {fileID: 21300000, guid: 91564a378e2648b4bb9fe6b3945f87d4, type: 3}
+  shoes: {fileID: 11400000, guid: 2c62a5a0b89534e4f88cdf097dca636a, type: 2}
+  translator: {fileID: 0}

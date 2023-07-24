@@ -10,7 +10,7 @@ namespace Scripts {
 
         public void HandleStartNewGame() {
             spawn.spawnpoint = null;
-            inventory.items.Clear();
+            inventory.Clear();
             SceneManager.LoadScene(1);
         }
 
