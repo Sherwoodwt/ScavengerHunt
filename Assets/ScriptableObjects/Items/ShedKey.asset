@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: ShedKey
   m_EditorClassIdentifier: 
-  description: 'Shed Key: A key that opens the back door of the shed. Enter at your
-    own risk.....'
+  description: 'Shed Key: A key to the shed. But no one has gone in there in quite
+    some time...'
   sprite: {fileID: 21300000, guid: 13113abc8e09eae449e456816ed8d4f6, type: 3}

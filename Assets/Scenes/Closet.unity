@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 1045341260, guid: 98f1474d2cbc0ca4699f1cafeb4564e5, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 2c62a5a0b89534e4f88cdf097dca636a,
+      objectReference: {fileID: 11400000, guid: 544c60a314a6448f1b58bed1c11ce8a1,
         type: 2}
     - target: {fileID: 6133324037152597052, guid: 98f1474d2cbc0ca4699f1cafeb4564e5,
         type: 3}
@@ -449,6 +449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: These could sustain your family through a famine.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -1619,6 +1624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: This here is some food. Looks almost too good to eat.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}

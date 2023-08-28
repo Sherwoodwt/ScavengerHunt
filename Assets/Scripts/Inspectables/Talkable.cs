@@ -4,38 +4,54 @@ using Scripts.Utilities;
 using Scripts.Movement;
 
 namespace Scripts.Inspectables {
-    public class Talkable : MonoBehaviour, Inspectable {
-        [TextArea(2, 20)]
-        public List<string> texts;
-
-        [Header("Lock Stuff")]
-        public ItemObject key;
-        public InventoryObject inventory;
+    public class Talkable : Inspectable {
+        public KeyItemObject translator;
         [TextArea()]
-        public string unlockedText;
+        public List<string> texts, translatedTexts;
+
+        [TextArea()]
+        public string successText, incorrectText;
+        Textbox textbox;
 
         int textIndex = 0;
-        Textbox textbox;
 
         void Start() {
             textbox = TextboxUtils.Init();
         }
 
-        public virtual void Inspect() {
-            // check for lock to determine which text to use
-            if (key != null && inventory != null && inventory.Contains(key) && !string.IsNullOrEmpty(unlockedText)) {
-                textbox.text = unlockedText;
-
-            } else {
-                textbox.text = texts[textIndex];
-                textIndex = (textIndex + 1) % texts.Count;
-            }
+        void ActivateTextbox() {
             textbox.talker = this.gameObject;
-
-            // activate textbox
             if (!textbox.gameObject.activeSelf && texts.Count > 0) {
                 textbox.gameObject.SetActive(true);
             }
+        }
+
+        public override void CorrectResponse() {
+            if (!string.IsNullOrEmpty(successText)) {
+                textbox.text = successText;
+                ActivateTextbox();
+            } else {
+                base.CorrectResponse();
+            }
+        }
+
+        public override void IncorrectResponse() {
+            if (!string.IsNullOrEmpty(incorrectText)) {
+                textbox.text = incorrectText;
+                ActivateTextbox();
+            } else {
+                base.IncorrectResponse();
+            }
+        }
+
+        public override void NoItemResponse() {
+            var curTexts = texts;
+            if (translatedTexts.Count > 0 && translator.Active) {
+                curTexts = translatedTexts;
+            }
+            textbox.text = curTexts[textIndex];
+            textIndex = (textIndex + 1) % curTexts.Count;
+            ActivateTextbox();
         }
     }
 }

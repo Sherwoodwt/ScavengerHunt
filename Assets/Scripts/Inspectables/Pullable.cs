@@ -4,12 +4,11 @@ using UnityEngine;
 namespace Scripts.SpiderTrivia {
     public delegate void PullAction();
 
-    public class Pullable : MonoBehaviour, Inspectable {
+    public class Pullable : Inspectable {
         public PullAction onPull;
 
-        public void Inspect() {
+        public override void NoItemResponse() {
             transform.RotateAround(transform.position, Vector3.up, 180);
-
             onPull();
         }
     }

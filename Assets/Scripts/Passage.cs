@@ -2,16 +2,17 @@
 using UnityEngine.SceneManagement;
 using System.Linq;
 using System.Collections;
+using Scripts.Inspectables;
 
 namespace Scripts {
     [RequireComponent(typeof(AudioSource))]
-    public class Passage : MonoBehaviour {
+    public class Passage : Inspectable {
         public LocationObject toLocation;
-        public ItemObject[] keys;
-        public InventoryObject inventory;
         public SpawnObject spawn;
         public float transitionTime = 1;
         public GameObject transitionPrefab;
+        public AudioClip doorNoise;
+        public LocksObject locks;
 
         readonly string lockedLayer = "LockedDoor";
         readonly string openLayer = "Door";
@@ -19,7 +20,6 @@ namespace Scripts {
 
         new AudioSource audio;
         Transform canvas;
-        int inventorySize = 0;
         bool open = false;
 
         void Start() {
@@ -28,7 +28,7 @@ namespace Scripts {
             if (canvas == null && transitionPrefab != null)
                 throw new System.Exception($"No object found with tag {canvasTag}");
 
-            if (keys.Length == 0) {
+            if (key == null || (locks != null && locks.Get(key)?.unlocked == true)) {
                 open = true;
                 gameObject.layer = LayerMask.NameToLayer(openLayer);
             } else {
@@ -36,26 +36,10 @@ namespace Scripts {
             }
         }
 
-        void Update() {
-            // Once opened they cannot be closed
-            if (open || inventorySize == inventory.Count() || keys.Length == 0)
-                return;
-
-            inventorySize = inventory.Count();
-
+        public override void CorrectResponse() {
             open = true;
-            foreach (var key in keys) {
-                if (!inventory.Contains(key)) {
-                    open = false;
-                    break;
-                }
-            }
-
-            if (open) {
-                gameObject.layer = LayerMask.NameToLayer(openLayer);
-            } else {
-                gameObject.layer = LayerMask.NameToLayer(lockedLayer);
-            }
+            locks.Get(key).unlocked = true;
+            gameObject.layer = LayerMask.NameToLayer(openLayer);
         }
 
         void OnTriggerEnter2D(Collider2D collider) {
@@ -68,6 +52,7 @@ namespace Scripts {
                     if (transitionPrefab != null) {
                         GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
                     }
+                    audio.clip = doorNoise;
                     audio.Play();
 
                     StartCoroutine(Transition());

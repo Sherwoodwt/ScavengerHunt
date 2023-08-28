@@ -30,7 +30,7 @@ namespace Scripts.Movement {
                 }
 
                 if (closest < speed)
-                    velocity.x = (closest * direction.x);
+                    velocity.x = closest * direction.x;
             }
             if (velocity.y != 0) {
                 // calculate edges

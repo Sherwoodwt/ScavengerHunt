@@ -8165,11 +8165,8 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: You can see outside a little bit. Ah jeez... It's Bob.                                        
-        That guy can talk forever. He has a lot to say but none of it is going to
-        be particularly helpful. Best not get too close to him to avoid getting roped
-        in.                                                                    He
-        seems so lonely though.....
+      value: "Quite the view from here. You can kinda see behind the trees on the
+        left side of the yard\u2026 Hey, something is hidden in the furthest tree!"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -9118,6 +9115,17 @@ PrefabInstance:
         type: 3}
       propertyPath: texts.Array.data[2]
       value: Look, stop asking about the other dryer! I'm a perfectly good dryer!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.data[0]
+      value: Hey where'd you get those glasses! Whatever, just don't talk to the
+        other dryer!
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -11554,7 +11562,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.19900346
+      value: 0.5531192
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -11564,17 +11572,17 @@ PrefabInstance:
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.09960711
+      value: 0.20584178
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -11821,13 +11829,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
+      propertyPath: m_Size.x
+      value: 1.3408332
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
       propertyPath: m_Size.y
-      value: 0.6376264
+      value: 0.8470845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.038082838
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.25789917
+      value: 0.26741982
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -11853,9 +11871,10 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[1]
-      value: 'Nothing useful to see here. Just a todo list: ->find missing computer
+      value: "Nothing useful to see here. Just a todo list: ->find missing computer
         cable ->find missing casette tape ->fix broken shed door ->remove french
-        rat from lower basement'
+        rat from lower basement ->figure out what\u2019s causing the beeping in the
+        living room\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -12800,167 +12819,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1311479215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1311479216}
-  - component: {fileID: 1311479217}
-  - component: {fileID: 1311479218}
-  - component: {fileID: 1311479219}
-  m_Layer: 5
-  m_Name: TVSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1311479216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311479215}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2101592958}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1311479217
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311479215}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e08c9f4bbe1ca4e9a9243c0be70e1f81, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1311479218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311479215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adeed1f7fe82f4ab4ac527f972d1218d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minVol: 0
-  maxVol: 0.2
-  factor: 0
---- !u!58 &1311479219
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311479215}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 5, y: 0}
-  serializedVersion: 2
-  m_Radius: 10
 --- !u!1001 &1370012993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13168,7 +13026,9 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: 
+      value: This shower's full of stuff. Makes you wonder, "when's the last time
+        anyone's used this thing?". But it'd make a great place to hide a scavenger
+        hunt clue...
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -13326,6 +13186,18 @@ PrefabInstance:
         type: 3}
       propertyPath: texts.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.data[0]
+      value: Help! That guy is not actually a dryer, it's the guy from Big Fat Liar
+        in a dryer costume! I'm the real dryer Laurence, goofy anthropomorphic dryer
+        character!
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -13569,9 +13441,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9f443832035c34cbf233f8d554b171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
-  item: {fileID: 11400000, guid: c7281ebf979184a438e936bd2d3b5f45, type: 2}
   key: {fileID: 11400000, guid: f243fbbbe32a0ec419b5e345f7b555d4, type: 2}
+  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  keyItems: {fileID: 0}
+  item: {fileID: 11400000, guid: c7281ebf979184a438e936bd2d3b5f45, type: 2}
 --- !u!82 &1491837453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14372,6 +14245,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351495019730513153, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: c7281ebf979184a438e936bd2d3b5f45,
+        type: 2}
     - target: {fileID: 3179730687030010776, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_Size.x
@@ -14459,6 +14338,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: c7281ebf979184a438e936bd2d3b5f45,
+        type: 2}
+    - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
       propertyPath: toLocation
       value: 
       objectReference: {fileID: 11400000, guid: 88123942fe39ce44abd15b4747c82da8,
@@ -14494,6 +14379,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351495019730513153, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: 2cd9d772504a847b88e3a830f26e3c6b,
+        type: 2}
     - target: {fileID: 1864086579618130609, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_audioClip
@@ -14569,6 +14460,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: 2cd9d772504a847b88e3a830f26e3c6b,
+        type: 2}
     - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: toLocation
@@ -14664,11 +14561,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  translator: {fileID: 0}
   texts:
   - You're filled with the urge to start singing a tune.
-  key: {fileID: 0}
-  inventory: {fileID: 0}
-  unlockedText: 
+  translatedTexts: []
+  successText: 
+  incorrectText: 
 --- !u!212 &1633077863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14755,13 +14654,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f95b9cd651ec749c6b42b7029f655cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 11400000, guid: 4b2933b128bba2a4b8db634774922686, type: 2}
   paulGiamattiPrefab: {fileID: 7379801825348724732, guid: 9e50d053e59c3473086c07cf3776371f,
     type: 3}
   poofPrefab: {fileID: 760313987450798922, guid: ee1efa001898345b5ba37f10b24330e5,
     type: 3}
   disguiseObject: {fileID: 1070349426}
-  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
-  key: {fileID: 11400000, guid: 4b2933b128bba2a4b8db634774922686, type: 2}
+  keyItems: {fileID: 11400000, guid: 09584ef25f38645a086e80e9c76f0728, type: 2}
+  overrideText: I can't believe you were able to understand me! I don't know what
+    happened, one day I suddenly was speaking in some other language. And then that
+    guy showed up! Gosh, what a wild ride.
 --- !u!1 &1759220152
 GameObject:
   m_ObjectHideFlags: 0
@@ -14793,12 +14695,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  translator: {fileID: 0}
   texts:
   - This toilet may seem perfectly normal, but something about it makes you think
     it shouldn't be trusted for... you know, more demanding situations....
-  key: {fileID: 0}
-  inventory: {fileID: 0}
-  unlockedText: 
+  translatedTexts: []
+  successText: 
+  incorrectText: 
 --- !u!61 &1759220154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15778,3 +15682,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3408cc9f4b0080746b9332b2b14e77f4, type: 3}
+--- !u!1001 &4746164231468525942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2101592958}
+    m_Modifications:
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080198, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746164230430080217, guid: 23bf8ac638086489a9ab299e4cd7db5b,
+        type: 3}
+      propertyPath: m_Name
+      value: TVSound
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23bf8ac638086489a9ab299e4cd7db5b, type: 3}

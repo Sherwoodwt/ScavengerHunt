@@ -10429,6 +10429,30 @@ PrefabInstance:
         through force. New claims of control and displays of power were a daily occurrance
         and average '
       objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.data[0]
+      value: "This text is dirty, and appears to be written in a lot less official
+        handwriting than most of the others\u2026 \u201C\u201D\u201D\u201D Well they
+        arrived. The moment they were spotted on the horizon, the emperor ordered
+        a full-scale offensive. Full-scale meaning literally every soldier was deployed
+        at once, in a straight, horizontal line. The entire city must have simultaneously
+        experienced the same feeling of surprise, panic, fear, and dread, all at
+        the same time, when the very walls of the Shed suddenly were jostled with
+        otherworldly force. People have been saying the Great Door in the north may
+        have opened. I guess people say crazy things during calamities, but none
+        of this will matter soon anyway. The nearby Great Rake, Rake Superior, fell
+        off the wall and landed perfectly upon the line of Imperial soldiers, crushing
+        them all immediately. The enemy, though shocked as we were, didn\u2019t take
+        long to take advantage of the opportunity. Civilians have been manning the
+        turrets ever since, but I don\u2019t know how long we can hold on. \u2013
+        Diary Entry 2, Spinner the Web Monger \u201C\u201D\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_RootOrder

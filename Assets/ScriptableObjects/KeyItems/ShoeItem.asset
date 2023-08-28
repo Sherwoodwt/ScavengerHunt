@@ -15,4 +15,5 @@ MonoBehaviour:
   description: 'Running Shoes: Press R to toggle run!'
   sprite: {fileID: 21300000, guid: 91564a378e2648b4bb9fe6b3945f87d4, type: 3}
   activatedSprite: {fileID: 21300000, guid: aaf82800470844896bf82988a4785e1d, type: 3}
+  name: Shoe
   active: 0

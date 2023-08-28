@@ -15,10 +15,12 @@ namespace Scripts {
         int index;
         Image image;
         RectTransform rect;
-        Vector2 startPosition;
+        [SerializeField] Vector2 startPosition;
         Button button;
         Canvas canvas;
         Talkable talkable;
+
+        ItemObject cachedItem;
 
         public ItemObject Item {
             get { return inventory.items[index]; }
@@ -34,7 +36,16 @@ namespace Scripts {
             startPosition = rect.anchoredPosition;
             index = int.Parse(name.Split("t")[1]); // ._.
 
+            cachedItem = Item;
+
             Refresh();
+        }
+
+        void Update() {
+            if (cachedItem != Item) {
+                cachedItem = Item;
+                Refresh();
+            }
         }
 
         public void Description() {
@@ -46,12 +57,16 @@ namespace Scripts {
             image.sprite = inventory.items[index]?.sprite;
             if (image.sprite == null) {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
+                button.enabled = false;
             } else {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
+                button.enabled = true;
             }
         }
 
         public void OnBeginDrag(PointerEventData eventData) {
+            if (image.sprite == null) return;
+
             image.raycastTarget = false;
             canvas.overrideSorting = true;
             canvas.sortingOrder = 20;
@@ -61,10 +76,19 @@ namespace Scripts {
         }
 
         public void OnDrag(PointerEventData eventData) {
-            rect.anchoredPosition += eventData.delta;
+            if (image.sprite == null) return;
+
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                rect.parent as RectTransform,
+                Input.mousePosition,
+                null,
+                out var pos);
+            rect.anchoredPosition = pos;
         }
 
         public void OnEndDrag(PointerEventData eventData) {
+            if (image.sprite == null) return;
+
             image.raycastTarget = true;
             canvas.overrideSorting = false;
             rect.anchoredPosition = startPosition;
@@ -86,10 +110,11 @@ namespace Scripts {
             }
 
             // Use Item
-            var inspectable = otherObj?.GetComponent<Inspectable>();
-            if (otherObj != null && inspectable != null) {
-                // TODO: Inspect with item here
-                // TODO: Update Inspectable to have base-level item possibly used
+            var inspectables = otherObj?.GetComponents<Inspectable>();
+            if (otherObj != null) {
+                foreach (var inspectable in inspectables) {
+                    inspectable.Inspect(Item);
+                }
             }
         }
     }

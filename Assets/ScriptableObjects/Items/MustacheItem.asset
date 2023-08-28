@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: MustacheItem
   m_EditorClassIdentifier: 
-  description: 'Jay''s Mustache: A symbol known and feared by nearly everyone. Having
-    a trophy like this will get you respect.'
+  description: 'Jay''s Mustache: A powerful magic item. This will allow you to interact
+    with magic items. It smells like alcohol and cigarettes.'
   sprite: {fileID: 21300000, guid: 155a733e476ec7e42a4682bee9e77bbe, type: 3}

@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: DrumKey
   m_EditorClassIdentifier: 
-  description: 'Drum Key: haha... get it?
-
-    Anyway, it''s basically just a regular
-    key. But how does it relate to drums??'
+  description: 'Drum Key: haha... get it? Anyway, it''s basically just a regular
+    key, but for drums. You''ll figure it out.'
   sprite: {fileID: 21300000, guid: e4eef6d6858a02b49b67cce5258b7f9d, type: 3}

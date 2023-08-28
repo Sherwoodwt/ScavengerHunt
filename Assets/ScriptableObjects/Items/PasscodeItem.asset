@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: PasscodeItem
   m_EditorClassIdentifier: 
-  description: Z3br@L1br@420
+  description: 'Strange Note: Z3br@L1br@420'
   sprite: {fileID: 21300000, guid: 8c4c927471d1f854291fb971117890be, type: 3}

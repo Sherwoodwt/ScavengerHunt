@@ -29,6 +29,7 @@ namespace Scripts.JayBoss {
 
         void Start() {
             textbox = TextboxUtils.Init();
+            textbox.talker = this.gameObject;
             audio = GetComponent<AudioSource>();
             disableMovement = GetComponent<DisableMovement>();
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -49,8 +50,8 @@ namespace Scripts.JayBoss {
             yield return new WaitForSeconds(2);
 
             cameraFocus.player = this.physics;
-            textbox.gameObject.SetActive(true);
             textbox.text = introSpeech;
+            textbox.gameObject.SetActive(true);
             introFinished = true;
         }
 

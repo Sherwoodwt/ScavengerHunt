@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: ComputerCable
   m_EditorClassIdentifier: 
-  description: Hooks Computer to the Microphone
+  description: 'Mic Cable: Hooks Computer to the Microphone'
   sprite: {fileID: 21300000, guid: 1786308f813f74a4cb7c939a2ce70fce, type: 3}

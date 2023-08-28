@@ -245,22 +245,22 @@ PrefabInstance:
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.35127065
+      value: 0.7059872
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.779035
+      value: 3.8993397
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.12353389
+      value: -0.14570343
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.32408047
+      value: -0.37692547
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -271,6 +271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Provides mediocre lighting to this dank, dingy, grimy, tough pool room.
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -521,6 +526,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351495019730513153, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: c73db45c68e262044ac52ccb46088028,
+        type: 2}
     - target: {fileID: 1864086579618130609, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: m_audioClip
@@ -601,6 +612,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 11400000, guid: c73db45c68e262044ac52ccb46088028,
+        type: 2}
     - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
       propertyPath: toLocation
@@ -2312,7 +2329,7 @@ PrefabInstance:
     - target: {fileID: 7788811231513873119, guid: caa20a776e806ac44ba786ccd6ab6364,
         type: 3}
       propertyPath: orthographic size
-      value: 4.05
+      value: 6.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa20a776e806ac44ba786ccd6ab6364, type: 3}
@@ -2447,6 +2464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
+      propertyPath: incorrectText
+      value: If you put this under the hat you're going to lose it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
       propertyPath: texts.Array.data[0]
       value: Oh the stories this hat could tell if it could talk like the sorting
         hat in the Harry Potter movies.
@@ -2540,7 +2562,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359439, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: m_Name
-      value: Chalk (1)
+      value: Hat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3edb786fa3e12149b25b38775c5f8f2, type: 3}
@@ -6215,10 +6237,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}
+      propertyPath: incorrectText
+      value: He simply glares at you in response. You feel guilty for even offering.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
       propertyPath: texts.Array.data[0]
-      value: "Salut mec ! Je cherche quelque chose \xE0 manger. Je trouve habituellement
-        de la nourriture dans le garde-manger, mais \xE9trangement je ne le trouve
-        pas... tu ne me comprends pas... "
+      value: "Essayer d'entrer dans le hangar ? Eh bien, il n'y a aucun moyen que
+        vous alliez entrer par la porte d'entr\xE9e. Cette chose n'a pas \xE9t\xE9
+        ouverte depuis des lustres. Mais la porte arri\xE8re pourrait encore \xEAtre
+        accessible."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: translatedTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041995922009234760, guid: 3b4dbda8a99690a49817df11544da6f1,
+        type: 3}
+      propertyPath: translatedTexts.Array.data[0]
+      value: Trying to get into the shed? Well there's no way you're going to get
+        in the front door. That thing hasn't been open in ages. But the back door
+        might still be accessible.
       objectReference: {fileID: 0}
     - target: {fileID: 7041995922009234761, guid: 3b4dbda8a99690a49817df11544da6f1,
         type: 3}

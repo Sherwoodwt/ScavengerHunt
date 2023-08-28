@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0af11bfcf4139948b87048ef9301371, type: 3}
   m_Name: HouseKey
   m_EditorClassIdentifier: 
-  description: 'House Key: A key to the house... HOUSE NOW ACCESSIBLE'
+  description: 'House Key: A key to the house.'
   sprite: {fileID: 21300000, guid: 364953b246bea20419d92256f1720560, type: 3}

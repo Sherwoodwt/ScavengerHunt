@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a79ea6dfd02042f8994f27669572834, type: 3}
   m_Name: KeyItemsObject
   m_EditorClassIdentifier: 
-  shoes: {fileID: 11400000, guid: 2c62a5a0b89534e4f88cdf097dca636a, type: 2}
-  translator: {fileID: 0}
+  shoes: {fileID: 11400000, guid: 544c60a314a6448f1b58bed1c11ce8a1, type: 2}
+  translator: {fileID: 11400000, guid: 5773d4e5c67ec4b7093e62cc385667cf, type: 2}

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Scripts.Inspectables {
     [RequireComponent(typeof(AudioSource))]
-    public class Transportable : MonoBehaviour, Inspectable {
+    public class Transportable : Inspectable {
         public LocationObject location;
         public EntranceObject entrance;
         public SpawnObject spawnObject;
@@ -20,7 +20,7 @@ namespace Scripts.Inspectables {
             wobble = GetComponent<Wobble>();
         }
 
-        public void Inspect() {
+        public override void NoItemResponse() {
             spawnObject.spawnpoint = entrance;
             audio.Play();
             if (wobble != null) {

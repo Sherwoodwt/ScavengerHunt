@@ -1,31 +1,40 @@
+using System.Collections.Generic;
 using Scripts.Inspectables;
 using Scripts.Utilities;
 using UnityEngine;
 
 namespace Scripts {
-    public class BigFatFuckingLiar : MonoBehaviour, Inspectable {
+    [RequireComponent(typeof(Talkable))]
+    public class BigFatFuckingLiar : Inspectable {
         public GameObject paulGiamattiPrefab, poofPrefab;
         public GameObject disguiseObject;
-        public InventoryObject inventory;
-        public ItemObject key;
+        public KeyItemsObject keyItems;
+        [TextArea]
+        public string overrideText;
 
         Textbox textbox;
         bool watching;
-
-        public void Inspect() {
-            watching = true;
-        }
+        Talkable talkable;
 
         void Start() {
             textbox = TextboxUtils.Init();
+            talkable = GetComponent<Talkable>();
         }
 
         void Update() {
-            if (inventory.Contains(key) && watching && !textbox.gameObject.activeSelf) {
+            if (watching && !textbox.gameObject.activeSelf) {
                 GameObject.Instantiate(poofPrefab);
                 GameObject.Instantiate(paulGiamattiPrefab);
                 disguiseObject.SetActive(false);
                 GameObject.Destroy(this);
+
+                talkable.translatedTexts = new List<string>() { overrideText };
+            }
+        }
+
+        public override void NoItemResponse() {
+            if (keyItems.translator != null && keyItems.translator.Active) {
+                watching = true;
             }
         }
     }

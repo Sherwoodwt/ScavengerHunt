@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "KeyItem Object", fileName = "DefaultKeyItemObject")]
 public class KeyItemObject : ItemObject {
     public Sprite activatedSprite;
+    public string name;
 
     [SerializeField]
     bool active = false;
