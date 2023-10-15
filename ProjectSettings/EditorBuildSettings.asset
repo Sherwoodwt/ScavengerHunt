@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShedPalaceTreasure.unity
     guid: 74475926058694b1084f0790088a0f33
+  - enabled: 1
+    path: Assets/Scenes/Skatepark.unity
+    guid: 185bfadac84d34963a6b2de5f2523992
   m_configObjects: {}

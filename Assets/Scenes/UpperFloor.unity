@@ -1017,9 +1017,8 @@ GameObject:
   m_Component:
   - component: {fileID: 447698438}
   - component: {fileID: 447698437}
-  - component: {fileID: 447698436}
   - component: {fileID: 447698435}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Furniture (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,25 +1051,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.363679, y: 3.5921504}
   m_EdgeRadius: 0
---- !u!114 &447698436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447698434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 0}
-  translator: {fileID: 0}
-  texts:
-  - Interesting... but this doesn't appear to be useful.
-  translatedTexts: []
-  successText: 
-  incorrectText: 
 --- !u!212 &447698437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1289,6 +1269,7 @@ MonoBehaviour:
   translatedTexts: []
   successText: 
   incorrectText: Someone is gonna slip on this if you leave it here.
+  killTalker: 0
 --- !u!212 &633538361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3793,6 +3774,7 @@ MonoBehaviour:
   translatedTexts: []
   successText: 
   incorrectText: You put it in the fridge. Just to see what it would be like.
+  killTalker: 0
 --- !u!1 &760054140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9799,7 +9781,8 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: incorrectText
-      value: You hold it up in front of the picture, and the dog's eyes follow it.
+      value: You hold it up in front of the picture, and the dog's eyes follow it!
+        Oh wait, no, its just your imagination...
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -9891,6 +9874,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3edb786fa3e12149b25b38775c5f8f2, type: 3}
+--- !u!1 &1245671035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7267769495986359439, guid: f3edb786fa3e12149b25b38775c5f8f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1245671034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1245671036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245671035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3902ade9b80b4d5989041850afac9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cowboyText: Wow, nice place you got here. But you know, you really shouldn't just
+    go around whistlin' for me all willy-nill-- wait a sec, you guys have the Gary
+    Potter books in your universe too? I thought they only sold these in the magical
+    universe! Did you know they're based on a real guy? Yep, all true. Well, I mean
+    they embellished a lot, but the gist of it all happened. We have a holiday and
+    everything. Ahhhh, how interesting... Welp, I should get going.
 --- !u!1001 &1315883181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10100,6 +10107,7 @@ MonoBehaviour:
   successText: 
   incorrectText: You turn on the water and stick it in the sink, getting it all wet.
     You look around desparately for a towel but there's nothing.
+  killTalker: 0
 --- !u!212 &1382161660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10349,6 +10357,7 @@ MonoBehaviour:
   successText: 
   incorrectText: This would probably be delicious. But I don't think this stove turn
     on.
+  killTalker: 0
 --- !u!61 &1470355163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10507,6 +10516,7 @@ MonoBehaviour:
   translatedTexts: []
   successText: 
   incorrectText: 
+  killTalker: 0
 --- !u!212 &1476029170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11136,6 +11146,7 @@ MonoBehaviour:
   translatedTexts: []
   successText: 
   incorrectText: Having this on the shlelf really pulls the room together.
+  killTalker: 0
 --- !u!212 &1777782270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11244,6 +11255,7 @@ MonoBehaviour:
   successText: 
   incorrectText: The thought crosses your mind. But you wouldn't dare. You still
     gotta carry this thing around.
+  killTalker: 0
 --- !u!61 &1872979863
 BoxCollider2D:
   m_ObjectHideFlags: 0

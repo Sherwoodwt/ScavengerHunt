@@ -11,11 +11,12 @@ namespace Scripts.Inspectables {
 
         [TextArea()]
         public string successText, incorrectText;
+        public bool killTalker = false;
         Textbox textbox;
 
         int textIndex = 0;
 
-        void Start() {
+        void OnEnable() {
             textbox = TextboxUtils.Init();
         }
 
@@ -23,6 +24,8 @@ namespace Scripts.Inspectables {
             textbox.talker = this.gameObject;
             if (!textbox.gameObject.activeSelf && texts.Count > 0) {
                 textbox.gameObject.SetActive(true);
+                var tb = textbox.GetComponent<Textbox>();
+                tb.killTalker = killTalker;
             }
         }
 

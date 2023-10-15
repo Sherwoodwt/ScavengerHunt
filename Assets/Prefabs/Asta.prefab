@@ -73,7 +73,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.036028266, y: -0.089350015}
+  m_Offset: {x: -0.048218727, y: -0.02195242}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -84,7 +84,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5244281, y: 0.22179073}
+  m_Size: {x: 0.6929221, y: 0.35658592}
   m_EdgeRadius: 0
 --- !u!212 &7092821669419446945
 SpriteRenderer:
@@ -179,7 +179,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b5887a879cbb4a9bad003a16c1f9d88, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 172e810a0ab49436f8067eb0af4a1d0b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -277,11 +277,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bc91d34f32efa4cb207fd15266f645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  translator: {fileID: 0}
   texts:
   - Bork Bork. She bites your arm affectionately
-  key: {fileID: 0}
-  inventory: {fileID: 0}
-  unlockedText: 
+  translatedTexts: []
+  successText: 
+  incorrectText: 
+  killTalker: 0
 --- !u!95 &3575808705709962384
 Animator:
   serializedVersion: 5

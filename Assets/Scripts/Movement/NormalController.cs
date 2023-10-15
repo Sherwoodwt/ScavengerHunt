@@ -43,6 +43,7 @@ namespace Scripts.Movement {
                 Pause(pauseMenuPrefab);
 
             var speed = running ? 1.5f : 1;
+            animator.speed = running ? 1.5f : 1;
             // y inputs
             if (!DisableInputs) {
                 if (Input.GetKey(KeyCode.S)) {

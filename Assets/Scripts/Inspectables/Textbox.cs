@@ -15,6 +15,7 @@ namespace Scripts.Inspectables {
         public float textSpeed = .01f;
         public int chunkSize;
         public string playerTag = "Player";
+        public bool killTalker;
 
         new AudioSource audio;
         RandomAudio randomAudio;
@@ -59,12 +60,15 @@ namespace Scripts.Inspectables {
             disableMovement.enabled = false;
             characterController.DisableInspect = false;
 
-
             if (targetRandomMovement != null)
                 targetRandomMovement.DisableFocus();
 
             if (targetPathMovement != null)
                 targetPathMovement.DisableFocus();
+
+            if (killTalker) {
+                GameObject.Destroy(talker);
+            }
         }
 
         void Update() {

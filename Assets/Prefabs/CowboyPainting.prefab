@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1667152787685932814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.33174348
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.44199076
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480,
+        type: 2}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: killTalker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: successText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: unlockedText
+      value: Wow. This is... perfect! I haven't had a cocktail since before I died
+        and my immortal soul was slurped up into a painting. Or however the hell
+        this works. Here, like I said before, I owe you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[7]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[8]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[9]
+      value: Howdy. Name's Noodleman Slim. Yep, paintings in this world can talk
+        and move between paintings and whatnot. Pretty cool, huh? Well yeah, maybe
+        if you aren't the one stuck in an inconsistent purgatory universe it would
+        seem charming. Like going to the zoo. But I have to live the rest of eternity
+        trapped in here with nothing to eat but fruit baskets. Why so many fruit
+        baskets? Why does nobody draw a nice bottle of whiskey? I would LITERALLY
+        KILL for a drink.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: translatedTexts.Array.data[0]
+      value: Now this is what I'm talking about! I can't believe you actually did
+        it! I haven't had a drink since I was trapped in this painting by that punk
+        wizard. Thank you. If you ever need anything and you're around a painting,
+        just blow this whistle and I'll come lend you a hand.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8bf2b088ed377e41bb75251f553534d,
+        type: 3}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -236240585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359439, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Name
+      value: CowboyPainting
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3edb786fa3e12149b25b38775c5f8f2, type: 3}

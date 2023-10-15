@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Scripts {
@@ -32,7 +31,6 @@ namespace Scripts {
         public void Toggle() {
             keyItem.Toggle();
             image.sprite = keyItem.CurrentSprite();
-            EventSystem.current.SetSelectedGameObject(null);
         }
     }
 }

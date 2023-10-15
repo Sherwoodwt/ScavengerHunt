@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad756bea549834aaf8dcf0a3dfe69261, type: 3}
   m_Name: WhistleItem
   m_EditorClassIdentifier: 
-  description: 
-  sprite: {fileID: 0}
-  activatedSprite: {fileID: 0}
-  name: 
+  description: 'Cowboy Whistle: Press Y to blow this whistle, summoning the cowboy
+    to a painting near you!'
+  sprite: {fileID: 21300000, guid: 3b7940949cd16403abf524d5536e2ba6, type: 3}
+  activatedSprite: {fileID: 21300000, guid: ffbfeb781b60c4d969cfe94a0561b22e, type: 3}
+  name: Whistle
   active: 0

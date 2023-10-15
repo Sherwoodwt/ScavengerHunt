@@ -5848,6 +5848,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3edb786fa3e12149b25b38775c5f8f2, type: 3}
+--- !u!4 &763127173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3442368244624008471, guid: 4b1bee6c538d5e9429a1ed9ebad3bf89,
+    type: 3}
+  m_PrefabInstance: {fileID: 149922622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &854692174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6586,6 +6592,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1408957940613743777, guid: 60ea4834bb1564273b239bfc9703200e,
+        type: 3}
+      propertyPath: accel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7092821669419446938, guid: 60ea4834bb1564273b239bfc9703200e,
         type: 3}
       propertyPath: m_Name
@@ -6593,17 +6604,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7092821669419446944, guid: 60ea4834bb1564273b239bfc9703200e,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 763127173}
     - target: {fileID: 7092821669419446945, guid: 60ea4834bb1564273b239bfc9703200e,
         type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7092821669419446946, guid: 60ea4834bb1564273b239bfc9703200e,
-        type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7092821669419446948, guid: 60ea4834bb1564273b239bfc9703200e,
@@ -6660,6 +6666,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155324668089276282, guid: 60ea4834bb1564273b239bfc9703200e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155324668089276282, guid: 60ea4834bb1564273b239bfc9703200e,
+        type: 3}
+      propertyPath: stirCraziness
+      value: 0.006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60ea4834bb1564273b239bfc9703200e, type: 3}

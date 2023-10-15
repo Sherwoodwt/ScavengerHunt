@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
+  startPosition: {x: 0, y: 0}
 --- !u!223 &7957512151233559404
 Canvas:
   m_ObjectHideFlags: 0
@@ -241,7 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 0}
+  translator: {fileID: 0}
   texts: []
+  translatedTexts: []
   successText: 
   incorrectText: 
-  lockedText: 

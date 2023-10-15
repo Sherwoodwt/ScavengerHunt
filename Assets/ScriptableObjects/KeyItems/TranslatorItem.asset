@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad756bea549834aaf8dcf0a3dfe69261, type: 3}
   m_Name: TranslatorItem
   m_EditorClassIdentifier: 
-  description: 'A translator: Possessing this gives you the ability to read anything.
-    Press T to toggle the translator.'
+  description: 'Translator Shades: Press T to put on these glasses, giving you the
+    ability to translate anything!'
   sprite: {fileID: 21300000, guid: 3505e494c27f74d48b2abb2d64a5ada6, type: 3}
   activatedSprite: {fileID: 21300000, guid: 40e499f167ca7f44a939112dd741c698, type: 3}
   name: Translator

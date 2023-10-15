@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PotterlandLock
   m_EditorClassIdentifier: 
   key: {fileID: 11400000, guid: 5d338bd0c9ea04ff1a584f09af846e7e, type: 2}
-  unlocked: 0
+  unlocked: 1

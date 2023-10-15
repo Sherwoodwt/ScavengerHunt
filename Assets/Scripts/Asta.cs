@@ -1,4 +1,5 @@
 using System.Collections;
+using Scripts.Inspectables;
 using Scripts.Movement;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Scripts {
     [RequireComponent(typeof(BoxCollider2D))]
     [RequireComponent(typeof(Chase))]
     [RequireComponent(typeof(SpriteRenderer))]
+    [RequireComponent(typeof(Talkable))]
     public class Asta : MonoBehaviour {
         public float distance;
         public Sprite sleepingSprite;
@@ -20,7 +22,7 @@ namespace Scripts {
         new BoxCollider2D collider;
         SpriteRenderer sprite;
         Chase chase;
-        Transform start;
+        Talkable talkable;
         
 
         void Start() {
@@ -29,13 +31,14 @@ namespace Scripts {
             collider = GetComponent<BoxCollider2D>();
             chase = GetComponent<Chase>();
             sprite = GetComponent<SpriteRenderer>();
-            start = transform;
+            talkable = GetComponent<Talkable>();
 
             if (!inventory.Contains(key)) {
                 sprite.enabled = false;
                 chase.enabled = false;
-            } else
+            } else {
                 StartCoroutine(Greet());
+            }
         }
 
         void FixedUpdate() {
@@ -43,39 +46,22 @@ namespace Scripts {
                 return;
             }
 
-            if (chase.target != null) {
-                var dist = (transform.position - chase.target.position).magnitude;
-                if (dist < distance) {
-                    if (chase.target == start) {
-                        animator.enabled = false;
-                        sprite.sprite = sleepingSprite;
-                    } else {
-                        StartCoroutine(Return());
-                    }
+            if (chase.enabled) {
+                var distance = chase.target.transform.position - transform.position;
+                if (distance.magnitude < .5f) {
+                    talkable.Inspect();
+                    chase.enabled = false;
                 }
             }
         }
 
         IEnumerator Greet() {
             animator.SetTrigger(borkTrigger);
-            yield return new WaitForSeconds(.8f);
             audio.Play();
             yield return new WaitForSeconds(2);
 
             animator.ResetTrigger(borkTrigger);
             chase.enabled = true;
-        }
-
-        IEnumerator Return() {
-            chase.target = null;
-            animator.SetTrigger(borkTrigger);
-            yield return new WaitForSeconds(.8f);
-            audio.Play();
-            yield return new WaitForSeconds(2);
-
-            animator.ResetTrigger(borkTrigger);
-            chase.target = start;
-            chase.speed = chase.speed / 2f;
         }
     }
 }

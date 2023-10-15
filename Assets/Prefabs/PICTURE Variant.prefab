@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8357848092526884515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7267769495986359411, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: incorrectText
+      value: You hold it up in front of the picture, and the dog's eyes follow it!
+        Oh wait, no, its just your imagination...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: You stare at the picture, immersing yourself in everything it has to
+        offer. You can almost smell that doggy frito smell. Beautiful.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: You stare at the picture, immersing yourself in everything it has to
+        offer. You feel a profound sense of warmth and frito smell. Beautiful.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -29.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359437, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a763ac65dc914b35a15c05015894887,
+        type: 3}
+    - target: {fileID: 7267769495986359438, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267769495986359439, guid: f3edb786fa3e12149b25b38775c5f8f2,
+        type: 3}
+      propertyPath: m_Name
+      value: PICTURE
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3edb786fa3e12149b25b38775c5f8f2, type: 3}
+--- !u!1 &1666691777636235820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7267769495986359439, guid: f3edb786fa3e12149b25b38775c5f8f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8357848092526884515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1245671036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666691777636235820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3902ade9b80b4d5989041850afac9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cowboyText: Wow, nice place you got here. But you know, you really shouldn't just
+    go around whistlin' for me all willy-nill-- wait a sec, you guys have the Gary
+    Potter books in your universe too? I thought they only sold these in the magical
+    universe! Did you know they're based on a real guy? Yep, all true. Well, I mean
+    they embellished a lot, but the gist of it all happened. We have a holiday and
+    everything. Ahhhh, how interesting... Welp, I should get going.

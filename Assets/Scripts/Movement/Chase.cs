@@ -9,9 +9,11 @@ namespace Scripts.Movement {
 
         bool flippin;
         PathMovement movement;
+        SpriteRenderer spriteRenderer;
 
         void Start() {
             movement = GetComponent<PathMovement>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         public void StartChasin(Transform newTarget) {
@@ -24,7 +26,9 @@ namespace Scripts.Movement {
 
         void FixedUpdate() {
             if (target != null) {
-                transform.localScale = new Vector3(target.position.x < transform.position.x ? 1 : -1, 1, 1);
+                if (spriteRenderer != null) {
+                    spriteRenderer.flipX = target.position.x < transform.position.x ? true : false;
+                }
                 transform.position += (target.position - transform.position).normalized * speed;
             }
 

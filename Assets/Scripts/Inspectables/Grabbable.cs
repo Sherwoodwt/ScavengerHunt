@@ -7,7 +7,7 @@ namespace Scripts.Inspectables {
         public KeyItemsObject keyItems;
         public ItemObject item;
 
-        new AudioSource audio;
+        protected new AudioSource audio;
 
         void Start() {
             audio = GetComponent<AudioSource>();
