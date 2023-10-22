@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using Scripts.Utilities;
+using UnityEngine;
 
 namespace Scripts.Pool {
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(CircleCollider2D))]
+    [RequireComponent(typeof(Explode))]
     public class PoolBall : MonoBehaviour {
         public float acceleration;
         public float maxSpeed;
@@ -19,11 +21,14 @@ namespace Scripts.Pool {
         Animator animator;
         new AudioSource audio;
         new CircleCollider2D collider;
+        Explode explode;
 
         void Start() {
             animator = GetComponent<Animator>();
             audio = GetComponent<AudioSource>();
             collider = GetComponent<CircleCollider2D>();
+            explode = GetComponent<Explode>();
+            explode.dieSound = dieSound;
 
             audio.clip = spawnSound;
         }
@@ -51,14 +56,10 @@ namespace Scripts.Pool {
             if (collider.gameObject.CompareTag("Projectile")) {
                 GameObject.Destroy(collider.gameObject);
                 this.collider.enabled = false;
-                audio.clip = dieSound;
-                audio.Play();
                 chase = false;
                 rotationSpeed = 0;
-                animator.enabled = true;
-                animator.SetTrigger("Splode");
                 poolGame.RemoveBall(this.gameObject);
-                GameObject.Destroy(this.gameObject, .75f);
+                explode.TriggerExplosion();
             }
         }
     }

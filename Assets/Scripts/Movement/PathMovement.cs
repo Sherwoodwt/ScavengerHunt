@@ -16,7 +16,7 @@ namespace Scripts.Movement {
 
         [SerializeField] int loopCount = 0;
         SpriteRenderer spriteRenderer;
-        int cur;
+        [SerializeField] int cur;
         int inc = -1;
 
         void Start() {
@@ -48,6 +48,11 @@ namespace Scripts.Movement {
 
         public void DisableFocus() {
             speed = cachedSpeed;
+        }
+
+        public void Reset() {
+            cur = 0;
+            inc = -1;
         }
     }
 }

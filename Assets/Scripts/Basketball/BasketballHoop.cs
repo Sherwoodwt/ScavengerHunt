@@ -1,53 +1,81 @@
 ﻿using UnityEngine;
 using Scripts.Utilities;
+using Scripts.Movement;
+using System;
+using UnityEngine.UIElements;
+using UnityEngine.PlayerLoop;
+using System.Collections;
 
 namespace Scripts.Basketball {
     [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(PathMovement))]
+    [RequireComponent(typeof(Explode))]
     public class BasketballHoop : MonoBehaviour {
-        [Range(.01f, .3f)]
-        public float speed;
         public LayerMask ballLayer;
-        public int goal = 5;
+        public int goal = 8;
         public ItemObject prize;
         public InventoryObject inventory;
-        public AudioClip scoreSound;
-        public AudioClip missSound;
-        public AudioClip prizeSound;
+        public AudioClip scoreSound, missSound, prizeSound;
+        public PointList[] paths;
+        public float[] speeds;
 
         new AudioSource audio;
-        float baseSpeed;
+        PathMovement pathMovement;
+        Explode explode;
+        [SerializeField] int score = 0;
 
         public void ResetScore() {
             audio.PlayOneShot(missSound);
-            speed = baseSpeed;
             score = 0;
+            pathMovement.Reset();
+            UpdatePath();
         }
-
-        [SerializeField] int score = 0;
-        float direction = 1;
 
         void Start() {
-            baseSpeed = speed;
-            audio = GetComponent<AudioSource>();
-        }
+            if (paths.Length != speeds.Length)
+                throw new ArgumentException("paths and speeds must be same length");
 
-        void FixedUpdate() {
-            transform.position = new Vector3(transform.position.x, transform.position.y + (direction * speed));
+            audio = GetComponent<AudioSource>();
+            explode = GetComponent<Explode>();
+            pathMovement = GetComponent<PathMovement>();
+            UpdatePath();
         }
 
         void OnTriggerEnter2D(Collider2D collider) {
-            direction = -direction;
             if (collider.gameObject.InLayerMask(ballLayer)) {
                 score++;
-                GameObject.Destroy(collider.gameObject);
+                Destroy(collider.gameObject);
+
                 if (score >= goal && prize != null) {
-                    audio.PlayOneShot(prizeSound);
-                    inventory.Add(prize);
+                    StartCoroutine(EndGame());
                 } else {
                     audio.PlayOneShot(scoreSound);
-                    speed *= 1.5f;
+                    UpdatePath();
                 }
             }
+        }
+
+        void UpdatePath() {
+            pathMovement.Reset();
+            pathMovement.speed = speeds[score];
+            pathMovement.points = paths[score].path;
+            transform.position = pathMovement.points[0];
+        }
+
+        IEnumerator EndGame() {
+            pathMovement.enabled = false;
+            explode.TriggerExplosion();
+
+            yield return new WaitForSeconds(1);
+
+            audio.volume = 1;
+            audio.PlayOneShot(prizeSound);
+            inventory.Add(prize);
+        }
+
+        [Serializable]
+        public class PointList {
+            public Vector2[] path;
         }
     }
 }

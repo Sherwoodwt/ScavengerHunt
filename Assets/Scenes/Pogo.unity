@@ -308,6 +308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
         type: 3}
+      propertyPath: doorNoise
+      value: 
+      objectReference: {fileID: 8300000, guid: 72ccb6bde18844205bd95cb4e57beef9, type: 3}
+    - target: {fileID: 5296225021808980830, guid: cb933a9f3258089408edfe69056f44a4,
+        type: 3}
       propertyPath: toLocation
       value: 
       objectReference: {fileID: 11400000, guid: 60edec7fcb1dcab4682ba65a139545fc,
