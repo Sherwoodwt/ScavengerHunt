@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 namespace Scripts.Pool {
     [RequireComponent(typeof(AudioSource))]
@@ -11,7 +9,7 @@ namespace Scripts.Pool {
         [Range(0, 10)]
         public float rotationSpeed;
         public bool chase;
-        public AudioClip spawnSound, killSound, dieSound;
+        public AudioClip spawnSound, dieSound;
         public PoolGame poolGame;
 
         public Transform Target { set { target = value; } }
@@ -31,6 +29,10 @@ namespace Scripts.Pool {
         }
 
         void FixedUpdate() {
+            if (rotationSpeed > 0) {
+                transform.RotateAround(transform.position, Vector3.forward, rotationSpeed);
+            }
+
             if (chase) {
                 var direction = (target.position - transform.position).normalized;
                 var accel = direction * acceleration;
@@ -45,12 +47,6 @@ namespace Scripts.Pool {
             }
         }
 
-        void Update() {
-            if (rotationSpeed > 0) {
-                transform.RotateAround(transform.position, Vector3.forward, rotationSpeed);
-            }
-        }
-
         void OnTriggerEnter2D(Collider2D collider) {
             if (collider.gameObject.CompareTag("Projectile")) {
                 GameObject.Destroy(collider.gameObject);
@@ -62,19 +58,8 @@ namespace Scripts.Pool {
                 animator.enabled = true;
                 animator.SetTrigger("Splode");
                 poolGame.RemoveBall(this.gameObject);
-                GameObject.Destroy(this.gameObject, 1);
-            } else if (collider.gameObject.CompareTag("Player")) {
-                StartCoroutine(Kill(collider.gameObject));
+                GameObject.Destroy(this.gameObject, .75f);
             }
-        }
-
-        IEnumerator Kill(GameObject obj) {
-            obj.SetActive(false);
-            audio.clip = killSound;
-            audio.Play();
-
-            yield return new WaitForSeconds(1);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         }
     }
 }

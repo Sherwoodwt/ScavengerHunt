@@ -1,9 +1,11 @@
 ﻿using System.Collections;
+using Scripts.Utilities;
 using UnityEngine;
 
 namespace Scripts.Pool {
     public class CueBall : MonoBehaviour {
         public float speed;
+        public LayerMask walls;
 
         public Vector2 Target { get; set; }
 
@@ -16,12 +18,18 @@ namespace Scripts.Pool {
         }
 
         void FixedUpdate() {
-            transform.position += ((Vector3)direction * speed);
+            transform.position += (Vector3)direction * speed;
+        }
+
+        void OnTriggerEnter2D(Collider2D collider) {
+            if (collider.gameObject.InLayerMask(walls)) {
+                GameObject.Destroy(this.gameObject);
+            }
         }
 
         IEnumerator Expire() {
-            yield return new WaitForSeconds(2);
-            GameObject.DestroyImmediate(this.gameObject);
+            yield return new WaitForSeconds(1);
+            GameObject.Destroy(this.gameObject);
         }
     }
 }

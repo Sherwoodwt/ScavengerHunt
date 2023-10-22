@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using Scripts.Pogo;
+using UnityEngine;
 
 namespace Scripts.Movement {
     public class DisableMovement : MonoBehaviour {
-        NormalController controller;
-        NormalPhysics physics;
+        BaseControls controller;
+        BasePhysics physics;
 
         void OnEnable() {
             var player = GameObject.FindGameObjectWithTag("Player");
-            controller = player.GetComponent<NormalController>();
-            physics = player.GetComponent<NormalPhysics>();
+            controller = player.GetComponent<BaseControls>();
+            physics = player.GetComponent<BasePhysics>();
 
             controller.DisableInputs = true;
             physics.input = Vector2.zero;

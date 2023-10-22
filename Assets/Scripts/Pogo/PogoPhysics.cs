@@ -8,22 +8,21 @@ namespace Scripts.Pogo {
         [SerializeField] float bounceSpeed;
         [SerializeField] float maxSpeed;
         Vector2 velocity;
-        float xInput;
 
         public void MoveLeft() {
-            xInput = -1;
+            input.x = -1;
         }
 
         public void MoveRight() {
-            xInput = 1;
+            input.x = 1;
         }
 
         public void MoveStop() {
-            xInput = 0;
+            input.x = 0;
         }
 
         void FixedUpdate() {
-            var acceleration = new Vector2(xInput * accel * Time.deltaTime, -gravity * Time.deltaTime);
+            var acceleration = new Vector2(input.x * accel * Time.deltaTime, -gravity * Time.deltaTime);
             if (acceleration.x == 0 && velocity.x != 0) {
                 // apply drag
                 acceleration.x = -Mathf.Sign(velocity.x) * accel/2 * Time.deltaTime;

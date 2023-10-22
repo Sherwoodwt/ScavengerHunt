@@ -15,6 +15,7 @@ namespace Scripts {
 
         void OnTriggerEnter2D(Collider2D collider) {
             if (string.IsNullOrEmpty(collisionTag) || collider.tag == collisionTag) {
+                Debug.Log(collider.transform);
                 onDetect.Invoke(collider.transform);
             }
         }

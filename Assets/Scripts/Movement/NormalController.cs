@@ -4,14 +4,12 @@ using UnityEngine;
 namespace Scripts.Movement {
     [RequireComponent(typeof(NormalPhysics))]
     [RequireComponent(typeof(BoxCollider2D))]
-    public class NormalController : MonoBehaviour {
+    public class NormalController : BaseControls {
         public GameObject pauseMenuPrefab;
         public InventoryObject inventory;
         public KeyItemObject shoeItem;
         public Animator animator;
         public LayerMask inspectMask;
-
-        public bool DisableInputs { get; set; }
 
         GameObject pauseMenu;
         Vector2 direction;

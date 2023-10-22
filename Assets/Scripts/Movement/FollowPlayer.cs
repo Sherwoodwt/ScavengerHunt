@@ -7,6 +7,14 @@ namespace Scripts.Movement {
         public BasePhysics player;
         public float factor = 1f, maxSpeed;
 
+        void Start() {
+            // snap to player at start of scene
+            transform.position = new Vector3(
+                player.transform.position.x,
+                player.transform.position.y,
+                transform.position.z);
+        }
+
         void Update() {
             var xdif = 0f;
             if (player.transform.position.x > collider.bounds.max.x)

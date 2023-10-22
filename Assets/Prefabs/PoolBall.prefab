@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1950786966255293556}
   - component: {fileID: 1950786966255293519}
   - component: {fileID: -2169441464740514440}
+  - component: {fileID: 4552276220617383246}
   m_Layer: 0
   m_Name: PoolBall
   m_TagString: Untagged
@@ -240,7 +241,6 @@ MonoBehaviour:
   rotationSpeed: 1.63
   chase: 0
   spawnSound: {fileID: 8300000, guid: 57a44ccadba0dd6418b52e37540cf8ad, type: 3}
-  killSound: {fileID: 8300000, guid: 026460462a80760488b2fa53d2c39724, type: 3}
   dieSound: {fileID: 8300000, guid: 8821990196a37d344bda2c6590888690, type: 3}
   poolGame: {fileID: 0}
   target: {fileID: 0}
@@ -264,3 +264,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &4552276220617383246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950786966255293518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c127f7991b2794b54a48cbc1ae603139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolGame: {fileID: 0}

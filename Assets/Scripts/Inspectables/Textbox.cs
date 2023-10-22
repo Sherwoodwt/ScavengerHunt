@@ -113,12 +113,14 @@ namespace Scripts.Inspectables {
             disableMovement.enabled = true;
             characterController.DisableInspect = true;
 
-            targetRandomMovement = talker.GetComponent<RandomMovement>();
-            if (targetRandomMovement != null)
-                targetRandomMovement.SetFocus(player.transform.position);
-            targetPathMovement = talker.GetComponent<PathMovement>();
-            if (targetPathMovement != null)
-                targetPathMovement.SetFocus(player.transform.position);
+            if (talker != null) {
+                targetRandomMovement = talker.GetComponent<RandomMovement>();
+                if (targetRandomMovement != null)
+                    targetRandomMovement.SetFocus(player.transform.position);
+                targetPathMovement = talker.GetComponent<PathMovement>();
+                if (targetPathMovement != null)
+                    targetPathMovement.SetFocus(player.transform.position);
+            }
         }
     }
 }
