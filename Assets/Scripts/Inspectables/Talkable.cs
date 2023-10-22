@@ -52,9 +52,11 @@ namespace Scripts.Inspectables {
             if (translatedTexts.Count > 0 && translator.Active) {
                 curTexts = translatedTexts;
             }
-            textbox.text = curTexts[textIndex];
-            textIndex = (textIndex + 1) % curTexts.Count;
-            ActivateTextbox();
+            if (curTexts.Count > 0) {
+                textbox.text = curTexts[textIndex];
+                textIndex = (textIndex + 1) % curTexts.Count;
+                ActivateTextbox();
+            }
         }
     }
 }

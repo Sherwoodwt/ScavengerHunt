@@ -49,15 +49,18 @@ namespace Scripts {
         }
 
         public void Description() {
-            talkable.texts = new List<string>{ Item.description };
-            talkable.Inspect();
+            if (Item != null) {
+                talkable.texts = new List<string>{ Item.description };
+                talkable.Inspect();
+            }
         }
 
         public void Refresh() {
-            image.sprite = inventory.items[index]?.sprite;
+            image.sprite = Item?.sprite;
             if (image.sprite == null) {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
                 button.enabled = false;
+                talkable.texts = new List<string>();
             } else {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
                 button.enabled = true;
