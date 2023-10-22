@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 651698107288eeb4bb1ba7cb0bd33180, type: 3}
   m_Name: SpawnObject
   m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 11400000, guid: 036db67123a45dd41b277f16ec5d2fdb, type: 2}
+  spawnpoint: {fileID: 11400000, guid: f4ae17d93064d4ec08b7bcc78902855b, type: 2}

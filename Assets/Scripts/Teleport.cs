@@ -24,6 +24,9 @@ namespace Scripts {
         }
 
         void OnTriggerEnter2D(Collider2D collider) {
+            if (!enabled)
+                return;
+
             if (collider.tag == "Player") {
                 StartCoroutine(SendIt(collider.transform));
             }
