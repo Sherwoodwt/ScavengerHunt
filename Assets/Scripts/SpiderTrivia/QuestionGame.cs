@@ -6,7 +6,7 @@ using Scripts.Pogo;
 using UnityEngine;
 
 namespace Scripts.SpiderTrivia {
-    // A class for genearting trivia questions and setting random choices to the correct answer.
+    // A class for generating trivia questions and setting random choices to the correct answer.
     // Meant to be used a number of times, then at teh end present a new room and a prize.
     public class QuestionGame : MonoBehaviour {
         public QuestionObject[] possibleQuestions;
@@ -39,8 +39,8 @@ namespace Scripts.SpiderTrivia {
         // Chooses a random question and sets up the room objects
         void InitRoom() {
             if (score == 0) {
-                portal.SetActive(false);
                 loreSign.SetActive(true);
+                portal.SetActive(false);
             } else {
                 loreSign.SetActive(false);
                 portal.SetActive(true);
@@ -65,15 +65,14 @@ namespace Scripts.SpiderTrivia {
             questionIndex = Random.Range(0, possibleQuestions.Length);
             var cur = possibleQuestions[questionIndex];
 
-            question.texts = new List<string>{ cur.question };
+            question.translatedTexts = new List<string>{ cur.question };
             var displacement = Random.Range(0, answers.Length);
-            Debug.Log(displacement);
             for (int i = 0; i < answers.Length; i++) {
                 if (answers.Length <= i) {
                     throw new System.Exception($"Need 3 answers to question, only have {i}");
                 }
                 var di = (i + displacement) % answers.Length;
-                answers[i].texts = new List<string> { cur.answers[di] };
+                answers[i].translatedTexts = new List<string> { cur.answers[di] };
                 var killPlayer = answers[i].GetComponentInChildren<KillPlayer>();
                 if (cur.correctAnswer == di) {
                     killPlayer.OnKill = Correct;
@@ -93,6 +92,8 @@ namespace Scripts.SpiderTrivia {
                     newList[i-1] = possibleQuestions[i];
                 }
             }
+            var question = possibleQuestions[questionIndex];
+            possibleQuestions.Where(q => q != question);
             possibleQuestions = newList;
             InitRoom();
         }
@@ -102,7 +103,5 @@ namespace Scripts.SpiderTrivia {
             possibleQuestions = originalQuestions.Select(q => q).ToArray();
             InitRoom();
         }
-
-        // TODO: Random question placement
     }
 }

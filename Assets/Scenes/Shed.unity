@@ -15663,7 +15663,7 @@ MonoBehaviour:
   transitionTime: 1
   transitionPrefab: {fileID: 1205180893210336901, guid: fc841d63f1f8881428b32d75c779c81b,
     type: 3}
-  doorNoise: {fileID: 0}
+  doorNoise: {fileID: 8300000, guid: fdbca83296405a648a8db12c242ead8b, type: 3}
   locks: {fileID: 0}
 --- !u!1 &401394146
 GameObject:
@@ -24089,12 +24089,12 @@ PrefabInstance:
     - target: {fileID: 3442368244624008471, guid: 4b1bee6c538d5e9429a1ed9ebad3bf89,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.496
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3442368244624008471, guid: 4b1bee6c538d5e9429a1ed9ebad3bf89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.472
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 3442368244624008471, guid: 4b1bee6c538d5e9429a1ed9ebad3bf89,
         type: 3}

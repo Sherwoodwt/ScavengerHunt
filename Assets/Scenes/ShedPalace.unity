@@ -200,6 +200,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1894456573}
+    - target: {fileID: 6453426837348473264, guid: 4ff4d5a4277254dd2be5d9e625475f09,
+        type: 3}
+      propertyPath: transitionPrefab
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff4d5a4277254dd2be5d9e625475f09, type: 3}
 --- !u!1001 &162562433
@@ -350,7 +355,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b8cfcc09098244d7eae044aa982b9b12, type: 2}
   - {fileID: 11400000, guid: a21b77098b1be49a892a80a6c9962d67, type: 2}
   - {fileID: 11400000, guid: f56009482290b48b9b3afbc222c9c927, type: 2}
-  goalScore: 3
+  - {fileID: 11400000, guid: 7032240ea08634146b7736bc5b22308c, type: 2}
+  - {fileID: 11400000, guid: 2c95fb6f0e6b04c55b0d4ece99db5238, type: 2}
+  - {fileID: 11400000, guid: fab6c5495ef9e4ae1951dbe54ec31aa8, type: 2}
+  - {fileID: 11400000, guid: af7b4af6b8b9549f5a62b08565ee5340, type: 2}
+  - {fileID: 11400000, guid: e27963ce5214a4ee59431a9e010c3ed0, type: 2}
+  - {fileID: 11400000, guid: eb75f72ff494549acaf5fc810c7eab1e, type: 2}
+  goalScore: 5
   questionTag: Question
   answerTag: Answer
   loreTag: Lore
@@ -367,10 +378,10 @@ GameObject:
   m_Component:
   - component: {fileID: 707529469}
   - component: {fileID: 707529471}
-  - component: {fileID: 707529470}
   - component: {fileID: 707529472}
   - component: {fileID: 707529473}
   - component: {fileID: 707529474}
+  - component: {fileID: 707529475}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Portal
@@ -393,19 +404,6 @@ Transform:
   m_Father: {fileID: 560280398}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &707529470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707529468}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0f9abe45059a79439f2e01160c57944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &707529471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,13 +468,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2754e916a7172e94ab3576944ab7dbfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 0}
   toLocation: {fileID: 11400000, guid: 357c5fb85d8f848c6b996ec90cae1062, type: 2}
-  keys: []
-  inventory: {fileID: 11400000, guid: 38dcf51e751ddd04fac828a9daf7b480, type: 2}
   spawn: {fileID: 11400000, guid: 58e6f48bbba3b9e43905282dae966365, type: 2}
   transitionTime: 1
   transitionPrefab: {fileID: 1205180893210336901, guid: fc841d63f1f8881428b32d75c779c81b,
     type: 3}
+  doorNoise: {fileID: 0}
+  locks: {fileID: 0}
 --- !u!82 &707529473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -599,6 +598,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6680269, y: 1.7385674}
   m_EdgeRadius: 0
+--- !u!114 &707529475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707529468}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9decb3b070f846caa51342b2f5cf6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockObject: {fileID: 0}
+  speed: 1
 --- !u!1001 &737392953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -710,8 +723,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: This is going to be the sign that asks a question. It can also just
-        say which path is which or whatever. Each path should re-enter this room.
+      value: "\u090F\u092B\u093F\u0921\u094D\u0938"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -884,6 +896,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1894456573}
+    - target: {fileID: 6453426837348473264, guid: 4ff4d5a4277254dd2be5d9e625475f09,
+        type: 3}
+      propertyPath: transitionPrefab
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff4d5a4277254dd2be5d9e625475f09, type: 3}
 --- !u!1 &1106880663
@@ -9883,8 +9900,13 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: This is going to be the sign that asks a question. It can also just
-        say which path is which or whatever. Each path should re-enter this room.
+      value: "\u0935\u093F\u0932\u0941\u092A\u094D\u0924 \u0939\u094B\u0928\u0947
+        \u0938\u0947 \u092A\u0939\u0932\u0947, \u092A\u094D\u0930\u093E\u091A\u0940\u0928
+        \u0915\u093E\u0932 \u092E\u0947\u0902 \u0915\u093F\u0938 \u0917\u0948\u0930-\u092E\u0915\u0921\u093C\u0940
+        \u092A\u094D\u0930\u093E\u0923\u0940 \u0915\u094B \u0930\u093E\u091C\u092A\u0930\u093F\u0935\u093E\u0930
+        \u0926\u094D\u0935\u093E\u0930\u093E \u092A\u093E\u0932\u0924\u0942 \u091C\u093E\u0928\u0935\u0930
+        \u0915\u0947 \u0930\u0942\u092A \u092E\u0947\u0902 \u0930\u0916\u093E \u091C\u093E\u0924\u093E
+        \u0925\u093E?"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -10079,8 +10101,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: This is going to be the sign that asks a question. It can also just
-        say which path is which or whatever. Each path should re-enter this room.
+      value: "\u0905\u092E\u0940\u092C\u093E"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -10191,8 +10212,7 @@ PrefabInstance:
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: This is going to be the sign that asks a question. It can also just
-        say which path is which or whatever. Each path should re-enter this room.
+      value: "\u092E\u0915\u094D\u0916\u093F\u092F\u094B\u0902"
       objectReference: {fileID: 0}
     - target: {fileID: 7267769495986359436, guid: f3edb786fa3e12149b25b38775c5f8f2,
         type: 3}
@@ -12823,5 +12843,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1894456573}
+    - target: {fileID: 6453426837348473264, guid: 4ff4d5a4277254dd2be5d9e625475f09,
+        type: 3}
+      propertyPath: transitionPrefab
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ff4d5a4277254dd2be5d9e625475f09, type: 3}

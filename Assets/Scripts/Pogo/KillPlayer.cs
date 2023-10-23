@@ -40,8 +40,8 @@ namespace Scripts.Pogo {
                     OnKill();
 
                 if (transitionPrefab != null) {
-                    var t = GameObject.Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
-                    GameObject.Destroy(t, 1);
+                    var t = Instantiate(transitionPrefab, canvas.position, Quaternion.identity, canvas);
+                    Destroy(t, 1);
                 }
             }
         }
